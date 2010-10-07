@@ -1,7 +1,5 @@
-#summary One-sentence summary of this page.
+#summary Info
 
 = Introduction =
 
 Development server: http://freon.mzk.cz:8080/meditor
-
-

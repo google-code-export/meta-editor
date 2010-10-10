@@ -1,10 +1,9 @@
-#Links to related technologies.
 
 
 = Used technologies, patterns and frameworks =
 
   * Kramerius4 project page: http://code.google.com/p/kramerius/
-  * Kramerius4 at MZK: krameriusdemo.mzk.cz
+  * Kramerius4 at MZK: http://krameriusdemo.mzk.cz
   * Fedora Commons repository: http://fedora-commons.org/
   * MVP: http://www.martinfowler.com/eaaDev/uiArchs.html
   * MVP with GWT: http://code.google.com/webtoolkit/articles/mvp-architecture.html

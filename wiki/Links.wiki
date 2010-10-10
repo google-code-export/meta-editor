@@ -1,0 +1,18 @@
+#Links to related technologies.
+
+
+= Used technologies, patterns and frameworks =
+
+  * Kramerius4 project page: http://code.google.com/p/kramerius/
+  * Kramerius4 at MZK: krameriusdemo.mzk.cz
+  * Fedora Commons repository: http://fedora-commons.org/
+  * MVP: http://www.martinfowler.com/eaaDev/uiArchs.html
+  * MVP with GWT: http://code.google.com/webtoolkit/articles/mvp-architecture.html
+  * gwt-platform: http://code.google.com/p/gwt-platform/
+  * Command pattern: http://en.wikipedia.org/wiki/Command_pattern
+  * Loose coupling: http://en.wikipedia.org/wiki/Loose_coupling
+  * REST: http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
+  * Z39.50: http://en.wikipedia.org/wiki/Z39.50
+  * GWT: http://code.google.com/webtoolkit/
+  * SmartGWT: http://code.google.com/p/smartgwt/
+  * PostgreSQL: http://www.postgresql.org/docs/9.0/interactive/index.html

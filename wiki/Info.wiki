@@ -2,4 +2,4 @@
 
 = Introduction =
 
-Development server: http://freon.mzk.cz:8080/meditor
+Development server: http://freon.mzk.cz

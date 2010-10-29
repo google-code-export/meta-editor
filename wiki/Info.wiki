@@ -1,5 +1,23 @@
-#summary Info
-
 = Introduction =
 
 Development server: http://freon.mzk.cz
+(The application above contains many bugs and due to its content it should not be viewed by anyone :)
+
+= Screenshots =
+
+
+There are two opened digital objects, Dublin Core stream and thumbnails of pages.
+
+http://meta-editor.googlecode.com/files/screen1.png
+
+
+
+Image preview.
+
+http://meta-editor.googlecode.com/files/screen2.png
+
+
+
+Drag & dropping of pages between digital objects.
+
+http://meta-editor.googlecode.com/files/screen3.png

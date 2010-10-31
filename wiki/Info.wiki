@@ -3,6 +3,25 @@
 Development server: http://freon.mzk.cz
 (The application above contains many bugs and due to its content it should not be viewed by anyone :)
 
+= Themes =
+There are some other themes on http://freon.mzk.cz/meditor1 - http://freon.mzk.cz/meditor4. However, some of them don't work properly. Some images like arrows from tab stack or other form features are missing.
+
+<br/><br/><br/>
+====Enterprise (default)====
+http://freon.mzk.cz
+<br/><br/><br/>
+====Fleet====
+http://freon.mzk.cz/meditor1 
+<br/><br/><br/>
+====SilverWave====
+http://freon.mzk.cz/meditor2
+<br/><br/><br/>
+===BlackOps===
+http://freon.mzk.cz/meditor3
+<br/><br/><br/>
+===TreeFrog===
+http://freon.mzk.cz/meditor4
+<br/><br/><br/>
 = Screenshots =
 
 

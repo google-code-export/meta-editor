@@ -25,3 +25,9 @@ http://meta-editor.googlecode.com/files/screen2.png
 Drag & dropping of pages between digital objects.
 
 http://meta-editor.googlecode.com/files/screen3.png
+
+
+
+User management.
+
+http://meta-editor.googlecode.com/files/screen4.png

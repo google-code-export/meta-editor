@@ -1,12 +1,18 @@
 = Introduction =
 
-Development server: http://freon.mzk.cz
-(The application above contains many bugs and due to its content it should not be viewed by anyone :)
+Demo: [http://editor.mzk.cz http://editor.mzk.cz]
 
-= Themes =
-There are some other themes on http://freon.mzk.cz/meditor1 - http://freon.mzk.cz/meditor4. However, some of them don't work properly. Some images like arrows from tab stack or other form features are missing.
+===test account===
+OpenID provider = Google<br/>
+*l:* metadataedit<br/>
+*p:* editoreditor<br/>
 
-<br/><br/><br/>
+After logging in you may for instance open some digital object from recently modified section on the left side at the bottom of the page.
+
+For information about the data model please visit http://code.google.com/p/kramerius/wiki/Data
+
+
+<br/>
 = Screenshots =
 
 
@@ -22,12 +28,12 @@ http://meta-editor.googlecode.com/files/screen2.png
 
 
 
-Drag & dropping of pages between digital objects.
+Drag & dropping of the pages between the digital objects.
 
 http://meta-editor.googlecode.com/files/screen3.png
 
 
 
-User management.
+The user management.
 
 http://meta-editor.googlecode.com/files/screen4.png

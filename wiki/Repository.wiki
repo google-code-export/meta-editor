@@ -1,3 +1,0 @@
-svn checkout https://meta-editor.googlecode.com/svn/trunk/ MEditor --username user.name
-
-svn checkout http://meta-editor.googlecode.com/svn/trunk/ MEditor-read-only

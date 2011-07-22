@@ -8,5 +8,6 @@ It is recommended that you use to Eclipse Helios or Galileo (this section has be
 
 * Use the Eclipse Menu: Window -> Preferences -> Java -> Code Style
 Under the top-level Code Style section:
+[http://meta-editor.googlecode.com/svn/wiki/img/CleanUp.png http://meta-editor.googlecode.com/svn/wiki/img/CleanUp_sm.png]
 
 <g:plusone size="medium"></g:plusone>

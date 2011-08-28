@@ -19,7 +19,7 @@ Under the top-level Code Style section:
 || [http://meta-editor.googlecode.com/svn/wiki/img/Formatter.png http://meta-editor.googlecode.com/svn/wiki/img/Formatter_sm.png] || [http://meta-editor.googlecode.com/svn/wiki/img/Imports.png http://meta-editor.googlecode.com/svn/wiki/img/Imports_sm.png] ||
 
  # Under the Clean-up section import meditor-cleanup.xml and press Apply
- # Under the Code Templates section import meditor-codetemplates.xml and press Apply
+ # Under the Code Templates section import meditor-codetemplates.xml, check the "Automatically add comments for new methods and types" checkbox and press Apply
  # Also under the Code Templates section in Comments -> Types edit Types to replace "Firstname Lastname" with your own name and press Apply
  # Under the Formatter section import meditor-formatter.xml and press Apply
  # Under the Organize Imports section import meditor.importorder and press Apply

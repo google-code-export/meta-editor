@@ -2,3 +2,4 @@
 
 ==Debian==
  * libtiff-tools
+ * imagemagick

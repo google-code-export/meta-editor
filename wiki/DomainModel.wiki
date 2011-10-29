@@ -1,0 +1,5 @@
+#summary One-sentence summary of this page.
+
+= Domain model of digital objects =
+
+http://meta-editor.googlecode.com/svn/wiki/img/domain.jpg

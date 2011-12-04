@@ -2,4 +2,13 @@
 
 ==Debian==
  * libtiff-tools
- * imagemagick
+ * imagemagick  (command convert is used)
+
+
+==Red Hat==
+ * tempfile command is missing in the Kakadu convert script => use:   
+
+TIFF_TMP1="/tmp/$$a.tif";
+TIFF_TMP2="/tmp/$$b.tif";
+
+.. instead

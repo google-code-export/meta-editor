@@ -6,9 +6,15 @@
 
 
 ==Red Hat==
- * tempfile command is missing in the Kakadu convert script => use:   
+ * tempfile command is missing in the Kakadu compress script => use:   
 
 TIFF_TMP1="/tmp/$$a.tif";
 TIFF_TMP2="/tmp/$$b.tif";
 
 .. instead
+
+
+
+= Java =
+ * JVM from Oracle is strongly recommended and tested
+ * OpenJDK have problems with the Djatoka/Kakadu extract script

@@ -13,6 +13,9 @@ TIFF_TMP2="/tmp/$$b.tif";
 
 .. instead
 
+packages: ImageMagick
+(yum install ImageMagick)
+
 
 
 = Java =

@@ -5,6 +5,9 @@
 </wiki:comment>
 
 
+----
+
+
 = Editor Installation =
 The goal of this page is to give information concerning the installation and deployment of the Metadata Editor. The most of the content copes with linux customization.
 

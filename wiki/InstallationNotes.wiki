@@ -1,7 +1,6 @@
-#sidebar TableOfContents
-<wiki:toc max_depth="2" />
-#information concerning the installation and deployment
+#summary information concerning the installation and deployment
 
+<wiki:toc max_depth="2" />
 
 
 ----

@@ -105,9 +105,15 @@ make a file _configuration.properties_ in H/user/.meditor and set the parameters
 Add the directory META-INF into dirrectory where from will be deployted and there create a new file context.xml which includes:
 
 {{{
-
-
-   
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/meditor">
+   <Resource name="jdbc/editor" auth="Container" type="javax.sql.DataSource"
+           driverClassName="org.postgresql.Driver"
+           maxActive="40" maxIdle="20" maxWait="7500"
+           removeAbandoned="true" removeAbandonedTimeout="100" logAbandoned="true"
+           username="meditor" password="samePassAsUnixPassForMeditor"
+           url="jdbc:postgresql://localhost:5432/meditor" />
+</Context> 
 
 }}}
 

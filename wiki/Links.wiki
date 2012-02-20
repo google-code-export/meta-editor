@@ -1,6 +1,4 @@
-
-
-= Used technologies, patterns and frameworks =
+= Used Technologies, Patterns and Frameworks =
 
   * Kramerius4 project page: http://code.google.com/p/kramerius/
   * Kramerius4 at MZK: http://krameriusdemo.mzk.cz
@@ -15,3 +13,33 @@
   * GWT: http://code.google.com/webtoolkit/
   * SmartGWT: http://code.google.com/p/smartgwt/
   * PostgreSQL: http://www.postgresql.org/docs/9.0/interactive/index.html
+
+= Communities =
+
+<wiki:gadget url="http://www.ohloh.net/p/fcrepo/widgets/project_basic_stats.xml" height="230" width="360" border="0" />
+
+<wiki:gadget url="http://www.ohloh.net/p/gwt/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+
+<wiki:gadget url="http://www.ohloh.net/p/smartgwt/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+
+<wiki:gadget url="http://www.ohloh.net/p/gwt-platform/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+
+<wiki:gadget url="http://www.ohloh.net/p/subversion/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+
+<wiki:gadget url="http://www.ohloh.net/p/log4j/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+
+<wiki:gadget url="http://www.ohloh.net/p/postgres/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+
+<wiki:gadget url="http://www.ohloh.net/p/tomcat/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+
+<wiki:gadget url="http://www.ohloh.net/p/apache/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+
+
+
+
+
+
+
+
+
+

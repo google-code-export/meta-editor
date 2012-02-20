@@ -1,9 +1,0 @@
-= Image server integration =
-
-install all the dependencies mentioned on LinuxDependencies
-
-copy djatoka war into `$CATALINA_HOME/webapps`
-
-in the `$CATALINA_HOME/webapps/meditor/viewer/viewer.html` modify the line where variable `server` is declared:
-
-`var server = http://your_hostname/djatoka/resolver`;

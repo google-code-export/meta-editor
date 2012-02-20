@@ -1,10 +1,12 @@
 #sidebar TableOfContents
 
 = Editor Installation =
+The goal of this page is to give information concerning the installation and deployment of the Metadata Editor. The most of the content copes with linux customization.
 
 == Notes: ==
 
-  * Let H is a host name, where we want to deploy the editor
+  * Let H is a host name where we want to deploy the editor
+  * Let E is a host name of a computer where the editor is already deployed
   * Installation process is primarilly designed for a Debian-like linux, but it was tested for example on RedHat distribution after few editations as well.
 
 Add a new user called "meditor" on H computer:
@@ -90,19 +92,23 @@ export PGCLIENTENCODING=UNICODE
 H:/home/meditor/.meditor
 }}}
 
- * copy {{{resources/djatoka dir}}} and {{{resources/xml}}} into {{{H:/meditor/.meditor}}} (the source of copy is in SVN)
-   * in war file: {{{H/user/.meditor/djatoka/dist/djatoka.war#/WEB-INF/classes/djatoka.properties}}} change password into database in {{{‘samePassAsUnixPassForMeditor}}} (mc can be used), eventually port of database too, if it is not default (5432’).
+ * copy directories 
+{{{
+resources/djatoka dir
+resources/xml
+}}} 
+into _H:/meditor/.meditor_ (directories are in SVN)
+   * in war file: _H/user/.meditor/djatoka/dist/djatoka.war#/WEB-INF/classes/djatoka.properties_ change the password for database by _‘samePassAsUnixPassForMeditor'_ (mc can be used), eventually port of the database as well if it is not the default one (5432).
 
-    * copy warko djatoky into Tomcat (into webapps)
+    * Copy the war file of djatoka image server into Tomcat (into webapps)
 
-Check that java is not using OpenJDK (java -version) but using JVM or oracle (HotSpot/ or JRockit). There should be equality between java, which is launched from  “$PATH” in shell and which is launched from {{{$JAVA_HOME/bin/java}}} (due to external processes as image conversion).
+    * Check that java is not using JVM from OpenJDK (java -version) It should be using JVM from Oracle (HotSpot or JRockit). There should be equality between java, which is launched from bash ('$PATH/java') and which is launched from $JAVA_HOME/bin/java (due to external processes as image conversion).
 
 
-make a file _configuration.properties_ in H/user/.meditor and set the parameters, especially the way to import directory, way to images (internal imgserver), etc.
+     * Make a file _configuration.properties_ in H/user/.meditor and set the parameters, especially the path to the import directory, the path to the images (internal imgserver), etc.
 
-== DB data: ==
-
-Add the directory META-INF into dirrectory where from will be deployted and there create a new file context.xml which includes:
+== DB credentials: ==
+On the PC from which I want to deploy, create the directory META-INF (next to the WEB-INF in the war directory) and subsequently create the file context.xml with following content:
 
 {{{
 <?xml version="1.0" encoding="UTF-8"?>
@@ -117,20 +123,22 @@ Add the directory META-INF into dirrectory where from will be deployted and ther
 
 }}}
 
+Note: the file is not included in the SVN, because of the password
+
 == Reverse proxy: ==
 
-   * Install Apache (httpd on RedHat) and check there already are (if absent, install them) moduls (_/etc/apache2/mods-available_) _mod_proxy, mod-proxy-html_ a _mod_ssl_ and _mod_rewrite_ and activate it a2enmod (_/etc/apache2/mods-enabled_).
+   * Install Apache (httpd on RedHat) and check the presence of (if absent, install them) modules (situated at _/etc/apache2/mods-available_) _mod_proxy, mod-proxy-html_ a _mod_ssl_ and _mod_rewrite_ and activate it by a2enmod (_/etc/apache2/mods-enabled_).
 
-   * From any computer where is editor actually running, copy definitions of virtual guests for editor as such and for editor running in port 443 and change hostname in every places. Originalplacing is {{{/etc/apache/sites-available}}} on computer, where editor is running.
-   * Add links for certificates into virtual guest definition for SSL.
+   * From any computer where editor is currently deployed, lets call this machine as E, copy the definitions of virtual hosts, one for editor running on port 80 and one for editor running on port 443 and change the hostname in all places for the proper one. The virtual hosts definitions are situated ad _E:/etc/apache/sites-available_.
+   * Add links for certificates into the virtual host definition for SSL.
 
-   * Allow these two sites by a2ensite.
+   * Allow these the two sites by a2ensite.
 
-   * Restart Apache ({{{/etc/init.d/apache2ctl}}} restart or reload, if changes are only on the level of virtual network).
+   * Restart Apache (_/etc/init.d/apache2 restart_ or reload_ if changes are only on the level of hosts).
 
-   * Revise the file {{{/etc/apache2/mods-enabled/proxy.conf}}} to be equal to the file on the computer, where was editor installed before.
+   * Revise the file _/etc/apache2/mods-enabled/proxy.conf_ to be equal to the file on the computer, where was editor installed before (E).
 
-   * Add/comment/change in {{{H:$CATALINA_HOME/conf/server.xml}}} for two conectors:
+   * Add/comment/change the file _H:$CATALINA_HOME/conf/server.xml_ to achieve the state as follows:
 {{{
  <Connector port="8081" protocol="HTTP/1.1"
              proxyName="H" redirectPort="8443" proxyPort="80" />
@@ -142,27 +150,32 @@ Add the directory META-INF into dirrectory where from will be deployted and ther
  keystoreFile="PATH_TO_KEYSTORE"
  keystorePass="changeme" />
 }}}
-where H is hostname
-{{{PATH_TO_KEYSTORE}}} is the way to the file, which ensue by following process:
+ where H is the hostname
+ _PATH_TO_KEYSTORE_ is the path to the file, which was created by running command:
 {{{
 $JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA
 }}}
-and  “changeme” will be a password, which the command keytool asks for.
+ and  “changeme” will be a password, which the command keytool asks for.
 
-   * restart Tomcat (use script in {{{/home/meditor/.meditor/djatoka/bin/tomcat.sh}}}).
+   * restart Tomcat (use script in 
+{{{
+/home/meditor/.meditor/djatoka/bin/tomcat.sh
+}}}
 
-   * Delete unusable aplications from Tomcat as ROOT or docs. etc.
+   * Delete the demo applications from Tomcat (webapps) such as ROOT or docs. etc.
 
 == Time server: ==
 {{{
 sudo vim /etc/openntpd/ntpd.conf 
 }}}
-(add tik.cesnet.cz and tak.cesnet.cz and restart the service 
-{{{sudo /etc/init.d/openntpd restart}}})
+add _tik.cesnet.cz_ and _tak.cesnet.cz_ and restart the service 
+{{{
+sudo /etc/init.d/openntpd restart
+}}}
 
-== Outlying discs: ==
+== Mounting the Discs: ==
 
-Definite discs, which are additing into {{{/etc/fstab}}}. Then enter to do that after restart of the computer in case sshfs (it means to {{{/etc/rc.local}}} add (+/- names and ways):
+In _/etc/fstab_ define the disks which are going to be mounted. In order to mount disks via sshfs protocol add the following to _/etc/rc.local_ and _/home/meditor/.bashrc_
 {{{
 sudo -u meditor mount /home/meditor/input/monograph/
 sudo -u meditor mount /home/meditor/input/periodical/
@@ -176,7 +189,7 @@ Into the file
 {{{
 /etc/init.d/firewall
 }}}
-add lines
+add lines:
 {{{
        iptables -t filter -A INPUT -p tcp --dport 80 -j ACCEPT
        # Tomcat
@@ -184,11 +197,11 @@ add lines
        # PostgreSLQ
        iptables -t filter -A INPUT -p tcp --dport 5432 -j ACCEPT
 }}}
-Port 8000 is neccesary for external debug. It means. If debug is not affected, it needs a comment and take into accound in parametres for JVM, when Tomcat is starded up.
+Port 8000 is neccesary for external debug. In other words if debug is not needed, comment the line with port 8000, otherwise take the debug mode into account also in the parametres for JVM when Tomcat is started.
 
-Port for postgres will be opened (for connection to database in debug mod GWT from outer places).
+Port for postgres will be opened for allowing the connection to the database in debug mode (GWT hosted mode for instance) from public IP.
 
-For outer acces to ssh to H computer, is necesary to add public IP address into group FRIENDS:
+For accesing the H from public IP via ssh, it is necesary to add the public IP address into the group FRIENDS:
 {{{
    # home laptop
    iptables -t filter -A FRIENDS -s 84.42.234.102 -j ACCEPT
@@ -196,7 +209,7 @@ For outer acces to ssh to H computer, is necesary to add public IP address into 
 
 == Security: ==
 
-Into the file {{{/etc/hosts.allow}}}
+Into the file _/etc/hosts.allow_
 add:
 {{{
 ALL: localhost
@@ -204,22 +217,26 @@ ALL: 195.113.155.
 sshd: 147.251.
 }}}
 
-When someone want to break safety from outer place (references in {{{/var/log/auth}}} or in log Apache), he can be banned in the file {{{/etc.hosts.deny}}}
+When someone wants to break in the machine (records in _/var/log/auth_ or in a log files from Apache), he can be banned in the file _/etc.hosts.deny_
 
-For more security is possible to change in {{{/etc/ssh/sshd_config}}} element {{{PasswordAuthentication}}} from *_yes_* to *_no_* and allow to loging in with certificate.
+For even more security it is possible to change the _/etc/ssh/sshd_config_ element _PasswordAuthentication_ from *_yes_* to *_no_* and allow for loging in only via the certificate.
 
-== Launching after restart: ==
+== Launching After Restart: ==
 
-postgres and apache should ate lounched automaticly after restart, but Tomcat is not. So, is necessary to do:
+Postgres and Apache should be launched automatically after the restart, but Tomcat don't. Therefore, it is necessary to do:
 
-create script {{{/etc/init.d/tomcat}}} and copy the content from the same location in the computer, where it is already installed, rewrite the ways, give the rights for launching and launch:
+create script _/etc/init.d/tomcat_ and copy the content from the same location in the computer, where the editor is already deployed (E), alter the paths for the correct ones and run:
 {{{
 update-rc.d tomcat defaults
 }}}
 
-== Actualiyations: ==
+== Actualizations: ==
 
-As root launch a command {{{crontab -e}}} and add the line 
+As the root launch a command 
+{{{
+crontab -e
+}}}
+and add the line 
 {{{
 3 14 * * * (aptitude update && aptitude safe-upgrade -y) > /dev/null
 }}}

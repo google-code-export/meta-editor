@@ -1,4 +1,5 @@
-  * [Info General Information]
+  * General Information
+    * [Info Screenshots]
     * [DomainModel Domain Model]
     * [Links Related Links]
   * [InstallationNotes Installation Notes]

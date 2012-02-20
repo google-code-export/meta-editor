@@ -8,7 +8,11 @@
 = To set up Eclipse (Helios, Galileo and Ganymede) =
 It is recommended that you use to Eclipse Helios or Galileo (this section has been tested for Helios and Galileo - some small differences will be encountered). You must install Eclipse and a compatible Java JDK prior to beginning this configuration. Also you need to obtain a set of configuration files which are located in the repository source. 
 
-*Path of the configuration files:*
+ == Plugins ==
+ * Google Plugin for Eclipse [http://code.google.com/intl/cs-CZ/appengine/docs/java/tools/eclipse.html GPE]
+ * [http://www.eclipse.org/subversive/ Subversive]
+
+ == Path of the configuration files: ==
 {{{
 trunk/MEditor/resources/dev/eclipse
 }}}

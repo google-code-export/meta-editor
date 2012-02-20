@@ -119,8 +119,107 @@ Add the directory META-INF into dirrectory where from will be deployted and ther
 
 == Reverse proxy: ==
 
-   * Install Apache (httpd on RedHat) and check there already are (if absent, install them) moduls (/etc/apache2/mods-available) mod_proxy, mod-proxy-html a mod_ssl and mod_rewrite and activate it a2enmod (/etc/apache2/mods-enabled).
-   * From any computer where is editor actually running, copy definitions of virtual guests for editor as such and for editor running in port 443 and change hostname in every places. Originalplacing is /etc/apache/sites-available on computer, where editor is running.
+   * Install Apache (httpd on RedHat) and check there already are (if absent, install them) moduls (_/etc/apache2/mods-available_) _mod_proxy, mod-proxy-html_ a _mod_ssl_ and _mod_rewrite_ and activate it a2enmod (_/etc/apache2/mods-enabled_).
+
+   * From any computer where is editor actually running, copy definitions of virtual guests for editor as such and for editor running in port 443 and change hostname in every places. Originalplacing is {{{/etc/apache/sites-available}}} on computer, where editor is running.
    * Add links for certificates into virtual guest definition for SSL.
-   * Allow tese two sites by a2ensite.
-   *
+
+   * Allow these two sites by a2ensite.
+
+   * Restart Apache ({{{/etc/init.d/apache2ctl}}} restart or reload, if changes are only on the level of virtual network).
+
+   * Revise the file {{{/etc/apache2/mods-enabled/proxy.conf}}} to be equal to the file on the computer, where was editor installed before.
+
+   * Add/comment/change in {{{H:$CATALINA_HOME/conf/server.xml}}} for two conectors:
+{{{
+ <Connector port="8081" protocol="HTTP/1.1"
+             proxyName="H" redirectPort="8443" proxyPort="80" />
+<Connector port="8443"
+ maxThreads="150" minSpareThreads="25" maxSpareThreads="75"
+ enableLookups="true" disableUploadTimeout="true"
+ acceptCount="100" debug="0" scheme="https" secure="true"
+ clientAuth="false" sslProtocol="TLS" SSLEnabled="true" SSLEngine="on"
+ keystoreFile="PATH_TO_KEYSTORE"
+ keystorePass="changeme" />
+}}}
+where H is hostname
+{{{PATH_TO_KEYSTORE}}} is the way to the file, which ensue by following process:
+{{{
+$JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA
+}}}
+and  “changeme” will be a password, which the command keytool asks for.
+
+   * restart Tomcat (use script in {{{/home/meditor/.meditor/djatoka/bin/tomcat.sh}}}).
+
+   * Delete unusable aplications from Tomcat as ROOT or docs. etc.
+
+== Time server: ==
+{{{
+sudo vim /etc/openntpd/ntpd.conf 
+}}}
+(add tik.cesnet.cz and tak.cesnet.cz and restart the service 
+{{{sudo /etc/init.d/openntpd restart}}})
+
+== Outlying discs: ==
+
+Definite discs, which are additing into {{{/etc/fstab}}}. Then enter to do that after restart of the computer in case sshfs (it means to {{{/etc/rc.local}}} add (+/- names and ways):
+{{{
+sudo -u meditor mount /home/meditor/input/monograph/
+sudo -u meditor mount /home/meditor/input/periodical/
+sudo -u meditor mount /home/meditor/imageserver/known/
+sudo -u meditor mount /home/meditor/imageserver/unknown/
+}}}
+
+== Firewall: ==
+
+Into the file 
+{{{
+/etc/init.d/firewall
+}}}
+add lines
+{{{
+       iptables -t filter -A INPUT -p tcp --dport 80 -j ACCEPT
+       # Tomcat
+       iptables -t filter -A INPUT -p tcp --dport 8000 -j ACCEPT
+       # PostgreSLQ
+       iptables -t filter -A INPUT -p tcp --dport 5432 -j ACCEPT
+}}}
+Port 8000 is neccesary for external debug. It means. If debug is not affected, it needs a comment and take into accound in parametres for JVM, when Tomcat is starded up.
+
+Port for postgres will be opened (for connection to database in debug mod GWT from outer places).
+
+For outer acces to ssh to H computer, is necesary to add public IP address into group FRIENDS:
+{{{
+   # home laptop
+   iptables -t filter -A FRIENDS -s 84.42.234.102 -j ACCEPT
+}}}
+
+== Security: ==
+
+Into the file {{{/etc/hosts.allow}}}
+add:
+{{{
+ALL: localhost
+ALL: 195.113.155.
+sshd: 147.251.
+}}}
+
+When someone want to break safety from outer place (references in {{{/var/log/auth}}} or in log Apache), he can be banned in the file {{{/etc.hosts.deny}}}
+
+For more security is possible to change in {{{/etc/ssh/sshd_config}}} element {{{PasswordAuthentication}}} from *_yes_* to *_no_* and allow to loging in with certificate.
+
+== Launching after restart: ==
+
+postgres and apache should ate lounched automaticly after restart, but Tomcat is not. So, is necessary to do:
+
+create script {{{/etc/init.d/tomcat}}} and copy the content from the same location in the computer, where it is already installed, rewrite the ways, give the rights for launching and launch:
+{{{
+update-rc.d tomcat defaults
+}}}
+
+== Actualiyations: ==
+
+As root launch a command {{{crontab -e}}} and add the line 
+{{{
+3 14 * * * (aptitude update && aptitude safe-upgrade -y) > /dev/null
+}}}

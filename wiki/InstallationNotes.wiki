@@ -15,7 +15,7 @@ The goal of this page is to give information concerning the installation and dep
 
   * Let H is a host name where we want to deploy the editor
   * Let E is a host name of a computer where the editor is already deployed
-  * Installation process is primarilly designed for a Debian-like linux, but it was tested for example on RedHat distribution after few editations as well.
+  * Installation process is primarilly designed for a Debian-like linux, but it was tested for example on `RedHat` distribution after few editations as well.
 
 Add a new user called "meditor" on H computer:
 {{{sudo adduser meditor}}}
@@ -74,7 +74,7 @@ CATALINA_HOME/lib/
 }}} 
  copy the JDBC driver for Postgres (for example postgresql-${version}.jdbc4.jar)
 
-== Environment Variable: ==
+== Environment Variables: ==
 
 Into 
 {{{
@@ -93,7 +93,7 @@ export LC_ALL=cs_CZ.utf8
 export PGCLIENTENCODING=UNICODE
 }}}
 
-== Image server: ==
+== Image Server: ==
 
    * create 
 {{{
@@ -110,12 +110,12 @@ into _H:/meditor/.meditor_ (directories are in SVN)
 
     * Copy the war file of djatoka image server into Tomcat (into webapps)
 
-    * Check that java is not using JVM from OpenJDK (java -version) It should be using JVM from Oracle (HotSpot or JRockit). There should be equality between java, which is launched from bash ('$PATH/java') and which is launched from $JAVA_HOME/bin/java (due to external processes as image conversion).
+    * Check that java is not using JVM from OpenJDK (java -version) It should be using JVM from Oracle (`HotSpot` or JRockit). There should be equality between java, which is launched from bash ('$PATH/java') and which is launched from $JAVA_HOME/bin/java (due to external processes as image conversion).
 
 
      * Make a file _configuration.properties_ in H/user/.meditor and set the parameters, especially the path to the import directory, the path to the images (internal imgserver), etc.
 
-== DB credentials: ==
+== DB Credentials: ==
 On the PC from which I want to deploy, create the directory META-INF (next to the WEB-INF in the war directory) and subsequently create the file context.xml with following content:
 
 {{{
@@ -133,9 +133,9 @@ On the PC from which I want to deploy, create the directory META-INF (next to th
 
 Note: the file is not included in the SVN, because of the password
 
-== Reverse proxy: ==
+== Reverse Proxy: ==
 
-   * Install Apache (httpd on RedHat) and check the presence of (if absent, install them) modules (situated at _/etc/apache2/mods-available_) _mod_proxy, mod-proxy-html_ a _mod_ssl_ and _mod_rewrite_ and activate it by a2enmod (_/etc/apache2/mods-enabled_).
+   * Install Apache (httpd on `RedHat`) and check the presence of (if absent, install them) modules (situated at _/etc/apache2/mods-available_) _mod_proxy, mod-proxy-html_ a _mod_ssl_ and _mod_rewrite_ and activate it by a2enmod (_/etc/apache2/mods-enabled_).
 
    * From any computer where editor is currently deployed, lets call this machine as E, copy the definitions of virtual hosts, one for editor running on port 80 and one for editor running on port 443 and change the hostname in all places for the proper one. The virtual hosts definitions are situated ad _E:/etc/apache/sites-available_.
    * Add links for certificates into the virtual host definition for SSL.
@@ -172,7 +172,7 @@ $JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA
 
    * Delete the demo applications from Tomcat (webapps) such as ROOT or docs. etc.
 
-== Time server: ==
+== Time Server: ==
 {{{
 sudo vim /etc/openntpd/ntpd.conf 
 }}}
@@ -227,9 +227,9 @@ sshd: 147.251.
 
 When someone wants to break in the machine (records in _/var/log/auth_ or in a log files from Apache), he can be banned in the file _/etc.hosts.deny_
 
-For even more security it is possible to change the _/etc/ssh/sshd_config_ element _PasswordAuthentication_ from *_yes_* to *_no_* and allow for loging in only via the certificate.
+For even more security it is possible to change the _/etc/ssh/sshd_config_ element _`PasswordAuthentication`_ from *_yes_* to *_no_* and allow for loging in only via the certificate.
 
-== Launching After Restart: ==
+== Running after Restart: ==
 
 Postgres and Apache should be launched automatically after the restart, but Tomcat don't. Therefore, it is necessary to do:
 

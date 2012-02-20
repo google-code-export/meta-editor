@@ -1,8 +1,7 @@
 #sidebar TableOfContents
 <wiki:toc max_depth="2" />
-<wiki:comment>
 #information concerning the installation and deployment
-</wiki:comment>
+
 
 
 ----

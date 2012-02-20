@@ -89,3 +89,32 @@ export PGCLIENTENCODING=UNICODE
 {{{
 H:/home/meditor/.meditor
 }}}
+
+ * copy {{{resources/djatoka dir}}} and {{{resources/xml}}} into {{{H:/meditor/.meditor}}} (the source of copy is in SVN)
+   * in war file: {{{H/user/.meditor/djatoka/dist/djatoka.war#/WEB-INF/classes/djatoka.properties}}} change password into database in {{{‘samePassAsUnixPassForMeditor}}} (mc can be used), eventually port of database too, if it is not default (5432’).
+
+    * copy warko djatoky into Tomcat (into webapps)
+
+Check that java is not using OpenJDK (java -version) but using JVM or oracle (HotSpot/ or JRockit). There should be equality between java, which is launched from  “$PATH” in shell and which is launched from {{{$JAVA_HOME/bin/java}}} (due to external processes as image conversion).
+
+
+make a file _configuration.properties_ in H/user/.meditor and set the parameters, especially the way to import directory, way to images (internal imgserver), etc.
+
+== DB data: ==
+
+Add the directory META-INF into dirrectory where from will be deployted and there create a new file context.xml which includes:
+
+{{{
+
+
+   
+
+}}}
+
+== Reverse proxy: ==
+
+   * Install Apache (httpd on RedHat) and check there already are (if absent, install them) moduls (/etc/apache2/mods-available) mod_proxy, mod-proxy-html a mod_ssl and mod_rewrite and activate it a2enmod (/etc/apache2/mods-enabled).
+   * From any computer where is editor actually running, copy definitions of virtual guests for editor as such and for editor running in port 443 and change hostname in every places. Originalplacing is /etc/apache/sites-available on computer, where editor is running.
+   * Add links for certificates into virtual guest definition for SSL.
+   * Allow tese two sites by a2ensite.
+   *

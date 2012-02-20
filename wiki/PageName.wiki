@@ -1,0 +1,89 @@
+#sidebar TableOfContents
+
+= Editor instalation =
+
+== Notes: ==
+
+  * If H is host name, where we want deploy the editor
+  * Process is primary designed for Debian-like linux, but it was tested for example on RedHat distribution after few editations too.
+
+Add a new meditor user on H computer:
+_sudo adduser meditor_
+
+== Packages: ==
+
+Add packages:
+
+_sudo aptitude (apt-get) install mc vim aptitude acpi ssh rar sshfs wget curl openntpd ntpdate libtiff-tools imagemagick unzip htop_
+
+== Database: ==
+
+If the DB is not present, install postgres
+_sudo su postgres_
+_psql_ and run following commands
+CREATE ROLE meditor WITH PASSWORD 'samePassAsUnixPassForMeditor' LOGIN;
+CREATE SCHEMA AUTHORIZATION meditor;
+CREATE DATABASE meditor WITH OWNER meditor;
+
+    * add following to the configuration of the postgres ({{{/etc/postgresql/${version}/main/pg_hba.conf}}}) line, for possibility to join through http for user and meditor database 
+#localhost - it should not be - it actuallz exist
+	host	all 	meditor 	127.0.0.1/32		password
+# MZK
+host	all 	meditor 	195.113.155.0/24   	password
+
+   * in file {{{/etc/postgresql/${version}/main/postgresql.conf}}} uncomment the line listen_addresses and use string localhost and ip address of H computer with accent separated
+
+   * restart postgres {{{/etc/init.d/postgresql-${version} restart}}}
+
+== Install Tomcat: ==
+
+_wget_ http://websiterra.com/friends/apache/tomcat/tomcat-7/v7.0.25/bin/apache-tomcat-7.0.25.zip (or newer, if it is possible)
+{{{unzip apache-tomcat-7.0.25.zip}}}
+
+into
+
+{{{$CATALINA_HOME/bin/catalina.sh}}} and add a line
+
+{{{CATALINA_PID="$CATALINA_HOME/tomcat.pid"}}} but do this after command, which set a variable {{{CATALINA_HOME}}} in case it was not set yet (in version 7 Tomcat is about line 100)
+
+    * Into {{{CATALINA_HOME/lib/}}} load JDBC driver for Postgres (for example postgresql-${version}.jdbc4.jar)
+
+== variable backgrouund: ==
+
+Into {{{/home/meditor/.bashrc}}} add exports of following variables (+/- ways):
+{{{
+export HISTSIZE=10000
+}}}
+
+{{{
+export HISTFILESIZE=10000
+}}}
+
+{{{
+export HISTCONTROL=ignoreboth
+}}}
+
+{{{
+export JAVA_HOME='/home/meditor/install/jdk1.6.0_21/'
+}}}
+
+{{{
+export CATALINA_HOME='/home/meditor/apache-tomcat-7.0.25/'
+}}}
+
+{{{
+export CATALINA_OPTS='-server -Xmx512m -XX:MaxPermSize=128m -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n'}}}
+{{{export PATH=$JAVA_HOME/bin:$PATH
+}}}
+
+{{{
+export LC_ALL=cs_CZ.utf8
+}}}
+
+{{{
+export PGCLIENTENCODING=UNICODE
+}}}
+
+== Image server: ==
+
+   * create {{{H:/meditor/.meditor}}}

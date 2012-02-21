@@ -140,7 +140,7 @@ Note: the file is not included in the SVN, because of the password
 
    * Allow these the two sites by a2ensite.
 
-   * Restart Apache (_/etc/init.d/apache2 restart_ or reload_ if changes are only on the level of hosts).
+   * Restart Apache (_/etc/init.d/apache2 restart_ or reload if changes are only on the level of hosts).
 
    * Revise the file _/etc/apache2/mods-enabled/proxy.conf_ to be equal to the file on the computer, where was editor installed before (E).
 
@@ -163,7 +163,7 @@ $JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA
 }}}
  and  “changeme” will be a password, which the command keytool asks for.
 
-   * restart Tomcat - use script in 
+   * restart Tomcat: use script in 
 {{{
 /home/meditor/.meditor/djatoka/bin/tomcat.sh
 }}}

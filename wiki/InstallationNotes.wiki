@@ -108,7 +108,7 @@ into _H:/meditor/.meditor_ (directories are in SVN)
 
     * Copy the war file of djatoka image server into Tomcat (into webapps)
 
-    * Check that java is not using JVM from OpenJDK (java -version) It should be using JVM from Oracle (`HotSpot` or JRockit). There should be equality between java, which is launched from bash ('$PATH/java') and which is launched from $JAVA_HOME/bin/java (due to external processes as image conversion).
+    * Check that java is not using JVM from OpenJDK (java -version) It should be using JVM from Oracle (`HotSpot` or JRockit). There should be equality between java, which is launched from bash ('$PATH/java') and which is launched from _$JAVA_HOME/bin/java_ (due to external processes as image conversion).
 
 
      * Make a file _configuration.properties_ in H/user/.meditor and set the parameters, especially the path to the import directory, the path to the images (internal imgserver), etc.
@@ -135,7 +135,7 @@ Note: the file is not included in the SVN, because of the password
 
    * Install Apache (httpd on `RedHat`) and check the presence of (if absent, install them) modules (situated at _/etc/apache2/mods-available_) _mod_proxy, mod-proxy-html_ a _mod_ssl_ and _mod_rewrite_ and activate it by a2enmod (_/etc/apache2/mods-enabled_).
 
-   * From any computer where editor is currently deployed, lets call this machine as E, copy the definitions of virtual hosts, one for editor running on port 80 and one for editor running on port 443 and change the hostname in all places for the proper one. The virtual hosts definitions are situated ad _E:/etc/apache/sites-available_.
+   * From any computer where editor is currently deployed, lets call this machine as E, copy the definitions of virtual hosts, one for editor running on port 80 and one for editor running on port 443 and change the hostname in all places for the proper one. The virtual hosts definitions are situated at _E:/etc/apache/sites-available_.
    * Add links for certificates into the virtual host definition for SSL.
 
    * Allow these the two sites by a2ensite.
@@ -163,7 +163,7 @@ $JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA
 }}}
  and  “changeme” will be a password, which the command keytool asks for.
 
-   * restart Tomcat (use script in 
+   * restart Tomcat - use script in 
 {{{
 /home/meditor/.meditor/djatoka/bin/tomcat.sh
 }}}

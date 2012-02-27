@@ -1,12 +1,7 @@
-#summary information concerning the installation and deployment
-
 <wiki:toc max_depth="4" />
 
 
 ----
-
-
-
 
 =1. Editor - přihlášení=
 

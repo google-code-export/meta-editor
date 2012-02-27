@@ -121,13 +121,13 @@ doplnit obrázek
 
    Pro úpravu čísel stránek je možné použít následující možnosti:
 
-     * *Editovat název stránky:* umožňuje změnit číslo stránky na jakékoli jiné číslo nebo lze stránku dle potřeby libovolně pojmenovat (na úrovni číslování - nemění typ stránky, viz níže). Editaci názvů stránek najdeme i v nabídce po kliknutí pravým tlačítkem myši na požadovanou stránku.
-      * *Přečíslovat vše:* přečísluje všechny stránky daného dokumentu. Do nabídky je třeba zadat číslo, kterým má posloupnost začít
-přečíslovat: přečísluje posloupně stránky dle našeho výběru, opět lze do nabídky zadat číslo, kterým si přejeme, aby posloupnost začínala.
+   * *Editovat název stránky:* umožňuje změnit číslo stránky na jakékoli jiné číslo nebo lze stránku dle potřeby libovolně pojmenovat (na úrovni číslování - nemění typ stránky, viz níže). Editaci názvů stránek najdeme i v nabídce po kliknutí pravým tlačítkem myši na požadovanou stránku.
+   * *Přečíslovat vše:* přečísluje všechny stránky daného dokumentu. Do nabídky je třeba zadat číslo, kterým má posloupnost začít
+   * *Přečíslovat:* přečísluje posloupně stránky dle našeho výběru, opět lze do nabídky zadat číslo, kterým si přejeme, aby posloupnost začínala.
 
       * *Na římské:* Vybrané stránky lze přečíslovat na římské číslice. Na výběr jsou dvě možné varianty (jedna kdy 4=IIII a druhá, kdy 4=IV).
 
-      * 1, 2,... → [1], [2],...: Dá vybrané číslo do hranatých závorek
+      * 1, 2,... → `[1]`, `[2]`,...: Dá vybrané číslo do hranatých závorek
 *pozn.:* Výběr hranatých závorek je třeba učinit až jako poslední krok, pokud dáme danou stránku nejprve do hranatých závorek a posléze přečíslujeme, hranaté závorky zmizí spolu se změnou čísla.
 
       * 1, 2,... → 1a, 1b,...: Umožňuje přidat číslu stránky index. Na výběr je z několika přednastavených variant:

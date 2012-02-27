@@ -23,16 +23,16 @@ Kliknutím na logo MZK v levé horní části se můžeme v jakékoli fázi prá
 
    ===2.2.1. Vstupní fronta===
 
-V pravé horní části úvodní stránky editoru se nalézá *Vstupní fronta*, kde nalezneme nascanované dokumenty čekající na finální úpravu metadat a jejich následné uložení do Fedory.
+   V pravé horní části úvodní stránky editoru se nalézá *Vstupní   fronta*, kde nalezneme nascanované dokumenty čekající na finální úpravu metadat a jejich následné uložení do Fedory.
 
 
    ===2.2.2. Odkazováno z===
-Bude doplněno
+   Bude doplněno
 
 
    ===2.2.3. Naposledy modifikované===
 
-Okno, které se nachází v nejspodnější části strany  rohu editoru nám na úvodní stránce nabízí seznam objektů, které jsme naposledy vytvořili (volba *Mnou*) nebo které vytvořili ostatní uživatelé (volba *Všemi*). Tyto objekty si odtud můžeme přímo otevřít v editačním módu editoru (poklikem na vybraný objekt).
+   Okno, které se nachází v nejspodnější části strany  rohu editoru nám na úvodní stránce nabízí seznam objektů, které jsme naposledy vytvořili (volba *Mnou*) nebo které vytvořili ostatní uživatelé (volba *Všemi*). Tyto objekty si odtud můžeme přímo otevřít v editačním módu editoru (poklikem na vybraný objekt).
 
 
 ==2.3. Pravá strana==
@@ -49,14 +49,14 @@ V horní části úvodní stránky nalezneme *nápovědu* a okno pro *správu u�
 
    ===2.4.1. Správa uživatelů===
 
-Po kliknutí na *Správu uživatelů* se nám v pravé části editoru zobrazí správcovský panel. Pokud k tomu máme patřičné oprávnění, můžeme zde přidávat nové uživatele nebo je odebírat a přidělovat jim role. Ve spodní části vidíme uživatele, kteří žádají o autorizaci. 
+   Po kliknutí na *Správu uživatelů* se nám v pravé části editoru zobrazí správcovský panel. Pokud k tomu máme patřičné oprávnění, můžeme zde přidávat nové uživatele nebo je odebírat a přidělovat jim role. Ve spodní části vidíme uživatele, kteří žádají o autorizaci. 
 
 
    ===2.4.2. Nápověda===
 
-Tlačítko nápovědy  v horní části editoru nabízí *Seznam klávesových zkratek*, které je možné v editoru využívat. Obsahuje také odkaz na *Wiki editoru*, kde je možné dohledat další informace usnadňující práci s ním. Tlačítko nápovědy je dostupné ve všech módech editoru.
+   Tlačítko nápovědy  v horní části editoru nabízí *Seznam klávesových zkratek*, které je možné v editoru využívat. Obsahuje také odkaz na *Wiki editoru*, kde je možné dohledat další informace usnadňující práci s ním. Tlačítko nápovědy je dostupné ve všech módech editoru.
 
-
+----
 
 =3. Editor - vytvářecí mód=
 
@@ -74,21 +74,21 @@ doplnit obrázek
 
    ===3.2.1. Vstupní fronta===
 
-Okno v levém horním rohu obsahuje *Vstupní frontu*, kde je možné zvolit dokument, který si přejeme vytvořit. Objekty v této frontě jsou zvlášť rozděleny na monografie a periodika. Vytvoření probíhá kliknutím pravým tlačítkem na čárový kód zvoleného objektu a zvolení tlačítka *Vytvořit*. U periodik je třeba ještě čárový kód dále rozkliknout a otevřít tak jednotlivé ročníky daného objektu. Pakliže byl objekt již dříve vytvořen a je nyní uložen v repozitáři, na výběr je také tlačítko *Informace o ingestu*, které nám umožňuje vidět, kdy byl objekt vytvořen a kým.
+   Okno v levém horním rohu obsahuje *Vstupní frontu*, kde je možné zvolit dokument, který si přejeme vytvořit. Objekty v této frontě jsou zvlášť rozděleny na monografie a periodika. Vytvoření probíhá kliknutím pravým tlačítkem na čárový kód zvoleného objektu a zvolení tlačítka *Vytvořit*. U periodik je třeba ještě čárový kód dále rozkliknout a otevřít tak jednotlivé ročníky daného objektu. Pakliže byl objekt již dříve vytvořen a je nyní uložen v repozitáři, na výběr je také tlačítko *Informace o ingestu*, které nám umožňuje vidět, kdy byl objekt vytvořen a kým.
 
-   * zelená fajfka značí, že již je objekt nahrán v repozitáři
-   * pokud jsme daný objekt už dříve otevřeli, vidíme vedle čárového kódu také název objektu (název monografie nebo periodika).
-   *potřebujeme-li obnovit vstupní frontu, použijeme tlačítko se symbolem šipek v pravé horní části okna vstupní fronty.
+      * zelená fajfka značí, že již je objekt nahrán v repozitáři
+      * pokud jsme daný objekt už dříve otevřeli, vidíme vedle čárového kódu také název objektu (název monografie nebo periodika).
+      *potřebujeme-li obnovit vstupní frontu, použijeme tlačítko se symbolem šipek v pravé horní části okna vstupní fronty.
 
 
    ===3.2.2. Načtení metadat===
 
-Po zvolení objektu se v pravé části obrazovky načtou základní metadata z Alephu - můžeme tedy zkontrolovat o jakou knihu se jedná.
+   Po zvolení objektu se v pravé části obrazovky načtou základní metadata z Alephu - můžeme tedy zkontrolovat o jakou knihu se jedná.
 
-Pokud je vše v pořádku, můžeme v tuto chvíli pokračovat pomocí tlačítka *Další*.
+   Pokud je vše v pořádku, můžeme v tuto chvíli pokračovat pomocí tlačítka *Další*.
 
-   * jestliže se z nějakého důvodu nenačtou metadata daného objektu, je možné je dohledat pomocí vyhledávacího formuláře, který se zobrazí v pravé části stránky nahoře. Zde je možné vyhledávat titul podle SYSNA, čárového kódu nebo informací o titulu (autor, název...)
-   * jestliže si z nějakého důvodu přejeme pokračovat bez načtených metadat (například když kniha není zanesena v katalogu), zvolíme pro pokračování tlačítko *Pokračovat bez metadat*. Pak se nám načtou pouze nascanované stánky dokumentu a metadata bude třeba v editoru doplnit ručně.
+      * jestliže se z nějakého důvodu nenačtou metadata daného objektu, je možné je dohledat pomocí vyhledávacího formuláře, který se zobrazí v pravé části stránky nahoře. Zde je možné vyhledávat titul podle SYSNA, čárového kódu nebo informací o titulu (autor, název...)
+      * jestliže si z nějakého důvodu přejeme pokračovat bez načtených metadat (například když kniha není zanesena v katalogu), zvolíme pro pokračování tlačítko *Pokračovat bez metadat*. Pak se nám načtou pouze nascanované stánky dokumentu a metadata bude třeba v editoru doplnit ručně.
 
 
 ==3.3. Editace stránek==
@@ -96,61 +96,61 @@ Pokud je vše v pořádku, můžeme v tuto chvíli pokračovat pomocí tlačítk
 
    ===3.3.1. Náhledy stránek===
 
-Náhledy stránek se načtou do pravé části obrazovky. V této fázi je možné zadávat typy stránek a provést číslování.
+   Náhledy stránek se načtou do pravé části obrazovky. V této fázi je možné zadávat typy stránek a provést číslování.
 
-   * náhled lze zvětšit dvojklikem na danou stránku
-   * pro více detailů můžeme použít prohlížečku - klik pravým tlačítkem myši a tlačítko *Zobrazit prohlížečkou*
+      * náhled lze zvětšit dvojklikem na danou stránku
+      * pro více detailů můžeme použít prohlížečku - klik pravým tlačítkem myši a tlačítko *Zobrazit prohlížečkou*
 
 
    ===3.3.2. Pořadí stránek===
 
-Umístění jednotlivých scanů lze měnit. Stačí vybrat danou stránku a pomocí myši ji přemístit na požadované místo (drug and drope).
+   Umístění jednotlivých scanů lze měnit. Stačí vybrat danou stránku a pomocí myši ji přemístit na požadované místo (drug and drope).
 
 
    ===3.3.3. Mazání, kopírování a vkládání stránek===
 
-Pomocí tlačítka, které se zobrazí po kliknutí pravým tlačítkem na zvolenou stránku nebo stránky můžeme vybrat *Odstranit vybrané* a tím výběr vymazat. Pomocí *Kopírovat vybrané* pak můžeme stránky kopírovat a následně vkládat pomocí *Vložit*.
+   Pomocí tlačítka, které se zobrazí po kliknutí pravým tlačítkem na zvolenou stránku nebo stránky můžeme vybrat *Odstranit vybrané* a tím výběr vymazat. Pomocí *Kopírovat vybrané* pak můžeme stránky kopírovat a následně vkládat pomocí *Vložit*.
 
 
    ===3.3.4. Číslování stránek===
 
-K číslování stránek slouží tlačítko umístěné nejvíce vlevo v liště nad náhledy stránek. Stránky, které si přejeme očíslovat, vybereme pomocí kliku levého tlačítka myši nebo využijeme nabídku po kliknutí pravým tlačítkem (*Vybrat vše*, *Vybrat nic*, *Invertovat výběr*).
+   K číslování stránek slouží tlačítko umístěné nejvíce vlevo v liště nad náhledy stránek. Stránky, které si přejeme očíslovat, vybereme pomocí kliku levého tlačítka myši nebo využijeme nabídku po kliknutí pravým tlačítkem (*Vybrat vše*, *Vybrat nic*, *Invertovat výběr*).
 
-   * pro výběr většího množství stránek můžeme použít klávesu Ctrl + klik levým tlačítkem myši
-   * potřebujeme-li vybrat např. scany od čísla 2 do čísla 50, lze kliknout levým tlačítkem myši na číslo 2 a pomocí držení klávesy Shift a následného kliknutí na číslo 50 se nám vyberou i všechny scany umístěné mezi těmito čísly.
+      * pro výběr většího množství stránek můžeme použít klávesu Ctrl + klik levým tlačítkem myši
+      * potřebujeme-li vybrat např. scany od čísla 2 do čísla 50, lze kliknout levým tlačítkem myši na číslo 2 a pomocí držení klávesy Shift a následného kliknutí na číslo 50 se nám vyberou i všechny scany umístěné mezi těmito čísly.
 
-Pro úpravu čísel stránek je možné použít následující možnosti:
+   Pro úpravu čísel stránek je možné použít následující možnosti:
 
-  * *Editovat název stránky:* umožňuje změnit číslo stránky na jakékoli jiné číslo nebo lze stránku dle potřeby libovolně pojmenovat (na úrovni číslování - nemění typ stránky, viz níže). Editaci názvů stránek najdeme i v nabídce po kliknutí pravým tlačítkem myši na požadovanou stránku.
-   * *Přečíslovat vše:* přečísluje všechny stránky daného dokumentu. Do nabídky je třeba zadat číslo, kterým má posloupnost začít
+     * *Editovat název stránky:* umožňuje změnit číslo stránky na jakékoli jiné číslo nebo lze stránku dle potřeby libovolně pojmenovat (na úrovni číslování - nemění typ stránky, viz níže). Editaci názvů stránek najdeme i v nabídce po kliknutí pravým tlačítkem myši na požadovanou stránku.
+      * *Přečíslovat vše:* přečísluje všechny stránky daného dokumentu. Do nabídky je třeba zadat číslo, kterým má posloupnost začít
 přečíslovat: přečísluje posloupně stránky dle našeho výběru, opět lze do nabídky zadat číslo, kterým si přejeme, aby posloupnost začínala.
 
-   * *Na římské:* Vybrané stránky lze přečíslovat na římské číslice. Na výběr jsou dvě možné varianty (jedna kdy 4=IIII a druhá, kdy 4=IV).
+      * *Na římské:* Vybrané stránky lze přečíslovat na římské číslice. Na výběr jsou dvě možné varianty (jedna kdy 4=IIII a druhá, kdy 4=IV).
 
-   * 1, 2,... → [1], [2],...: Dá vybrané číslo do hranatých závorek
+      * 1, 2,... → [1], [2],...: Dá vybrané číslo do hranatých závorek
 *pozn.:* Výběr hranatých závorek je třeba učinit až jako poslední krok, pokud dáme danou stránku nejprve do hranatých závorek a posléze přečíslujeme, hranaté závorky zmizí spolu se změnou čísla.
 
-   * 1, 2,... → 1a, 1b,...: Umožňuje přidat číslu stránky index. Na výběr je z několika přednastavených variant:
+      * 1, 2,... → 1a, 1b,...: Umožňuje přidat číslu stránky index. Na výběr je z několika přednastavených variant:
 
-  * 1, 2, 3, 4, → 1r, 1v, 2r, 2v
-  * 1, 2, 3, 4, → 1a, 1b, 2a, 2b
-  * 1, 2, 3, 4, → 1a, 1b, 1c, 2a
-  * 1, 2, 3, 4, → 1a, 1b, 1c, 1d
-  * 1, ... 4, 5,→ 1a, ...1e, 2a
+     * 1, 2, 3, 4, → 1r, 1v, 2r, 2v
+     * 1, 2, 3, 4, → 1a, 1b, 2a, 2b
+     * 1, 2, 3, 4, → 1a, 1b, 1c, 2a
+     * 1, 2, 3, 4, → 1a, 1b, 1c, 1d
+     * 1, ... 4, 5,→ 1a, ...1e, 2a
 
-nebo lze nastavit vlastní hodnotu indexu, podle potřeby daného dokumentu
+   nebo lze nastavit vlastní hodnotu indexu, podle potřeby daného dokumentu
 
-   * *Posunout doleva..., posunout doprava...*: Pro změnu pořadí stránek a jejich automatické přečíslování  lze využít i možnosti v nabídce číslování stránek (*Posunout doleva...*, *Posunout doprava...*), kde editor umožní posunout vybrané stránky o požadovaný počet stran doprava nebo doleva.
+      * *Posunout doleva..., posunout doprava...*: Pro změnu pořadí stránek a jejich automatické přečíslování  lze využít i možnosti v nabídce číslování stránek (*Posunout doleva...*, *Posunout doprava...*), kde editor umožní posunout vybrané stránky o požadovaný počet stran doprava nebo doleva.
 
-   * *Posunout na...:* Toto tlačítko umožní danou stránku přesunout na místo stránky zadaného čísla.
+      * *Posunout na...:* Toto tlačítko umožní danou stránku přesunout na místo stránky zadaného čísla.
 
 
    ===3.3.5. Určení typu stránky===
 
-Kromě čísel stránek umožňuje editor změnit i *typ stránky*. Pro tuto možnost slouží tlačítko napravo od *Čísla stránek*. Nabídka obsahuje přednastavené typy stránek, které se pro potřeby editace využívají.
+   Kromě čísel stránek umožňuje editor změnit i *typ stránky*. Pro tuto možnost slouží tlačítko napravo od *Čísla stránek*. Nabídka obsahuje přednastavené typy stránek, které se pro potřeby editace využívají.
 
-Po určení typu stránky se jeho zkratka promítne pod číslo stránky, takže můžeme vidět, které strany jsme již editovali.
-   * *Výjimka:*  Při výběru prázdné strany “blank” se po zadání zkratka nezobrazí pod číslem strany, u ostatních typů stránek ano.
+   Po určení typu stránky se jeho zkratka promítne pod číslo stránky, takže můžeme vidět, které strany jsme již editovali.
+      * *Výjimka:*  Při výběru prázdné strany “blank” se po zadání zkratka nezobrazí pod číslem strany, u ostatních typů stránek ano.
 
 
 ==3.4. Detail stránky==
@@ -189,17 +189,17 @@ Okno umístěné vlevo uprostřed *Vytvořit podstrukturu* umožňuje rozdělova
 
    ===3.9.1. Typ===
 
-Chceme-li vytvořit podstrukturu, vybereme v pravé části stránky, které chceme do strukturálního stromu přidat. Po té vybereme z nabídky *Typ* a určíme, zda se jedná o stránku, interní část nebo volnou část. U periodik pak, zda se jedná o číslo nebo ročník periodika.
+   Chceme-li vytvořit podstrukturu, vybereme v pravé části stránky, které chceme do strukturálního stromu přidat. Po té vybereme z nabídky *Typ* a určíme, zda se jedná o stránku, interní část nebo volnou část. U periodik pak, zda se jedná o číslo nebo ročník periodika.
 
 
    ===3.9.2. Jméno===
 
-V kolonce *Jméno* zadáme požadovaný název vytvářené podstruktury.
+   V kolonce *Jméno* zadáme požadovaný název vytvářené podstruktury.
 
 
    ===3.9.3. Ponechat v pravé části===
 
-Zaškrtnutím možnosti *Ponechat v pravé části* stanovíme, že chceme po přesunutí do strukturálního stromu vybrané stránky ponechat i v pravé části editoru. Pakliže tuto volbu nezatrhneme, stránky se z pravé části automaticky odstraní.
+   Zaškrtnutím možnosti *Ponechat v pravé části* stanovíme, že chceme po přesunutí do strukturálního stromu vybrané stránky ponechat i v pravé části editoru. Pakliže tuto volbu nezatrhneme, stránky se z pravé části automaticky odstraní.
 
 
    ===3.9.4. Vytvořit===
@@ -208,10 +208,10 @@ Pomocí tohoto tlačítka přesuneme vybrané stránky do strukturálního strom
 
    ===3.9.5. Přesun stránek mezi podstrukturou a oknem s náhledy===
 
-Stránky lze kdykoli pomocí drug and drop přesouvat mezi oknem s náhledy a strukturálním stromem v pravé dolní části editoru.
+   Stránky lze kdykoli pomocí drug and drop přesouvat mezi oknem s náhledy a strukturálním stromem v pravé dolní části editoru.
 
-   * pokud přesouváme vybrané stránky ze stromu do pravé části, stránky se nám ze stromu automaticky odstraní. Pokud však postupujeme zprava doleva a přesouváme pomocí drug and drope stránky z okna náhledů do stromu, kopie stran nám zůstane v okně s náhledy. Ty můžeme buď v okně ponechat nebo je odstraníme pomocí pravého tlačítka myši a výběrem možnosti *Odstranit vybrané*.
-   * přesouváme-li stánku z okna s náhledy do stromu, přesouvaná stránka se nám vždy zařadí na konec stromu. Stránku můžeme poté ve stromě posunout na správné místo tím, že ji vybereme pomocí myši a přesuneme výše na požadované umístění.
+      * pokud přesouváme vybrané stránky ze stromu do pravé části, stránky se nám ze stromu automaticky odstraní. Pokud však postupujeme zprava doleva a přesouváme pomocí drug and drope stránky z okna náhledů do stromu, kopie stran nám zůstane v okně s náhledy. Ty můžeme buď v okně ponechat nebo je odstraníme pomocí pravého tlačítka myši a výběrem možnosti *Odstranit vybrané*.
+      * přesouváme-li stánku z okna s náhledy do stromu, přesouvaná stránka se nám vždy zařadí na konec stromu. Stránku můžeme poté ve stromě posunout na správné místo tím, že ji vybereme pomocí myši a přesuneme výše na požadované umístění.
 
 
 ==3.10. Podstruktury==
@@ -221,37 +221,37 @@ Vytvořené podstruktury tvoří strom v okně vlevo dole. Se stránkami a čás
 
    ===3.10.1. Editace===
 
-Po kliknutí pravým tlačítkem na libovolnou položku stromu se nám zobrazí nabídka. Nejvýše umístěné tlačítko *Editace* umožňuje rychlou úpravu názvu podstruktury nebo úpravu názvů jednotlivých stránek.
+   Po kliknutí pravým tlačítkem na libovolnou položku stromu se nám zobrazí nabídka. Nejvýše umístěné tlačítko *Editace* umožňuje rychlou úpravu názvu podstruktury nebo úpravu názvů jednotlivých stránek.
 
-   * pozn.: u jednotlivých stránek umožňuje editace názvu pouze změnu na úrovni čísla strany. Je tedy možné změnit např.  *1* na *1a*. Nemůžeme ale tímto způsobem editovat typ strany (např. “FrontCover”). Pokud potřebujeme upravit typ, musíme danou stránku přesunout zpět do pravé části editoru do okna s náhledy jednotlivých stránek.
+      * pozn.: u jednotlivých stránek umožňuje editace názvu pouze změnu na úrovni čísla strany. Je tedy možné změnit např.  *1* na *1a*. Nemůžeme ale tímto způsobem editovat typ strany (např. “FrontCover”). Pokud potřebujeme upravit typ, musíme danou stránku přesunout zpět do pravé části editoru do okna s náhledy jednotlivých stránek.
 
 
    ===3.10.2. Vymazání===
 
-Libovolnou stránku nebo podstrukturu lze vymazat pomocí kliknutí pravým tlačítkem myši na zvolenou položku a vybráním *Odstranit vybrané*. Odstaníme-li nadřazenou složku obsahující např. jednotlivé stránky, logicky nám zmizí celá podřazená struktura.
+   Libovolnou stránku nebo podstrukturu lze vymazat pomocí kliknutí pravým tlačítkem myši na zvolenou položku a vybráním *Odstranit vybrané*. Odstaníme-li nadřazenou složku obsahující např. jednotlivé stránky, logicky nám zmizí celá podřazená struktura.
 
 
    ===3.10.3. Přidat ALTO/OCR===
 
-bude doplněno 
+   bude doplněno 
 
 
    ===3.10.4. Připojení objektu na existující===
-Tato vlastnost je určena pro správu periodik a umožňuje připojit nově vytvářený objekt na již existující digitální objekt (*Připojit tento objekt na existující digitální objekt*) nebo naopak připojí k nově vytvářenému objektu již existující (*Připojit existující digitální objekt na tento objekt*). Slouží například pro spojování jednotlivých ročníků daného periodika do jednoho celku.
+   Tato vlastnost je určena pro správu periodik a umožňuje připojit nově vytvářený objekt na již existující digitální objekt (*Připojit tento objekt na existující digitální objekt*) nebo naopak připojí k nově vytvářenému objektu již existující (*Připojit existující digitální objekt na tento objekt*). Slouží například pro spojování jednotlivých ročníků daného periodika do jednoho celku.
 
 
    ===3.10.5. Ukládání/načítání jednotlivých struktur===
 
-Tlačítko pro ukládání a načítání se nachází v pravém horním rohu okna *Podstruktury*. Umožňuje uložit rozpracovanou strukturu stromu a také uloží provedené změny v pravém okně s náhledy stránek. Lze si zde také načíst dříve uložená data.
+   Tlačítko pro ukládání a načítání se nachází v pravém horním rohu okna *Podstruktury*. Umožňuje uložit rozpracovanou strukturu stromu a také uloží provedené změny v pravém okně s náhledy stránek. Lze si zde také načíst dříve uložená data.
 
-V okně pro načítání můžeme pomocí záložky v pravé části zobrazit a následně načíst buď námi uložená data (symbol jednoho panáčka) nebo informace, které uložili ostatní (dva panáčci).
+   V okně pro načítání můžeme pomocí záložky v pravé části zobrazit a následně načíst buď námi uložená data (symbol jednoho panáčka) nebo informace, které uložili ostatní (dva panáčci).
 
-Můžeme také zvolit, zda se nám v okně načítací nabídky zobrazí mé vlastní savy pouze pro právě otevřený objekt nebo pro všechny. Toto volbu provedeme ve spodní části (tlačítka: *Jen pro tento vytvářený objekt* a *Všechny mé uložené struktury*).
+   Můžeme také zvolit, zda se nám v okně načítací nabídky zobrazí mé vlastní savy pouze pro právě otevřený objekt nebo pro všechny. Toto volbu provedeme ve spodní části (tlačítka: *Jen pro tento vytvářený objekt* a *Všechny mé uložené struktury*).
 
 
    ===3.10.6. Zpět/vpřed v okně podstruktur===
 
-Okno *Podstruktury* má svá vlastní tlačítka, která umožňují vrátit se ve vytváření stromu o krok vpřed nebo vzad. Najdeme je v horní části tohoto okna vedle tlačítka pro ukládání.
+   Okno *Podstruktury* má svá vlastní tlačítka, která umožňují vrátit se ve vytváření stromu o krok vpřed nebo vzad. Najdeme je v horní části tohoto okna vedle tlačítka pro ukládání.
 
 
 ----
@@ -295,83 +295,84 @@ Pro každý typ digitálního objektu (monografie, ročník periodika, strana...
 
    ===4.3.1. Záložka Info===
 
-Je společná všem digitálním objektům. Na úvodní stránce se nám objeví základní informace o otevřeném digitálním objektu a náhled úvodní stránky. V tomto okně je možné provést tzv. *Rychlou editaci*. Kolonku *Label* lze vyplnit rovnou, změny se však promítnou až po dalším publikování (viz publikování změn).
+   Je společná všem digitálním objektům. Na úvodní stránce se nám objeví základní informace o otevřeném digitálním objektu a náhled úvodní stránky. V tomto okně je možné provést tzv. *Rychlou editaci*. Kolonku *Label* lze vyplnit rovnou, změny se však promítnou až po dalším publikování (viz publikování změn).
 
 
-   ====4.3.1.1.Rychlá editace====
+      ====4.3.1.1. Rychlá editace====
 
-Kliknutím na tlačítko *Rychlé editace* se nám zpřístupní okno, ve kterém nalezneme předvyplněná základní metadata. Pokud si přejeme něco z těchto metadat upravit, změníme v okně patřičnou kolonku. Pro publikování provedené změny klikneme v pravé spodní části okna na tlačítko *Publikovat*. Změny se standardně promítnou do MODS. Přejeme-li si promítnout provedené věci i v DC, zaklikneme v okně rychlé editace položku *Promítnout změny do Dublin Core*.
+      Kliknutím na tlačítko *Rychlé editace* se nám zpřístupní okno, ve kterém nalezneme předvyplněná základní metadata. Pokud si přejeme něco z těchto metadat upravit, změníme v okně patřičnou kolonku. Pro publikování provedené změny klikneme v pravé spodní části okna na tlačítko *Publikovat*. Změny se standardně promítnou do MODS. Přejeme-li si promítnout provedené věci i v DC, zaklikneme v okně rychlé editace položku *Promítnout změny do Dublin Core*.
 
-Dáme-li tlačítko *Publikovat*, vyskočí nám okno, které se zeptá, zda si přejeme v kódu uchovat i předchozí informace. Pokud tuto variantu zvolíme, můžeme si dodatečně prohlédnou v kódu změny, kterými objekt prošel.
+   Dáme-li tlačítko *Publikovat*, vyskočí nám okno, které se zeptá, zda si přejeme v kódu uchovat i předchozí informace. Pokud tuto variantu zvolíme, můžeme si dodatečně prohlédnou v kódu změny, kterými objekt prošel.
 
 
-   ====4.3.1.2. Publikování změn====
+      ====4.3.1.2. Publikování změn====
 
-Změny, které musíme provést jinak než prostřednictvím rychlé editace je potřeba publikovat tlačítkem pro to určeným, které nalezneme v nabídce *Menu* v horní liště úplně vpravo.
+      Změny, které musíme provést jinak než prostřednictvím rychlé editace je potřeba publikovat tlačítkem pro to určeným, které nalezneme v nabídce *Menu* v horní liště úplně vpravo.
 
 
    ===4.3.2. Záložka Stránky===
 
-Vpravo od záložky info nalezneme záložku *Stránky*. V té nalezneme seznam náhledů stránek, které dokument obsahuje - pokud má daný objekt stránky přímo ve své struktuře a neobsahuje další složky (například tedy u objektu *Ročník svazku* nebudou zobrazeny žádné stránky, protože dále obsahuje složku s jednotlivými čísly).
+   Vpravo od záložky info nalezneme záložku *Stránky*. V té nalezneme seznam náhledů stránek, které dokument obsahuje - pokud má daný objekt stránky přímo ve své struktuře a neobsahuje další složky (například tedy u objektu *Ročník svazku* nebudou zobrazeny žádné stránky, protože dále obsahuje složku s jednotlivými čísly).
 
-Pomocí drug and drope lze pořadí stránek libovolně přehazovat.
+   Pomocí drug and drope lze pořadí stránek libovolně přehazovat.
 
-*POZOR!* přehozením stránek se nám změní pouze fyzické umístění stránky v digitálním dokumentu. Nedojde k reálnému přečíslování stran.
+*POZOR* přehozením stránek se nám změní pouze fyzické umístění stránky v digitálním dokumentu. Nedojde k reálnému přečíslování stran.
 
    * lze si otevřít pod sebou 2 okna obsahující digitální objekt. Mezi těmito objekty lze stránky přemisťovat opět prostřednictvím drug and drope
 
    * dvojklikem na náhled stránky danou stránku zvětšíme
 
    * klik pravým tlačítkem rozbalí nabídku akcí, které je s danou stránkou provést. Tyto akce jsou:
-      # _Editovat_ - otevře stránku v samostatném okně, kde můžeme provádět případné změny na úrovni této stránky
-      # _Vybrat vše/vybrat nic/invertovat výběr_ - stanovuje kolik stránek bude automaticky vybráno.
-      # _Kopírovat vybrané_ - zkopíruje dané stránky
-      # _Vložit_ - vloží zkopírované stránky
-      # _Odstranit vybrané_ - smaže označené stránky 
-      # _Zcela odstranit_ - ???
+         # _Editovat_ - otevře stránku v samostatném okně, kde můžeme provádět případné změny na úrovni této stránky
+         # _Vybrat vše/vybrat nic/invertovat výběr_ - stanovuje kolik stránek bude automaticky vybráno.
+         # _Kopírovat vybrané_ - zkopíruje dané stránky
+         # _Vložit_ - vloží zkopírované stránky
+         # _Odstranit vybrané_ - smaže označené stránky 
+         # _Zcela odstranit_ - ???
 
 
    ===4.3.3. Záložka Interní části===
 
-Obsahuje-li objekt nějaké interní části (internal part), zobrazí se v této složce. Dvojklikem lze tyto jednotlivé podčásti otevřít a zpřístupnit je případné editaci.
+   Obsahuje-li objekt nějaké interní části (internal part), zobrazí se v této složce. Dvojklikem lze tyto jednotlivé podčásti otevřít a zpřístupnit je případné editaci.
 
 
    ===4.3.4. Záložka Vydání periodika===
 
-Obsahuje-li objekt (periodikum) složky s vydáními periodika (jednotlivá čísla), zobrazí se v této složce. Dvojklikem lze tyto jednotlivé podčásti otevřít a zpřístupnit je případné editaci
+   Obsahuje-li objekt (periodikum) složky s vydáními periodika (jednotlivá čísla), zobrazí se v této složce. Dvojklikem lze tyto jednotlivé podčásti otevřít a zpřístupnit je případné editaci.
 
 
    ===4.3.5. Záložka Jednotky monografie===
-Záložka je přístupná pouze pro monografie. Skládá-li se monografie z několika částí, zobrazí se v této záložce. Nahrazuje tak záložku “vydání periodika” u periodik.
+   Záložka je přístupná pouze pro monografie. Skládá-li se monografie z několika částí, zobrazí se v této záložce. Nahrazuje tak záložku “vydání periodika” u periodik.
 
 
    ===4.3.6. Záložka DC===
 
-Zobrazí záznam v DC pro daný objekt. Zde můžeme dále upravovat jednotlivé položky, je-li to třeba (pro uložení změn užijeme tlačítka *Publikovat* nahoře v menu).
+   Zobrazí záznam v DC pro daný objekt. Zde můžeme dále upravovat jednotlivé položky, je-li to třeba (pro uložení změn užijeme tlačítka *Publikovat* nahoře v menu).
 
 
    ===4.3.7. Záložka MODS===
-Zobrazí záznam v MODS pro daný objekt. Zde můžeme dále upravovat jednotlivé položky, je-li to třeba (pro uložení změn užijeme tlačítka *Publikovat* nahoře v menu). Pomocí MODSu lze například upravit typ nebo číslo strany, změnou v patřičné položce.
+   Zobrazí záznam v MODS pro daný objekt. Zde můžeme dále upravovat jednotlivé položky, je-li to třeba (pro uložení změn užijeme tlačítka *Publikovat* nahoře v menu). Pomocí MODSu lze například upravit typ nebo číslo strany, změnou v patřičné položce.
 
 
    ===4.3.8. Záložka Popis===
 
-Vyplněný popis je dotupný všem uživatelům a během publikování není zapsán k digitálnímu objektu (není součástí metadat ve FOXML).
+   Vyplněný popis je dotupný všem uživatelům a během publikování není zapsán k digitálnímu objektu (není součástí metadat ve FOXML).
 
 
    ===4.3.9. Záložka FOXML===
-Zobrazí kód obsahující metadata k danému objektu.
+   Zobrazí kód obsahující metadata k danému objektu.
 
 
    ===4.3.10. Záložka OCR===
 
-Zobrazí se při otevření objektu, kterým je v tomto případě jednotlivá stránka.  Najdeme zde informace k OCR dané stránky.
+   Zobrazí se při otevření objektu, kterým je v tomto případě jednotlivá stránka.  Najdeme zde informace k OCR dané stránky.
 
 
    ===4.3.11. Záložka Náhled===
 
-Pouze pro editaci jednotlivých stránek. Obsahu zvětšený náhled stránky (preview).
+   Pouze pro editaci jednotlivých stránek. Obsahu zvětšený náhled stránky (preview).
 
 
    ===4.3.12. Záložka Obrázek první stránky===
-Pouze pro editaci jednotlivých stránek. Umožňuje zobrazit danou stránku ve větším detailu.
+
+   Pouze pro editaci jednotlivých stránek. Umožňuje zobrazit danou stránku ve větším detailu.

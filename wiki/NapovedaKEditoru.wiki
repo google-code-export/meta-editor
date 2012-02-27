@@ -341,7 +341,7 @@ Obsahuje-li objekt nějaké interní části (internal part), zobrazí se v tét
 Obsahuje-li objekt (periodikum) složky s vydáními periodika (jednotlivá čísla), zobrazí se v této složce. Dvojklikem lze tyto jednotlivé podčásti otevřít a zpřístupnit je případné editaci
 
 
-   ===4.3.5. Záložka “Jednotky monografie”===
+   ===4.3.5. Záložka Jednotky monografie===
 Záložka je přístupná pouze pro monografie. Skládá-li se monografie z několika částí, zobrazí se v této záložce. Nahrazuje tak záložku “vydání periodika” u periodik.
 
 

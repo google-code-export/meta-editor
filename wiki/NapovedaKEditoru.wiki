@@ -76,7 +76,7 @@ doplnit obrázek
 
    Okno v levém horním rohu obsahuje *Vstupní frontu*, kde je možné zvolit dokument, který si přejeme vytvořit. Objekty v této frontě jsou zvlášť rozděleny na monografie a periodika. Vytvoření probíhá kliknutím pravým tlačítkem na čárový kód zvoleného objektu a zvolení tlačítka *Vytvořit*. U periodik je třeba ještě čárový kód dále rozkliknout a otevřít tak jednotlivé ročníky daného objektu. Pakliže byl objekt již dříve vytvořen a je nyní uložen v repozitáři, na výběr je také tlačítko *Informace o ingestu*, které nám umožňuje vidět, kdy byl objekt vytvořen a kým.
 
-      * zelená fajfka značí, že již je objekt nahrán v repozitáři
+      * zelená fajfka značí, že již je objekt nahrán v repozitáři.
       * pokud jsme daný objekt už dříve otevřeli, vidíme vedle čárového kódu také název objektu (název monografie nebo periodika).
       *potřebujeme-li obnovit vstupní frontu, použijeme tlačítko se symbolem šipek v pravé horní části okna vstupní fronty.
 
@@ -87,7 +87,7 @@ doplnit obrázek
 
    Pokud je vše v pořádku, můžeme v tuto chvíli pokračovat pomocí tlačítka *Další*.
 
-      * jestliže se z nějakého důvodu nenačtou metadata daného objektu, je možné je dohledat pomocí vyhledávacího formuláře, který se zobrazí v pravé části stránky nahoře. Zde je možné vyhledávat titul podle SYSNA, čárového kódu nebo informací o titulu (autor, název...)
+      * jestliže se z nějakého důvodu nenačtou metadata daného objektu, je možné je dohledat pomocí vyhledávacího formuláře, který se zobrazí v pravé části stránky nahoře. Zde je možné vyhledávat titul podle SYSNA, čárového kódu nebo informací o titulu (autor, název...).
       * jestliže si z nějakého důvodu přejeme pokračovat bez načtených metadat (například když kniha není zanesena v katalogu), zvolíme pro pokračování tlačítko *Pokračovat bez metadat*. Pak se nám načtou pouze nascanované stánky dokumentu a metadata bude třeba v editoru doplnit ručně.
 
 
@@ -99,7 +99,7 @@ doplnit obrázek
    Náhledy stránek se načtou do pravé části obrazovky. V této fázi je možné zadávat typy stránek a provést číslování.
 
       * náhled lze zvětšit dvojklikem na danou stránku
-      * pro více detailů můžeme použít prohlížečku - klik pravým tlačítkem myši a tlačítko *Zobrazit prohlížečkou*
+      * pro více detailů můžeme použít prohlížečku - klik pravým tlačítkem myši a tlačítko *Zobrazit prohlížečkou*.
 
 
    ===3.3.2. Pořadí stránek===
@@ -125,22 +125,17 @@ doplnit obrázek
    * *Přečíslovat vše:* přečísluje všechny stránky daného dokumentu. Do nabídky je třeba zadat číslo, kterým má posloupnost začít
    * *Přečíslovat:* přečísluje posloupně stránky dle našeho výběru, opět lze do nabídky zadat číslo, kterým si přejeme, aby posloupnost začínala.
 
-      * *Na římské:* Vybrané stránky lze přečíslovat na římské číslice. Na výběr jsou dvě možné varianty (jedna kdy 4=IIII a druhá, kdy 4=IV).
+   * *Na římské:* Vybrané stránky lze přečíslovat na římské číslice. Na výběr jsou dvě možné varianty (jedna kdy 4=IIII a druhá, kdy 4=IV).
+   * *1, 2,... → `[1]`, `[2]`,...:* Dá vybrané číslo do hranatých závorek (*Pozn.:* Výběr hranatých závorek je třeba učinit až jako poslední krok, pokud dáme danou stránku nejprve do hranatých závorek a posléze přečíslujeme, hranaté závorky zmizí spolu se změnou čísla.)
+   * *1, 2,... → 1a, 1b,...:* Umožňuje přidat číslu stránky index. Na výběr je z několika přednastavených variant:
+         * *1, 2, 3, 4, → 1r, 1v, 2r, 2v*
+         * *1, 2, 3, 4, → 1a, 1b, 2a, 2b*
+         * *1, 2, 3, 4, → 1a, 1b, 1c, 2a*
+         * *1, 2, 3, 4, → 1a, 1b, 1c, 1d*
+         * *1, ... 4, 5,→ 1a, ...1e, 2a*
+         * nebo lze nastavit *vlastní hodnotu indexu*, podle potřeby daného dokumentu
 
-      * 1, 2,... → `[1]`, `[2]`,...: Dá vybrané číslo do hranatých závorek
-*pozn.:* Výběr hranatých závorek je třeba učinit až jako poslední krok, pokud dáme danou stránku nejprve do hranatých závorek a posléze přečíslujeme, hranaté závorky zmizí spolu se změnou čísla.
-
-      * 1, 2,... → 1a, 1b,...: Umožňuje přidat číslu stránky index. Na výběr je z několika přednastavených variant:
-
-     * 1, 2, 3, 4, → 1r, 1v, 2r, 2v
-     * 1, 2, 3, 4, → 1a, 1b, 2a, 2b
-     * 1, 2, 3, 4, → 1a, 1b, 1c, 2a
-     * 1, 2, 3, 4, → 1a, 1b, 1c, 1d
-     * 1, ... 4, 5,→ 1a, ...1e, 2a
-
-   nebo lze nastavit vlastní hodnotu indexu, podle potřeby daného dokumentu
-
-      * *Posunout doleva..., posunout doprava...*: Pro změnu pořadí stránek a jejich automatické přečíslování  lze využít i možnosti v nabídce číslování stránek (*Posunout doleva...*, *Posunout doprava...*), kde editor umožní posunout vybrané stránky o požadovaný počet stran doprava nebo doleva.
+      * *Posunout doleva..., Posunout doprava...*: Pro změnu pořadí stránek a jejich automatické přečíslování  lze využít i možnosti v nabídce číslování stránek (*Posunout doleva...*, *Posunout doprava...*), kde editor umožní posunout vybrané stránky o požadovaný počet stran doprava nebo doleva.
 
       * *Posunout na...:* Toto tlačítko umožní danou stránku přesunout na místo stránky zadaného čísla.
 
@@ -319,9 +314,7 @@ Pro každý typ digitálního objektu (monografie, ročník periodika, strana...
 *POZOR* přehozením stránek se nám změní pouze fyzické umístění stránky v digitálním dokumentu. Nedojde k reálnému přečíslování stran.
 
    * lze si otevřít pod sebou 2 okna obsahující digitální objekt. Mezi těmito objekty lze stránky přemisťovat opět prostřednictvím drug and drope
-
    * dvojklikem na náhled stránky danou stránku zvětšíme
-
    * klik pravým tlačítkem rozbalí nabídku akcí, které je s danou stránkou provést. Tyto akce jsou:
          # _Editovat_ - otevře stránku v samostatném okně, kde můžeme provádět případné změny na úrovni této stránky
          # _Vybrat vše/vybrat nic/invertovat výběr_ - stanovuje kolik stránek bude automaticky vybráno.
@@ -342,6 +335,7 @@ Pro každý typ digitálního objektu (monografie, ročník periodika, strana...
 
 
    ===4.3.5. Záložka Jednotky monografie===
+
    Záložka je přístupná pouze pro monografie. Skládá-li se monografie z několika částí, zobrazí se v této záložce. Nahrazuje tak záložku “vydání periodika” u periodik.
 
 
@@ -351,6 +345,7 @@ Pro každý typ digitálního objektu (monografie, ročník periodika, strana...
 
 
    ===4.3.7. Záložka MODS===
+
    Zobrazí záznam v MODS pro daný objekt. Zde můžeme dále upravovat jednotlivé položky, je-li to třeba (pro uložení změn užijeme tlačítka *Publikovat* nahoře v menu). Pomocí MODSu lze například upravit typ nebo číslo strany, změnou v patřičné položce.
 
 
@@ -360,6 +355,7 @@ Pro každý typ digitálního objektu (monografie, ročník periodika, strana...
 
 
    ===4.3.9. Záložka FOXML===
+
    Zobrazí kód obsahující metadata k danému objektu.
 
 

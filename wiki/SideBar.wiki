@@ -5,3 +5,4 @@
   * [InstallationNotes Installation Notes]
   * [CodingStandards Coding Standards]
   * [Repository SVN Repository]
+  * [NapovedaKEditoru]

@@ -1,11 +1,13 @@
 <wiki:toc max_depth="4" />
 
-
+<br/>
 ----
 
 =1. Editor - přihlášení=
 
 Bude doplněno.
+<br/>
+<br/>
 
 ----
 
@@ -17,14 +19,11 @@ Bude doplněno.
 Kliknutím na logo MZK v levé horní části se můžeme v jakékoli fázi práce s editorem vrátit na úvodní stránku.
 
 
-
 ==2.2. Levý panel==
-
 
    ===2.2.1. Vstupní fronta===
 
    V pravé horní části úvodní stránky editoru se nalézá *Vstupní   fronta*, kde nalezneme nascanované dokumenty čekající na finální úpravu metadat a jejich následné uložení do Fedory.
-
 
    ===2.2.2. Odkazováno z===
    Bude doplněno
@@ -34,13 +33,14 @@ Kliknutím na logo MZK v levé horní části se můžeme v jakékoli fázi prá
 
    Okno, které se nachází v nejspodnější části strany  rohu editoru nám na úvodní stránce nabízí seznam objektů, které jsme naposledy vytvořili (volba *Mnou*) nebo které vytvořili ostatní uživatelé (volba *Všemi*). Tyto objekty si odtud můžeme přímo otevřít v editačním módu editoru (poklikem na vybraný objekt).
 
+<br/>
 
 ==2.3. Pravá strana==
 
 V pravé části úvodní stránky nalezneme základní popis editoru a můžeme zde zkontrolovat dostupnost kooperujících systémů (Krameria 4 a Fedory).
 
 Můžeme zde také rychle vyhledat a otevřít digitální objekt pomocí formuláře zadáním PID (uuid).
-
+<br/>
 
 ==2.4. Horní část==
 
@@ -55,7 +55,7 @@ V horní části úvodní stránky nalezneme *nápovědu* a okno pro *správu u�
    ===2.4.2. Nápověda===
 
    Tlačítko nápovědy  v horní části editoru nabízí *Seznam klávesových zkratek*, které je možné v editoru využívat. Obsahuje také odkaz na *Wiki editoru*, kde je možné dohledat další informace usnadňující práci s ním. Tlačítko nápovědy je dostupné ve všech módech editoru.
-
+<br/>
 ----
 
 =3. Editor - vytvářecí mód=
@@ -68,7 +68,7 @@ Vytvářecí mód editoru umožňuje vytvářet nové digitální objekty, kter�
 
 doplnit obrázek
 
-
+<br/>
 ==3.2. Vytvoření nového digitálního objektu==
 
 
@@ -90,7 +90,7 @@ doplnit obrázek
       * jestliže se z nějakého důvodu nenačtou metadata daného objektu, je možné je dohledat pomocí vyhledávacího formuláře, který se zobrazí v pravé části stránky nahoře. Zde je možné vyhledávat titul podle SYSNA, čárového kódu nebo informací o titulu (autor, název...).
       * jestliže si z nějakého důvodu přejeme pokračovat bez načtených metadat (například když kniha není zanesena v katalogu), zvolíme pro pokračování tlačítko *Pokračovat bez metadat*. Pak se nám načtou pouze nascanované stánky dokumentu a metadata bude třeba v editoru doplnit ručně.
 
-
+<br/>
 ==3.3. Editace stránek==
 
 
@@ -147,7 +147,7 @@ doplnit obrázek
    Po určení typu stránky se jeho zkratka promítne pod číslo stránky, takže můžeme vidět, které strany jsme již editovali.
       * *Výjimka:*  Při výběru prázdné strany “blank” se po zadání zkratka nezobrazí pod číslem strany, u ostatních typů stránek ano.
 
-
+<br/>
 ==3.4. Detail stránky==
 
 Pro usnadnění orientace ve scanech při určování čísel stránek je možné využít funkce *Detail stránky*, která nám zobrazí horní a spodní okraj nascanovaných stránek a můžeme tak v detailu vidět číslo strany uvedené na scanu, aniž bychom museli strany jednotlivě zvětšovat nebo otevírat pomocí prohlížečky.
@@ -156,27 +156,27 @@ Velikost a umístění detailu stránky si lze dle potřeby upravit tak, že det
 
 Ve většině případů nám stačí mít otevřený pouze jeden detail (horní nebo spodní), ten který aktuálně nepotřebujeme lze kdykoli zabalit nebo rozbalit prostřednictvím tlačítka nad náhledem detailu.
 
-
+<br/>
 ==3.5. Velikost náhledů stránek==
 
 Náhledy stánek jsou v automatickém zobrazení editoru poměrně malé, což však umožňuje současně pracovat s větším množstvím náhledů na jedné obrazovce. Pokud však potřebujeme náhledy větší pro usnadnění orientace, můžeme si je zvětšit podle vlastní potřeby pomocí lup *+* a *-* umístěných v horní liště vedle tlačítka *Detail stránky*.
 
-
+<br/>
 ==3.6. Editovat metadata==
 
 Pro manuální editaci a kontrolu metadat slouží v pravé části horní lišty umístěné nad scany tlačítko *Editovat metadata*. Po zvolení tohoto tlačítka se dole pod scany otevře nové okno, kde je možné editovat metadata v DC a MODS (dvě samostatné záložky). Většina metadat se stáhne automaticky z Alephu, takže je není třeba vyplňovat. Pokud je třeba něco dovyplnit, je potřeba to učinit v DC i MODS, pokud to kategorie umožňují. Případné provedené změny se uloží spolu s vytvořením digitálního objektu, což je poslední akce, kterou dokument projde ve vytvářecím módu editoru.
 
-
+<br/>
 ==3.7. Zpět, vpřed==
 
 Tyto tlačítka umístěné v pravé části horní lišty slouží k vracení provedených kroků, pokud jsme například udělali chybu.
 
-
+<br/>
 ==3.8. Vytvořit==
 
 Finální krok vytvářecího módu představuje tlačítko *Vytvořit*, které nahraje upravený digitální objekt do repozitáře. Pokud jsme si jisti, že jsme provedli všechny požadované změny dokumentu a máme vytvořený strom podstruktur, můžeme pomocí *Vytvořit* objekt nahrát a následně je možné si výsledek prohlédnout v editačním módu editoru.
 
-
+<br/>
 ==3.9. Vytvoření podstruktury==
 
 Okno umístěné vlevo uprostřed *Vytvořit podstrukturu* umožňuje rozdělovat digitalizované tituly na podčásti (např. kapitoly), periodika na ročníky, čísla apod. Podstruktury vytváří strom, který se zobrazuje v okně v levé spodní části a umožňuje nám tak kontrolovat strukturu dokumentu.
@@ -208,7 +208,7 @@ Pomocí tohoto tlačítka přesuneme vybrané stránky do strukturálního strom
       * pokud přesouváme vybrané stránky ze stromu do pravé části, stránky se nám ze stromu automaticky odstraní. Pokud však postupujeme zprava doleva a přesouváme pomocí drug and drope stránky z okna náhledů do stromu, kopie stran nám zůstane v okně s náhledy. Ty můžeme buď v okně ponechat nebo je odstraníme pomocí pravého tlačítka myši a výběrem možnosti *Odstranit vybrané*.
       * přesouváme-li stánku z okna s náhledy do stromu, přesouvaná stránka se nám vždy zařadí na konec stromu. Stránku můžeme poté ve stromě posunout na správné místo tím, že ji vybereme pomocí myši a přesuneme výše na požadované umístění.
 
-
+<br/>
 ==3.10. Podstruktury==
 
 Vytvořené podstruktury tvoří strom v okně vlevo dole. Se stránkami a částmi objektu je možné dále pracovat.
@@ -216,11 +216,9 @@ Vytvořené podstruktury tvoří strom v okně vlevo dole. Se stránkami a čás
 
    ===3.10.1. Editace===
 
-   Po kliknutí pravým tlačítkem na libovolnou položku stromu se nám zobrazí nabídka. Nejvýše umístěné tlačítko *Editace* umožňuje rychlou úpravu názvu podstruktury nebo úpravu názvů jednotlivých stránek.
+   Po kliknutí pravým tlačítkem na libovolnou položku stromu se nám zobrazí nabídka. Nejvýše umístěné tlačítko *Editace* umožňuje rychlou úpravu názvu podstruktury nebo úpravu názvů jednotlivých stránek a také typů stránek.
 
-      * pozn.: u jednotlivých stránek umožňuje editace názvu pouze změnu na úrovni čísla strany. Je tedy možné změnit např.  *1* na *1a*. Nemůžeme ale tímto způsobem editovat typ strany (např. `“FrontCover”`). Pokud potřebujeme upravit typ, musíme danou stránku přesunout zpět do pravé části editoru do okna s náhledy jednotlivých stránek.
-
-
+   
    ===3.10.2. Vymazání===
 
    Libovolnou stránku nebo podstrukturu lze vymazat pomocí kliknutí pravým tlačítkem myši na zvolenou položku a vybráním *Odstranit vybrané*. Odstaníme-li nadřazenou složku obsahující např. jednotlivé stránky, logicky nám zmizí celá podřazená struktura.
@@ -248,7 +246,7 @@ Vytvořené podstruktury tvoří strom v okně vlevo dole. Se stránkami a čás
 
    Okno *Podstruktury* má svá vlastní tlačítka, která umožňují vrátit se ve vytváření stromu o krok vpřed nebo vzad. Najdeme je v horní části tohoto okna vedle tlačítka pro ukládání.
 
-
+<br/>
 ----
 =4. Editor - Editační mód=
 
@@ -266,7 +264,7 @@ Editační mód je možné zpřístupnit několika způsoby:
 
 Po provedení některého z těchto kroků se nám zobrazí daný digitální objekt pro případné další úpravy.
 
-
+<br/>
 ==4.2. Tlačítko menu==
 
 Nalezneme v horní liště úplně vpravo (vedle symbolu křížku, kterým se zavře aktuální okno upravovaného digitálního objektu)
@@ -281,7 +279,7 @@ Nalezneme v horní liště úplně vpravo (vedle symbolu křížku, kterým se z
    * _Odstranit objekt_ - odstraní již vytvořený dig. objekt.
    * _Publikovat_ - provede změny, které zadáme v editačním módu a zavede je do Krameria?
    * _Perzistentní odkaz_ - vytvoří perzistentní odkaz
-
+<br/>
 
 ==4.3. Záložky==
 
@@ -372,3 +370,4 @@ Pro každý typ digitálního objektu (monografie, ročník periodika, strana...
    ===4.3.12. Záložka Obrázek první stránky===
 
    Pouze pro editaci jednotlivých stránek. Umožňuje zobrazit danou stránku ve větším detailu.
+<br/>

@@ -93,7 +93,7 @@ Detail horní lišty:
 
       * zelená fajfka značí, že již je objekt nahrán v repozitáři.
       * pokud jsme daný objekt už dříve otevřeli, vidíme vedle čárového kódu také název objektu (název monografie nebo periodika).
-      *potřebujeme-li obnovit vstupní frontu, použijeme tlačítko se symbolem šipek v pravé horní části okna vstupní fronty.
+      * potřebujeme-li obnovit vstupní frontu, použijeme tlačítko se symbolem šipek v pravé horní části okna vstupní fronty.
 
 
    ===3.2.2. Načtení metadat===

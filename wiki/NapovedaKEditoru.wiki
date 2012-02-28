@@ -6,13 +6,14 @@
 =1. Editor - přihlášení=
 
 Bude doplněno.
+[http://meta-editor.googlecode.com/svn/wiki/img/Prihlaseni.jpg http://meta-editor.googlecode.com/svn/wiki/img/Prihlaseni.jpg] 
 <br/>
 <br/>
 
 ----
 
 =2.  Editor - úvodní stránka=
-
+||[http://meta-editor.googlecode.com/svn/wiki/img/vytvoreniNovehoObjektu.jpg http://meta-editor.googlecode.com/svn/wiki/img/vytvoreniNovehoObjektu_sm.jpg]||
 
 ==2.1. Logo MZK==
 
@@ -24,6 +25,7 @@ Kliknutím na logo MZK v levé horní části se můžeme v jakékoli fázi prá
    ===2.2.1. Vstupní fronta===
 
    V pravé horní části úvodní stránky editoru se nalézá *Vstupní   fronta*, kde nalezneme nascanované dokumenty čekající na finální úpravu metadat a jejich následné uložení do Fedory.
+
 
    ===2.2.2. Odkazováno z===
    Bude doplněno
@@ -39,7 +41,12 @@ Kliknutím na logo MZK v levé horní části se můžeme v jakékoli fázi prá
 
 V pravé části úvodní stránky nalezneme základní popis editoru a můžeme zde zkontrolovat dostupnost kooperujících systémů (Krameria 4 a Fedory).
 
+||[http://meta-editor.googlecode.com/svn/wiki/img/DostupnostKooperujicichSystemu.jpg http://meta-editor.googlecode.com/svn/wiki/img/DostupnostKooperujicichSystemu.jpg]||
+
 Můžeme zde také rychle vyhledat a otevřít digitální objekt pomocí formuláře zadáním PID (uuid).
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/OtevritDigitalniObjekt.jpg http://meta-editor.googlecode.com/svn/wiki/img/OtevritDigitalniObjekt.jpg]||
+
 <br/>
 
 ==2.4. Horní část==
@@ -50,6 +57,8 @@ V horní části úvodní stránky nalezneme *nápovědu* a okno pro *správu u�
    ===2.4.1. Správa uživatelů===
 
    Po kliknutí na *Správu uživatelů* se nám v pravé části editoru zobrazí správcovský panel. Pokud k tomu máme patřičné oprávnění, můžeme zde přidávat nové uživatele nebo je odebírat a přidělovat jim role. Ve spodní části vidíme uživatele, kteří žádají o autorizaci. 
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/SpravaUzivatelu.jpg http://meta-editor.googlecode.com/svn/wiki/img/SpravaUzivatelu_sm.jpg]||
 
 
    ===2.4.2. Nápověda===
@@ -66,7 +75,11 @@ Vytvářecí mód editoru umožňuje vytvářet nové digitální objekty, kter�
 
 ==3.1. Struktura vytvářecího módu==
 
-doplnit obrázek
+||[http://meta-editor.googlecode.com/svn/wiki/img/VytvareciMod.jpg http://meta-editor.googlecode.com/svn/wiki/img/VytvareciMod_sm.jpg]||
+
+Detail horní lišty:
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/HorniLista.jpg http://meta-editor.googlecode.com/svn/wiki/img/HorniLista.jpg]||
 
 <br/>
 ==3.2. Vytvoření nového digitálního objektu==
@@ -75,6 +88,8 @@ doplnit obrázek
    ===3.2.1. Vstupní fronta===
 
    Okno v levém horním rohu obsahuje *Vstupní frontu*, kde je možné zvolit dokument, který si přejeme vytvořit. Objekty v této frontě jsou zvlášť rozděleny na monografie a periodika. Vytvoření probíhá kliknutím pravým tlačítkem na čárový kód zvoleného objektu a zvolení tlačítka *Vytvořit*. U periodik je třeba ještě čárový kód dále rozkliknout a otevřít tak jednotlivé ročníky daného objektu. Pakliže byl objekt již dříve vytvořen a je nyní uložen v repozitáři, na výběr je také tlačítko *Informace o ingestu*, které nám umožňuje vidět, kdy byl objekt vytvořen a kým.
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/VstupniFronta.jpg http://meta-editor.googlecode.com/svn/wiki/img/VstupniFronta.jpg]||[http://meta-editor.googlecode.com/svn/wiki/img/InformaceOIngestu.jpg http://meta-editor.googlecode.com/svn/wiki/img/InformaceOIngestu.jpg]||
 
       * zelená fajfka značí, že již je objekt nahrán v repozitáři.
       * pokud jsme daný objekt už dříve otevřeli, vidíme vedle čárového kódu také název objektu (název monografie nebo periodika).
@@ -90,6 +105,8 @@ doplnit obrázek
       * jestliže se z nějakého důvodu nenačtou metadata daného objektu, je možné je dohledat pomocí vyhledávacího formuláře, který se zobrazí v pravé části stránky nahoře. Zde je možné vyhledávat titul podle SYSNA, čárového kódu nebo informací o titulu (autor, název...).
       * jestliže si z nějakého důvodu přejeme pokračovat bez načtených metadat (například když kniha není zanesena v katalogu), zvolíme pro pokračování tlačítko *Pokračovat bez metadat*. Pak se nám načtou pouze nascanované stánky dokumentu a metadata bude třeba v editoru doplnit ručně.
 
+||[http://meta-editor.googlecode.com/svn/wiki/img/informace.jpg http://meta-editor.googlecode.com/svn/wiki/img/informace_sm.jpg]||
+
 <br/>
 ==3.3. Editace stránek==
 
@@ -101,6 +118,11 @@ doplnit obrázek
       * náhled lze zvětšit dvojklikem na danou stránku
       * pro více detailů můžeme použít prohlížečku - klik pravým tlačítkem myši a tlačítko *Zobrazit prohlížečkou*.
 
+Detail prohlížečky:
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/Prohlizecka.jpg http://meta-editor.googlecode.com/svn/wiki/img/Prohlizecka_sm.jpg]
+||
+
 
    ===3.3.2. Pořadí stránek===
 
@@ -110,6 +132,8 @@ doplnit obrázek
    ===3.3.3. Mazání, kopírování a vkládání stránek===
 
    Pomocí tlačítka, které se zobrazí po kliknutí pravým tlačítkem na zvolenou stránku nebo stránky můžeme vybrat *Odstranit vybrané* a tím výběr vymazat. Pomocí *Kopírovat vybrané* pak můžeme stránky kopírovat a následně vkládat pomocí *Vložit*.
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/NabidkaStranky.jpg http://meta-editor.googlecode.com/svn/wiki/img/NabidkaStranky.jpg]||
 
 
    ===3.3.4. Číslování stránek===
@@ -139,6 +163,8 @@ doplnit obrázek
 
       * *Posunout na...:* Toto tlačítko umožní danou stránku přesunout na místo stránky zadaného čísla.
 
+||[http://meta-editor.googlecode.com/svn/wiki/img/VyberCislovani.jpg http://meta-editor.googlecode.com/svn/wiki/img/VyberCislovani.jpg]||
+
 
    ===3.3.5. Určení typu stránky===
 
@@ -147,19 +173,27 @@ doplnit obrázek
    Po určení typu stránky se jeho zkratka promítne pod číslo stránky, takže můžeme vidět, které strany jsme již editovali.
       * *Výjimka:*  Při výběru prázdné strany “blank” se po zadání zkratka nezobrazí pod číslem strany, u ostatních typů stránek ano.
 
+||[http://meta-editor.googlecode.com/svn/wiki/img/TypStrany.jpg http://meta-editor.googlecode.com/svn/wiki/img/TypStrany.jpg]||
+
 <br/>
 ==3.4. Detail stránky==
 
 Pro usnadnění orientace ve scanech při určování čísel stránek je možné využít funkce *Detail stránky*, která nám zobrazí horní a spodní okraj nascanovaných stránek a můžeme tak v detailu vidět číslo strany uvedené na scanu, aniž bychom museli strany jednotlivě zvětšovat nebo otevírat pomocí prohlížečky.
 
-Velikost a umístění detailu stránky si lze dle potřeby upravit tak, že detail stránky otevřeme (obdobně potom i zavřeme) kliknutím na lupu v horní liště s nápisem *Detail stránky* a po otevření náhledů klikneme (dvojklikem) na vybraný detail. Otevře se nám okno, kde můžeme změnit umístění, nebo náhled zvětšíme či zmenšíme na potřebnou velikost.
+Velikost a umístění detailu stránky si lze dle potřeby upravit tak, že detail stránky otevřeme (obdobně potom i zavřeme) kliknutím na lupu v horní liště s nápisem *Detail stránky* a po otevření náhledů klikneme (dvojklikem) na vybraný detail. Otevře se nám okno, kde můžeme změnit umístění, nebo náhled zvětšíme či zmenšíme na potřebnou velikost:
 
-Ve většině případů nám stačí mít otevřený pouze jeden detail (horní nebo spodní), ten který aktuálně nepotřebujeme lze kdykoli zabalit nebo rozbalit prostřednictvím tlačítka nad náhledem detailu.
+||[http://meta-editor.googlecode.com/svn/wiki/img/detailStranky.jpg http://meta-editor.googlecode.com/svn/wiki/img/detailStranky_sm.jpg]||
+
+Ve většině případů nám stačí mít otevřený pouze jeden detail (horní nebo spodní), ten který aktuálně nepotřebujeme lze kdykoli zabalit nebo rozbalit prostřednictvím tlačítka nad náhledem detailu:
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/DetaiStranky3.jpg http://meta-editor.googlecode.com/svn/wiki/img/DetailStranky3_sm.jpg]||
 
 <br/>
 ==3.5. Velikost náhledů stránek==
 
 Náhledy stánek jsou v automatickém zobrazení editoru poměrně malé, což však umožňuje současně pracovat s větším množstvím náhledů na jedné obrazovce. Pokud však potřebujeme náhledy větší pro usnadnění orientace, můžeme si je zvětšit podle vlastní potřeby pomocí lup *+* a *-* umístěných v horní liště vedle tlačítka *Detail stránky*.
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/MaleStranky.jpg http://meta-editor.googlecode.com/svn/wiki/img/MaleStranky.jpg]||[http://meta-editor.googlecode.com/svn/wiki/img/ZvetseneStranky.jpg http://meta-editor.googlecode.com/svn/wiki/img/ZvetseneStranky.jpg]||
 
 <br/>
 ==3.6. Editovat metadata==
@@ -180,6 +214,8 @@ Finální krok vytvářecího módu představuje tlačítko *Vytvořit*, které 
 ==3.9. Vytvoření podstruktury==
 
 Okno umístěné vlevo uprostřed *Vytvořit podstrukturu* umožňuje rozdělovat digitalizované tituly na podčásti (např. kapitoly), periodika na ročníky, čísla apod. Podstruktury vytváří strom, který se zobrazuje v okně v levé spodní části a umožňuje nám tak kontrolovat strukturu dokumentu.
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/VytvoritPodstrukturu.jpg http://meta-editor.googlecode.com/svn/wiki/img/VytvoritPodstrukturu.jpg]||
 
 
    ===3.9.1. Typ===
@@ -213,10 +249,14 @@ Pomocí tohoto tlačítka přesuneme vybrané stránky do strukturálního strom
 
 Vytvořené podstruktury tvoří strom v okně vlevo dole. Se stránkami a částmi objektu je možné dále pracovat.
 
+||[http://meta-editor.googlecode.com/svn/wiki/img/strom1.jpg http://meta-editor.googlecode.com/svn/wiki/img/strom1.jpg]||
+
 
    ===3.10.1. Editace===
 
    Po kliknutí pravým tlačítkem na libovolnou položku stromu se nám zobrazí nabídka. Nejvýše umístěné tlačítko *Editace* umožňuje rychlou úpravu názvu podstruktury nebo úpravu názvů jednotlivých stránek a také typů stránek.
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/strom2.jpg http://meta-editor.googlecode.com/svn/wiki/img/strom2.jpg]||[http://meta-editor.googlecode.com/svn/wiki/img/RychlaEditace.jpg http://meta-editor.googlecode.com/svn/wiki/img/RychlaEditace.jpg]||
 
    
    ===3.10.2. Vymazání===
@@ -237,7 +277,12 @@ Vytvořené podstruktury tvoří strom v okně vlevo dole. Se stránkami a čás
 
    Tlačítko pro ukládání a načítání se nachází v pravém horním rohu okna *Podstruktury*. Umožňuje uložit rozpracovanou strukturu stromu a také uloží provedené změny v pravém okně s náhledy stránek. Lze si zde také načíst dříve uložená data.
 
+||[http://meta-editor.googlecode.com/svn/wiki/img/save3.jpg http://meta-editor.googlecode.com/svn/wiki/img/save3.jpg]||[http://meta-editor.googlecode.com/svn/wiki/img/Save.jpg http://meta-editor.googlecode.com/svn/wiki/img/Save_sm.jpg]||
+
    V okně pro načítání můžeme pomocí záložky v pravé části zobrazit a následně načíst buď námi uložená data (symbol jednoho panáčka) nebo informace, které uložili ostatní (dva panáčci).
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/Load.jpg http://meta-editor.googlecode.com/svn/wiki/img/Load_sm.jpg]||
+
 
    Můžeme také zvolit, zda se nám v okně načítací nabídky zobrazí mé vlastní savy pouze pro právě otevřený objekt nebo pro všechny. Toto volbu provedeme ve spodní části (tlačítka: *Jen pro tento vytvářený objekt* a *Všechny mé uložené struktury*).
 
@@ -251,6 +296,10 @@ Vytvořené podstruktury tvoří strom v okně vlevo dole. Se stránkami a čás
 =4. Editor - Editační mód=
 
 Jedná se o mód editoru, který umožňuje provádět změny v již vytvořených objektech.
+
+Struktura editačního módu:
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/EditacniMod.jpg http://meta-editor.googlecode.com/svn/wiki/img/EditacniMod_sm.jpg]||
 
 
 ==4.1. Jak otevřít objekt, který si přejeme editovat==

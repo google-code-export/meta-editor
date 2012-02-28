@@ -218,7 +218,7 @@ Vytvořené podstruktury tvoří strom v okně vlevo dole. Se stránkami a čás
 
    Po kliknutí pravým tlačítkem na libovolnou položku stromu se nám zobrazí nabídka. Nejvýše umístěné tlačítko *Editace* umožňuje rychlou úpravu názvu podstruktury nebo úpravu názvů jednotlivých stránek.
 
-      * pozn.: u jednotlivých stránek umožňuje editace názvu pouze změnu na úrovni čísla strany. Je tedy možné změnit např.  *1* na *1a*. Nemůžeme ale tímto způsobem editovat typ strany (např. “FrontCover”). Pokud potřebujeme upravit typ, musíme danou stránku přesunout zpět do pravé části editoru do okna s náhledy jednotlivých stránek.
+      * pozn.: u jednotlivých stránek umožňuje editace názvu pouze změnu na úrovni čísla strany. Je tedy možné změnit např.  *1* na *1a*. Nemůžeme ale tímto způsobem editovat typ strany (např. `“FrontCover”`). Pokud potřebujeme upravit typ, musíme danou stránku přesunout zpět do pravé části editoru do okna s náhledy jednotlivých stránek.
 
 
    ===3.10.2. Vymazání===

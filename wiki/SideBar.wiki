@@ -2,6 +2,7 @@
     * [Info Screenshots]
     * [DomainModel Domain Model]
     * [Links Related Links]
+    * [EditorDemo]
   * [InstallationNotes Installation Notes]
   * [CodingStandards Coding Standards]
   * [Repository SVN Repository]

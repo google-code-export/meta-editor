@@ -1,24 +1,7 @@
-= Introduction =
-
-Demo: [http://editor.mzk.cz http://editor.mzk.cz]
-
-===test account===
-OpenID provider = Google<br/>
-*l:* metadataedit<br/>
-*p:* editoreditor<br/>
-
-After logging in you may for instance open some digital object from recently modified section on the left side at the bottom of the page.
-
-For information about the data model please visit http://code.google.com/p/kramerius/wiki/Data
-
-
-<br/>
 = Screenshots =
 
 
-There are two opened digital objects, Dublin Core stream and thumbnails of pages.
-
-http://meta-editor.googlecode.com/files/screen1.png
+||[http://meta-editor.googlecode.com/svn/wiki/img/UvodniStrana.jpg http://meta-editor.googlecode.com/svn/wiki/img/UvodniStrana.jpg]||
 
 
 

@@ -1,0 +1,10 @@
+#summary Technical documentation of the whole architecture
+
+= Introduction =
+
+101101001101
+
+
+= Details =
+
+101010100111101100011010011010

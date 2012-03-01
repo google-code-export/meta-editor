@@ -4,7 +4,9 @@
     * [Links Related Links]
     * [EditorDemo Demo]
     * [Team]
-  * [InstallationNotes Installation Notes]
-  * [CodingStandards Coding Standards]
-  * [Repository SVN Repository]
+  * Developer Information
+    * [TechnicalDocumentation Technical Documentation]
+    * [CodingStandards Coding Standards]
+    * [Repository SVN Repository]
+    * [InstallationNotes Installation Notes]
   * [NapovedaKEditoru User Guide]

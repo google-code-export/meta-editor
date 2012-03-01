@@ -166,6 +166,7 @@ Detail prohlížečky:
 
 ||[http://meta-editor.googlecode.com/svn/wiki/img/VyberCislovani.jpg http://meta-editor.googlecode.com/svn/wiki/img/VyberCislovani.jpg]||
 
+*Poznámka:* Potřebujeme-lizměnit název stránky ručně (pokud nabídka nenabízí možnost, kterou si přejeme zadat) , můžeme využít možnosti "editovat název stránky", které se nám zobrazí po kliku pravým tlačítkem na zvolenou stánku.
 
    ===3.3.5. Určení typu stránky===
 

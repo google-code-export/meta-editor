@@ -2,7 +2,7 @@
     * [Info Screenshots]
     * [DomainModel Domain Model]
     * [Links Related Links]
-    * [EditorDemo]
+    * [EditorDemo Demo]
     * [Team]
   * [InstallationNotes Installation Notes]
   * [CodingStandards Coding Standards]

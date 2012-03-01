@@ -156,8 +156,9 @@ Detail prohlížečky:
          * *1, 2, 3, 4, → 1a, 1b, 2a, 2b*
          * *1, 2, 3, 4, → 1a, 1b, 1c, 2a*
          * *1, 2, 3, 4, → 1a, 1b, 1c, 1d*
-         * *1, ... 4, 5,→ 1a, ...1e, 2a*
+         * *1,... 4, 5,→ 1a, ...1e, 2a*
          * nebo lze nastavit *vlastní hodnotu indexu*, podle potřeby daného dokumentu
+   * *1, 2,...→ 1|2,...:* Slouží k číslování sloupců, tedy nacházejí-li se na jedné straně dvě různá čísla.
 
       * *Posunout doleva..., Posunout doprava...*: Pro změnu pořadí stránek a jejich automatické přečíslování  lze využít i možnosti v nabídce číslování stránek (*Posunout doleva...*, *Posunout doprava...*), kde editor umožní posunout vybrané stránky o požadovaný počet stran doprava nebo doleva.
 

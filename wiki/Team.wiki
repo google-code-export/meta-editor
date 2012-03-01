@@ -1,0 +1,17 @@
+
+= Team=
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/LogoMZK.jpg http://meta-editor.googlecode.com/svn/wiki/img/LogoMZK.jpg]||
+
+===Jiří Kremser===
+ * owner
+ * analysis
+ * development
+
+===Matouš Jobánek===
+ * analysis
+ * development
+
+===Viola Kučerová===
+ * tester
+ * project wiki

@@ -1,22 +1,27 @@
 = Screenshots =
 
+ * Welcome page
 
-||[http://meta-editor.googlecode.com/svn/wiki/img/UvodniStrana.jpg http://meta-editor.googlecode.com/svn/wiki/img/UvodniStrana.jpg]||
+||[http://meta-editor.googlecode.com/svn/wiki/img/UvodniStr.jpg http://meta-editor.googlecode.com/svn/wiki/img/UvodniStr_sm.jpg]||
+
+ * Metadata of the new object
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/Metad.jpg http://meta-editor.googlecode.com/svn/wiki/img/Metad_sm.jpg]||
+
+ * Editation of pages (Editation mode)
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/Stranky.jpg http://meta-editor.googlecode.com/svn/wiki/img/Stranky_sm.jpg]||
+
+ * Editation mode (two opened objects)
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/OknaNadSebou.jpg http://meta-editor.googlecode.com/svn/wiki/img/OknaNadSebou_sm.jpg]||
 
 
 
-Image preview.
+ * The user management
 
-http://meta-editor.googlecode.com/files/screen2.png
+||[http://meta-editor.googlecode.com/svn/wiki/img/SpravaUzivatelu.jpg http://meta-editor.googlecode.com/svn/wiki/img/SpravaUzivatelu_sm.jpg]||
 
+ * The logging window
 
-
-Drag & dropping of the pages between the digital objects.
-
-http://meta-editor.googlecode.com/files/screen3.png
-
-
-
-The user management.
-
-http://meta-editor.googlecode.com/files/screen4.png
+||[http://meta-editor.googlecode.com/svn/wiki/img/Prihlaseni.jpg http://meta-editor.googlecode.com/svn/wiki/img/Prihlaseni.jpg]||

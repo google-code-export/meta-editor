@@ -8,4 +8,4 @@ OpenID provider = Google<br/>
 *l:* metadataedit<br/>
 *p:* editoreditor<br/>
 
-For information about the data model please visit http://code.google.com/p/kramerius/wiki/Data
+For information about the data model please visit http://code.google.com/p/kramerius/wiki/Data or DomainModel

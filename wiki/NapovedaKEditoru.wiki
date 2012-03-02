@@ -5,7 +5,6 @@
 
 =1. Editor - přihlášení=
 
-Bude doplněno.
 [http://meta-editor.googlecode.com/svn/wiki/img/Prihlaseni.jpg http://meta-editor.googlecode.com/svn/wiki/img/Prihlaseni.jpg] 
 <br/>
 <br/>
@@ -28,7 +27,8 @@ Kliknutím na logo MZK v levé horní části se můžeme v jakékoli fázi prá
 
 
    ===2.2.2. Odkazováno z===
-   Bude doplněno
+
+   Zobrazuje nám případné nadřazené digitální objekty k digitálnímu objektu, který máme otevřený v editačním módu.
 
 
    ===2.2.3. Naposledy modifikované===
@@ -321,11 +321,10 @@ Po provedení některého z těchto kroků se nám zobrazí daný digitální ob
 Nalezneme v horní liště úplně vpravo (vedle symbolu křížku, kterým se zavře aktuální okno upravovaného digitálního objektu)
 
 *V menu nalezneme tyto položky:*
-   * _Nový_ -nepoužívá se!!! (protože nefunguje:)
    * _Zamknout objekt_ - slouží k tomu, že objekt, který máme rozpracovaný a nemáme čas v jeho editaci dále pokračovat, tímto znepřístupníme úpravám jiných uživatelů.
    * Odemknout objekt - slouží k odemknutí zamčeného objektu	
    * _Uložit práci_ - zatím nefunkční
-   * _Obnovit_ - obnoví do původního nastavení neuložené změny???
+   * _Obnovit_ - obnoví do původního nastavení neuložené změny.
    * _Stáhnout FOXML_ - pokud si z nějakého důvodu potřebujeme stáhnout   kód FOXML.
    * _Odstranit objekt_ - odstraní již vytvořený dig. objekt.
    * _Publikovat_ - provede změny, které zadáme v editačním módu a zavede je do Krameria?

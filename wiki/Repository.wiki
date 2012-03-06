@@ -1,5 +1,5 @@
 =New Repository=
-[https://a248.e.akamai.net/assets.github.com/images/modules/header/logov7@4x-hover.png?1324325424]
+[http://t1.gstatic.com/images?q=tbn:ANd9GcQrHrV8S_HKhUN9YTJrka90euKNng8NLf7KBCcy4Ol54pGsDjng]
 
 The source code of the project is hosted on `GitHub`
 https://github.com/Jiri-Kremser/MEditor

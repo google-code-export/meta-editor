@@ -10,10 +10,19 @@ git clone https://github.com/Jiri-Kremser/MEditor
 }}}
 
 
-
+<br/><br/>
 =Old abandoned repository=
+[http://code.google.com/images/code_logo.gif]
+
 Till revision r601 the source code were hosted here on Google code, since then we've moved to `GitHub`.
 
-svn checkout https://meta-editor.googlecode.com/svn/trunk/ MEditor --username user.name
+For up to date code please use the `GitHub` repository.
 
+access:
+{{{
+svn checkout https://meta-editor.googlecode.com/svn/trunk/ MEditor --username user.name
+}}}
+read only access:
+{{{
 svn checkout http://meta-editor.googlecode.com/svn/trunk/ MEditor-read-only
+}}}

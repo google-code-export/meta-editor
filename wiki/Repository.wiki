@@ -6,7 +6,7 @@ https://github.com/Jiri-Kremser/MEditor
 
 To clone the repository just type in 
 {{{
-https://github.com/Jiri-Kremser/MEditor
+git clone https://github.com/Jiri-Kremser/MEditor
 }}}
 
 

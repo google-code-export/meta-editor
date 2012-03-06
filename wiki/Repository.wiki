@@ -1,5 +1,5 @@
 =New Repository=
-[http://t1.gstatic.com/images?q=tbn:ANd9GcQrHrV8S_HKhUN9YTJrka90euKNng8NLf7KBCcy4Ol54pGsDjng]
+[http://technology.edmunds.com/github-logo.png]
 
 The source code of the project is hosted on `GitHub`
 https://github.com/Jiri-Kremser/MEditor

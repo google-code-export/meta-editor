@@ -1,7 +1,7 @@
 =New Repository=
 [https://a248.e.akamai.net/assets.github.com/images/modules/header/logov7@4x-hover.png?1324325424]
 
-The source code of the project is hosted on GitHub
+The source code of the project is hosted on `GitHub`
 https://github.com/Jiri-Kremser/MEditor
 
 To clone the repository just type in 
@@ -12,7 +12,7 @@ git clone https://github.com/Jiri-Kremser/MEditor
 
 
 =Old abandoned repository=
-Till revision r601 the source code were hosted here on Google code, since then we've moved to GitHub.
+Till revision r601 the source code were hosted here on Google code, since then we've moved to `GitHub`.
 
 svn checkout https://meta-editor.googlecode.com/svn/trunk/ MEditor --username user.name
 

@@ -7,6 +7,6 @@
   * Developer Information
     * [TechnicalDocumentation Technical Documentation]
     * [CodingStandards Coding Standards]
-    * [Repository SVN Repository]
+    * [Repository Repository]
     * [InstallationNotes Installation Notes]
   * [NapovedaKEditoru User Guide]

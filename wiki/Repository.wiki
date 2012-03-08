@@ -26,3 +26,4 @@ read only access:
 {{{
 svn checkout http://meta-editor.googlecode.com/svn/trunk/ MEditor-read-only
 }}}
+.. or [http://code.google.com/p/meta-editor/source/browse/trunk/?r=601#trunk%2FMEditor browse] the old repository

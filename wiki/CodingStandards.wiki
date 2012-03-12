@@ -6,9 +6,12 @@
 = To set up Eclipse (Helios, Galileo and Ganymede) =
 It is recommended that you use to Eclipse Helios or Galileo (this section has been tested for Helios and Galileo - some small differences will be encountered). You must install Eclipse and a compatible Java JDK prior to beginning this configuration. Also you need to obtain a set of configuration files which are located in the repository source. 
 
+You need to add "process-resources" goal to the Window / Preferences / Maven / Goals to run on project Import. 
+
+
  == Plugins ==
  * Google Plugin for Eclipse [http://code.google.com/intl/cs-CZ/appengine/docs/java/tools/eclipse.html GPE]
- * [http://www.eclipse.org/subversive/ Subversive]
+ * [http://www.sonatype.org/m2eclipse m2eclipse]
 
  == Path of the configuration files: ==
 {{{

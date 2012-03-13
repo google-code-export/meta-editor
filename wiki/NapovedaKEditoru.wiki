@@ -369,7 +369,7 @@ Pro každý typ digitálního objektu (monografie, ročník periodika, strana...
          # _Kopírovat vybrané_ - zkopíruje dané stránky
          # _Vložit_ - vloží zkopírované stránky
          # _Odstranit vybrané_ - smaže označené stránky 
-         # _Zcela odstranit_ - ???
+         # _Zcela odstranit_ 
 
 
    ===4.3.3. Záložka Interní části===

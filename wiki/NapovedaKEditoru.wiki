@@ -152,7 +152,7 @@ Detail prohlížečky:
    * *Na římské:* Vybrané stránky lze přečíslovat na římské číslice. Na výběr jsou dvě možné varianty (jedna kdy 4=IIII a druhá, kdy 4=IV).
    * *1, 2,... → `[1]`, `[2]`,...:* Dá vybrané číslo do hranatých závorek (*Pozn.:* Výběr hranatých závorek je třeba učinit až jako poslední krok, pokud dáme danou stránku nejprve do hranatých závorek a posléze přečíslujeme, hranaté závorky zmizí spolu se změnou čísla.)
    * *1, 2,... → 1a, 1b,...:* Umožňuje přidat číslu stránky index. Na výběr je z několika přednastavených variant:
-         * *1, 2, 3, 4, → 1r, 1v, 2r, 2v*
+         * *1, 2, 3, 4, → 1r, 1v, 2r, 2v* (pro číslování jednotlivých listů - recto/verso)
          * *1, 2, 3, 4, → 1a, 1b, 2a, 2b*
          * *1, 2, 3, 4, → 1a, 1b, 1c, 2a*
          * *1, 2, 3, 4, → 1a, 1b, 1c, 1d*

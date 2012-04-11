@@ -217,12 +217,10 @@ Finální krok vytvářecího módu představuje tlačítko *Vytvořit*, které 
 
 Okno umístěné vlevo uprostřed *Vytvořit podstrukturu* umožňuje rozdělovat digitalizované tituly na podčásti (např. kapitoly), periodika na ročníky, čísla apod. Podstruktury vytváří strom, který se zobrazuje v okně v levé spodní části a umožňuje nám tak kontrolovat strukturu dokumentu.
 
-||[http://meta-editor.googlecode.com/svn/wiki/img/VytvoritPodstrukturu.jpg http://meta-editor.googlecode.com/svn/wiki/img/VytvoritPodstrukturu.jpg]||
-
 
    ===3.9.1. Typ===
 
-   Chceme-li vytvořit podstrukturu, vybereme v pravé části stránky, které chceme do strukturálního stromu přidat. Po té vybereme z nabídky *Typ* a určíme, zda se jedná o stránku, interní část nebo volnou část. U periodik pak, zda se jedná o číslo nebo ročník periodika.
+   Chceme-li vytvořit podstrukturu, vybereme v pravé části stránky, které chceme do strukturálního stromu přidat. Poté vybereme z nabídky *Typ* a určíme, zda se jedná o stránku, interní část nebo volnou část. U periodik pak, zda se jedná o číslo nebo ročník periodika.
 
 
    ===3.9.2. Jméno===

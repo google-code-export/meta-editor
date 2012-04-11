@@ -87,7 +87,7 @@ Detail horní lišty:
 
    ===3.2.1. Vstupní fronta===
 
-   Okno v levém horním rohu obsahuje *Vstupní frontu*, kde je možné zvolit dokument, který si přejeme vytvořit. Objekty v této frontě jsou zvlášť rozděleny na monografie a periodika. Vytvoření probíhá kliknutím pravým tlačítkem na čárový kód zvoleného objektu a zvolení tlačítka *Vytvořit*. U periodik je třeba ještě čárový kód dále rozkliknout a otevřít tak jednotlivé ročníky daného objektu. Pakliže byl objekt již dříve vytvořen a je nyní uložen v repozitáři, na výběr je také tlačítko *Informace o ingestu*, které nám umožňuje vidět, kdy byl objekt vytvořen a kým.
+   Okno v levém horním rohu obsahuje *Vstupní frontu*, kde je možné zvolit dokument, který si přejeme vytvořit. Objekty v této frontě jsou zvlášť rozděleny na monografie a periodika. Vytvoření probíhá kliknutím pravým tlačítkem na sysno zvoleného objektu a zvolení tlačítka *Vytvořit*. U periodik je třeba ještě čárový kód dále rozkliknout a otevřít tak jednotlivé ročníky daného objektu. Pakliže byl objekt již dříve vytvořen a je nyní uložen v repozitáři, na výběr je také tlačítko *Informace o ingestu*, které nám umožňuje vidět, kdy byl objekt vytvořen a kým.
 
 ||[http://meta-editor.googlecode.com/svn/wiki/img/VstupniFronta.jpg http://meta-editor.googlecode.com/svn/wiki/img/VstupniFronta.jpg]||[http://meta-editor.googlecode.com/svn/wiki/img/InformaceOIngestu.jpg http://meta-editor.googlecode.com/svn/wiki/img/InformaceOIngestu.jpg]||
 
@@ -220,17 +220,21 @@ Okno umístěné vlevo uprostřed *Vytvořit podstrukturu* umožňuje rozdělova
 
    ===3.9.1. Typ===
 
-   Chceme-li vytvořit podstrukturu, vybereme v pravé části stránky, které chceme do strukturálního stromu přidat. Poté vybereme z nabídky *Typ* a určíme, zda se jedná o stránku, interní část nebo volnou část. U periodik pak, zda se jedná o číslo nebo ročník periodika.
+   Chceme-li vytvořit podstrukturu, vybereme v pravé části stránky, které chceme do strukturálního stromu přidat. Poté vybereme z nabídky *Typ* a určíme, zda se jedná o interní část nebo volnou část (pro monografie). U periodik pak, zda se jedná např. o číslo (periodical item) nebo ročník periodika (periodical volume).
 
 
-   ===3.9.2. Jméno===
+   ===3.9.2. Popis částí monografie/periodika===
 
-   V kolonce *Jméno* zadáme požadovaný název vytvářené podstruktury.
+   Po zvolení správné úrovně, kterou si přejeme vytvořit (například periodical volume) se nám zobrazí pole, která je třeba vyplnit pro danou úroveň. Pro ročník periodika tak doplníme například číslo ročníku a rok vydání. Můžeme zde také přidat poznámku ohledně fyzického stavu (např. zde zapíšeme, že v ročníku chybí některá čísla). Pole, které je potřeba doplnit se liší podle zvolené úrovně.
+
+ * Pozn: Data vždy zapisujeme do polí bez mezer (např 1.1.2011, 2.4.2012-2.5.2012...) - formát DD.MM.RRRR, MM.RRRR, RRRR apod.
 
 
    ===3.9.3. Ponechat v pravé části===
 
    Zaškrtnutím možnosti *Ponechat v pravé části* stanovíme, že chceme po přesunutí do strukturálního stromu vybrané stránky ponechat i v pravé části editoru. Pakliže tuto volbu nezatrhneme, stránky se z pravé části automaticky odstraní.
+
+ * Pozn: Pokud pro pro přesun stránek používáme drag and drope, docílíme ponechání stránek v pravé části editoru tak, že držíme klávesu ctrl.
 
 
    ===3.9.4. Vytvořit===

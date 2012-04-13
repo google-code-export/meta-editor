@@ -210,7 +210,7 @@ Tyto tlačítka umístěné v pravé části horní lišty slouží k vracení p
 <br/>
 ==3.8. Vytvořit==
 
-Finální krok vytvářecího módu představuje tlačítko *Vytvořit*, které nahraje upravený digitální objekt do repozitáře. Pokud jsme si jisti, že jsme provedli všechny požadované změny dokumentu a máme vytvořený strom podstruktur, můžeme pomocí *Vytvořit* objekt nahrát a následně je možné si výsledek prohlédnout v editačním módu editoru.
+Finální krok vytvářecího módu představuje tlačítko *Vytvořit*, které nahraje upravený digitální objekt do repozitáře. Pokud jsme si jisti, že jsme provedli všechny požadované změny dokumentu (máme provedené číslování stran) a *máme vytvořený strom podstruktur* (*bez něj se data do repozitáře neuloží!*), můžeme pomocí *Vytvořit* objekt nahrát a následně je možné si výsledek prohlédnout v editačním módu editoru.
 
 <br/>
 ==3.9. Vytvoření podstruktury==

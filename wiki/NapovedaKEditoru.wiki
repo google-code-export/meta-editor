@@ -164,7 +164,7 @@ Detail prohlížečky:
 
       * *Posunout na...:* Toto tlačítko umožní danou stránku přesunout na místo stránky zadaného čísla. (*nepoužívat!*)
 
-||[http://meta-editor.googlecode.com/svn/wiki/img/VyberCislovani.jpg http://meta-editor.googlecode.com/svn/wiki/img/VyberCislovani.jpg]||
+||[http://meta-editor.googlecode.com/svn/wiki/img/strankovani.jpg http://meta-editor.googlecode.com/svn/wiki/img/strankovani.jpg]||
 
 *Poznámka:* Potřebujeme-lizměnit název stránky ručně (pokud nabídka nenabízí možnost, kterou si přejeme zadat) , můžeme využít možnosti "editovat název stránky", které se nám zobrazí po kliku pravým tlačítkem na zvolenou stánku.
 
@@ -173,9 +173,9 @@ Detail prohlížečky:
    Kromě čísel stránek umožňuje editor změnit i *typ stránky*. Pro tuto možnost slouží tlačítko napravo od *Čísla stránek*. Nabídka obsahuje přednastavené typy stránek, které se pro potřeby editace využívají.
 
    Po určení typu stránky se jeho zkratka promítne pod číslo stránky, takže můžeme vidět, které strany jsme již editovali.
-      * *Výjimka:*  Při výběru prázdné strany “blank” se po zadání zkratka nezobrazí pod číslem strany, u ostatních typů stránek ano.
+     
 
-||[http://meta-editor.googlecode.com/svn/wiki/img/TypStrany.jpg http://meta-editor.googlecode.com/svn/wiki/img/TypStrany.jpg]||
+||[http://meta-editor.googlecode.com/svn/wiki/img/typystran.jpg http://meta-editor.googlecode.com/svn/wiki/img/typystran.jpg]||
 
 <br/>
 ==3.4. Detail stránky==
@@ -227,9 +227,11 @@ Okno umístěné vlevo uprostřed *Vytvořit podstrukturu* umožňuje rozdělova
 
    Při volbě postupného vytváření se po zvolení správné úrovně, kterou si přejeme vytvořit (například periodical volume pro ročník periodika) se nám zobrazí pole, která je třeba vyplnit pro danou úroveň. Pro ročník periodika tak doplníme například číslo ročníku a rok vydání. Můžeme zde také přidat poznámku ohledně fyzického stavu (např. zde zapíšeme, že v ročníku chybí některá čísla). Pole, které je potřeba doplnit se liší podle zvolené úrovně a vychází ze specifikace metadat NK.
 
+||[http://meta-editor.googlecode.com/svn/wiki/img/tvorbacisla.jpg http://meta-editor.googlecode.com/svn/wiki/img/tvorbacisla.jpg]||[http://meta-editor.googlecode.com/svn/wiki/img/tvorbarocniku.jpg http://meta-editor.googlecode.com/svn/wiki/img/tvorbarocniku.jpg]||
+
  * Pozn: Data vždy zapisujeme do polí bez mezer (např 1.1.2011, 2.4.2012-2.5.2012...) - formát DD.MM.RRRR, MM.RRRR, RRRR apod.
 
-
+  
    ===3.9.3. Ponechat v pravé části===
 
    Zaškrtnutím možnosti *Ponechat v pravé části* stanovíme, že chceme po přesunutí do strukturálního stromu vybrané stránky ponechat i v pravé části editoru. Pakliže tuto volbu nezatrhneme, stránky se z pravé části automaticky odstraní.
@@ -240,7 +242,7 @@ Okno umístěné vlevo uprostřed *Vytvořit podstrukturu* umožňuje rozdělova
 
 Výběrem varianty *najednou* nám editor umožní vytvořit strukturu pomocí označení titulních stran. Označíme všechny titulní strany za pomoci kliku levým tlačítkem myši při současném držení kombinace kláves Ctrl + Alt. Vybrané titulní strany se nám podbarví červeně a dále použijeme tlačítko *vytvořit* (viz kapitola 3.9.5.). 
 
-||[http://meta-editor.googlecode.com/svn/wiki/img/tvorbapodstruktury.jpg http://meta-editor.googlecode.com/svn/wiki/img/tvorbapodstruktury.jpg]||
+||[http://meta-editor.googlecode.com/svn/wiki/img/tvorbapodstuktury.jpg http://meta-editor.googlecode.com/svn/wiki/img/tvorbapodstuktury.jpg]||[http://meta-editor.googlecode.com/svn/wiki/img/rychledeleni.jpg http://meta-editor.googlecode.com/svn/wiki/img/rychledeleni.jpg]||
 
 *Pozn:* Při volbě této možnosti tvorby strukturálního stromu je nutné po vytvoření jednotlivých čísel a ročníků využít rychlé editace v okně podstruktur (čísla výtisků, data a poznámky vyplníme ručně tak, že klikneme pravým tlačítkem na zvolenou úroveň a výběrem *Rychlá editace* se nám zobrazí formulář pro editaci údajů dané úrovně)
 

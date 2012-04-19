@@ -150,19 +150,19 @@ Detail prohlížečky:
    * *Přečíslovat:* přečísluje posloupně stránky dle našeho výběru, opět lze do nabídky zadat číslo, kterým si přejeme, aby posloupnost začínala.
 
    * *Na římské:* Vybrané stránky lze přečíslovat na římské číslice. Na výběr jsou dvě možné varianty (jedna kdy 4=IIII a druhá, kdy 4=IV).
-   * *1, 2,... → `[1]`, `[2]`,...:* Dá vybrané číslo do hranatých závorek (*Pozn.:* Výběr hranatých závorek je třeba učinit až jako poslední krok, pokud dáme danou stránku nejprve do hranatých závorek a posléze přečíslujeme, hranaté závorky zmizí spolu se změnou čísla.)
-   * *1, 2,... → 1a, 1b,...:* Umožňuje přidat číslu stránky index. Na výběr je z několika přednastavených variant:
+   * *1, 2,... → `[1]`, `[2]`,...:* Dá vybrané číslo do hranatých závorek (*Pozn.:* Výběr hranatých závorek je třeba učinit až jako poslední krok, čísla, které pomocí přečíslování označíme jako 1a, 1b... se do hranatých závorek umístí automaticky.)
+   * *1, 2,... → `[1a]`, `[1b]`,...:* Umožňuje přidat číslu stránky index. Na výběr je z několika přednastavených variant:
          * *1, 2, 3, 4, → 1r, 1v, 2r, 2v* (pro číslování jednotlivých listů - recto/verso)
-         * *1, 2, 3, 4, → 1a, 1b, 2a, 2b*
-         * *1, 2, 3, 4, → 1a, 1b, 1c, 2a*
-         * *1, 2, 3, 4, → 1a, 1b, 1c, 1d*
-         * *1,... 4, 5,→ 1a, ...1e, 2a*
+         * *1, 2, 3, 4, → `[1a]`, `[1b]` `[2a]`, `[2b]`*
+         * *1, 2, 3, 4, → `[1a]`, `[1b]` `[1c]`, `[2a]`*
+         * *1, 2, 3, 4, → `[1a]`, `[1b]` `[1c]`, `[1d]`*
+         * *1,... 4, 5,→ `[1a]`, ...`[1e]`, `[2a]`*
          * nebo lze nastavit *vlastní hodnotu indexu*, podle potřeby daného dokumentu. (*Poznámka:* Připojení písmenného indexu funguje i tehdy, jsou-li strany očíslované římskými čísly. Například I, II... se nám tedy změní na Ia, Ib...)
    * *1, 2,...→ 1|2,...:* Slouží k číslování sloupců, tedy nacházejí-li se na jedné straně dvě různá čísla.
 
-      * *Posunout doleva..., Posunout doprava...*: Pro změnu pořadí stránek a jejich automatické přečíslování  lze využít i možnosti v nabídce číslování stránek (*Posunout doleva...*, *Posunout doprava...*), kde editor umožní posunout vybrané stránky o požadovaný počet stran doprava nebo doleva.
+      * *Posunout doleva..., Posunout doprava...*: Pro změnu pořadí stránek a jejich automatické přečíslování  lze využít i možnosti v nabídce číslování stránek (*Posunout doleva...*, *Posunout doprava...*), kde editor umožní posunout vybrané stránky o požadovaný počet stran doprava nebo doleva. (*nepoužívat!*)
 
-      * *Posunout na...:* Toto tlačítko umožní danou stránku přesunout na místo stránky zadaného čísla.
+      * *Posunout na...:* Toto tlačítko umožní danou stránku přesunout na místo stránky zadaného čísla. (*nepoužívat!*)
 
 ||[http://meta-editor.googlecode.com/svn/wiki/img/VyberCislovani.jpg http://meta-editor.googlecode.com/svn/wiki/img/VyberCislovani.jpg]||
 
@@ -215,7 +215,7 @@ Finální krok vytvářecího módu představuje tlačítko *Vytvořit*, které 
 <br/>
 ==3.9. Vytvoření podstruktury==
 
-Okno umístěné vlevo uprostřed *Vytvořit podstrukturu* umožňuje rozdělovat digitalizované tituly na podčásti (např. kapitoly), periodika na ročníky, čísla apod. Podstruktury vytváří strom, který se zobrazuje v okně v levé spodní části a umožňuje nám tak kontrolovat strukturu dokumentu.
+Okno umístěné vlevo uprostřed *Vytvořit podstrukturu* umožňuje rozdělovat digitalizované tituly na podčásti (např. kapitoly), periodika na ročníky, čísla apod. Podstruktury vytváří strom, který se zobrazuje v okně v levé spodní části a umožňuje nám tak kontrolovat strukturu dokumentu. V pravé horní části okna podstruktur můžeme zvolit *způsob* tvorby podstruktury. Lze je tvořit buď *postupně* (jednotlivá čísla a ročníky budeme tvořit po jednom) nebo *najednou* (umožní nám pomocí označení titulních stran vytvořit celou strukturu současně).
 
 
    ===3.9.1. Typ===
@@ -225,7 +225,7 @@ Okno umístěné vlevo uprostřed *Vytvořit podstrukturu* umožňuje rozdělova
 
    ===3.9.2. Popis částí monografie/periodika===
 
-   Po zvolení správné úrovně, kterou si přejeme vytvořit (například periodical volume) se nám zobrazí pole, která je třeba vyplnit pro danou úroveň. Pro ročník periodika tak doplníme například číslo ročníku a rok vydání. Můžeme zde také přidat poznámku ohledně fyzického stavu (např. zde zapíšeme, že v ročníku chybí některá čísla). Pole, které je potřeba doplnit se liší podle zvolené úrovně.
+   Při volbě postupného vytváření se po zvolení správné úrovně, kterou si přejeme vytvořit (například periodical volume pro ročník periodika) se nám zobrazí pole, která je třeba vyplnit pro danou úroveň. Pro ročník periodika tak doplníme například číslo ročníku a rok vydání. Můžeme zde také přidat poznámku ohledně fyzického stavu (např. zde zapíšeme, že v ročníku chybí některá čísla). Pole, které je potřeba doplnit se liší podle zvolené úrovně a vychází ze specifikace metadat NK.
 
  * Pozn: Data vždy zapisujeme do polí bez mezer (např 1.1.2011, 2.4.2012-2.5.2012...) - formát DD.MM.RRRR, MM.RRRR, RRRR apod.
 
@@ -236,12 +236,19 @@ Okno umístěné vlevo uprostřed *Vytvořit podstrukturu* umožňuje rozdělova
 
  * Pozn: Pokud pro pro přesun stránek používáme drag and drope, docílíme ponechání stránek v pravé části editoru tak, že držíme klávesu ctrl.
 
+   ===3.9.4. Rychlé vytváření podstruktury===
 
-   ===3.9.4. Vytvořit===
-Pomocí tohoto tlačítka přesuneme vybrané stránky do strukturálního stromu v pravé spodní části, kde je možné s nimi dále pracovat.
+Výběrem varianty *najednou* nám editor umožní vytvořit strukturu pomocí označení titulních stran. Označíme všechny titulní strany za pomoci kliku levým tlačítkem myši při současném držení kombinace kláves Ctrl + Alt. Vybrané titulní strany se nám podbarví červeně a dále použijeme tlačítko *vytvořit* (viz kapitola 3.9.5.). 
+
+||[http://meta-editor.googlecode.com/svn/wiki/img/tvorbapodstruktury.jpg http://meta-editor.googlecode.com/svn/wiki/img/tvorbapodstruktury.jpg]||
+
+*Pozn:* Při volbě této možnosti tvorby strukturálního stromu je nutné po vytvoření jednotlivých čísel a ročníků využít rychlé editace v okně podstruktur (čísla výtisků, data a poznámky vyplníme ručně tak, že klikneme pravým tlačítkem na zvolenou úroveň a výběrem *Rychlá editace* se nám zobrazí formulář pro editaci údajů dané úrovně)
+
+   ===3.9.5. Vytvořit===
+Pomocí tohoto tlačítka přesuneme vybrané stránky do strukturálního stromu v pravé spodní části, kde je možné s nimi dále pracovat a při rychlém vytváření nám toto tlačítko vytvoří celý strukturální strom.
 
 
-   ===3.9.5. Přesun stránek mezi podstrukturou a oknem s náhledy===
+   ===3.9.6. Přesun stránek mezi podstrukturou a oknem s náhledy===
 
    Stránky lze kdykoli pomocí drug and drop přesouvat mezi oknem s náhledy a strukturálním stromem v pravé dolní části editoru.
 

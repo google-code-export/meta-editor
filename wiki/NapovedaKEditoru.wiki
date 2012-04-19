@@ -267,7 +267,7 @@ Vytvořené podstruktury tvoří strom v okně vlevo dole. Se stránkami a čás
 
    ===3.10.1. Editace===
 
-   Po kliknutí pravým tlačítkem na libovolnou položku stromu se nám zobrazí nabídka. Nejvýše umístěné tlačítko *Editace* umožňuje rychlou úpravu názvu podstruktury nebo úpravu názvů jednotlivých stránek a také typů stránek.
+   Po kliknutí pravým tlačítkem na libovolnou položku stromu se nám zobrazí nabídka. Nejvýše umístěné tlačítko *Editace* umožňuje rychlou úpravu názvu podstruktury  (úpravu čísel vydání, názvů jednotlivých čísel, čísla ročníků apod.)nebo úpravu názvů jednotlivých stránek a také typů stránek.
 
 ||[http://meta-editor.googlecode.com/svn/wiki/img/strom2.jpg http://meta-editor.googlecode.com/svn/wiki/img/strom2.jpg]||[http://meta-editor.googlecode.com/svn/wiki/img/RychlaEditace.jpg http://meta-editor.googlecode.com/svn/wiki/img/RychlaEditace.jpg]||
 

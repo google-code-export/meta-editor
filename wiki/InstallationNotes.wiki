@@ -179,14 +179,15 @@ add _tik.cesnet.cz_ and _tak.cesnet.cz_ and restart the service
 sudo /etc/init.d/openntpd restart
 }}}
 
-== Mounting the Discs: ==
+== Mounting the Drives: ==
 
 In _/etc/fstab_ define the disks which are going to be mounted. In order to mount disks via sshfs protocol add the following to _/etc/rc.local_ and _/home/meditor/.bashrc_
 {{{
-sudo -u meditor mount /home/meditor/input/monograph/
-sudo -u meditor mount /home/meditor/input/periodical/
-sudo -u meditor mount /home/meditor/imageserver/known/
-sudo -u meditor mount /home/meditor/imageserver/unknown/
+sudo -u meditor sshfs -o ssh_command="ssh -i /home/meditor/.ssh/id_rsa",nonempty imageserver@imageserver:/var/www/imageserver.mzk.cz/mzk03 /home/meditor/imageserver/known/mzk03
+sudo -u meditor sshfs -o ssh_command="ssh -i /home/meditor/.ssh/id_rsa",nonempty imageserver@imageserver:/var/www/imageserver.mzk.cz/mzk01 /home/meditor/imageserver/known/mzk01
+sudo -u meditor sshfs -o ssh_command="ssh -i /home/meditor/.ssh/id_rsa",nonempty imageserver@imageserver:/var/www/imageserver.mzk.cz/meditor /home/meditor/imageserver/unknown
+sudo -u meditor sshfs -o ssh_command="ssh -i /home/meditor/.ssh/id_rsa",nonempty meditor@hades:/data/meditor/editor/import/serial /home/meditor/input/periodical
+sudo -u meditor sshfs -o ssh_command="ssh -i /home/meditor/.ssh/id_rsa",nonempty meditor@hades:/data/meditor/editor/import/monograph /home/meditor/input/monograph
 }}}
 
 == Firewall: ==

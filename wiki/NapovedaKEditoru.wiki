@@ -331,34 +331,36 @@ Po provedení některého z těchto kroků se nám zobrazí daný digitální ob
 
 Nalezneme v horní liště úplně vpravo (vedle symbolu křížku, kterým se zavře aktuální okno upravovaného digitálního objektu)
 
+||[http://meta-editor.googlecode.com/svn/wiki/img/menuen.jpg http://meta-editor.googlecode.com/svn/wiki/img/menuem.jpg]||
+
 *V menu nalezneme tyto položky:*
 
-===4.2.1. Zamknout objekt=== 
+   ===4.2.1. Zamknout objekt=== 
 Toto tlačítko slouží k tomu, že objekt, který máme rozpracovaný a nemáme čas v jeho editaci dále pokračovat, tímto znepřístupníme úpravám jiných uživatelů v rámci editačního módu.
 
-===4.2.2. Odemknout objekt===
+   ===4.2.2. Odemknout objekt===
 
 Tato volba slouží k odemknutí uzamčeného objektu.
 
-===4.2.3. Uložit práci===
+   ===4.2.3. Uložit práci===
 zatím nefunkční
 
-===4.2.4. Obnovit===
+   ===4.2.4. Obnovit===
 Obnoví do původního nastavení neuložené změny.
 
-===4.2.5. Stáhnout FOXML===
+   ===4.2.5. Stáhnout FOXML===
 Pokud si z nějakého důvodu potřebujeme stáhnout kód FOXML pro daný objekt, umožní nám to právě toto tlačítko.
 
-===4.2.6. Odstranit objekt===
+   ===4.2.6. Odstranit objekt===
 Odstraní již vytvořený dig. objekt.
 
-===4.2.7. Publikovat=== 
+   ===4.2.7. Publikovat=== 
 Provede změny, které zadáme v editačním módu a zavede je do Krameria.
 
-===4.2.8. Perzistentní odkaz===
+   ===4.2.8. Perzistentní odkaz===
 Zobrazí nám perzistentní odkazy (do Krameria a do editoru).
 
-===4.2.9. Změnit právo===
+   ===4.2.9. Změnit právo===
 Pomocí tohoto tlačítka změníme přístupová práva k danému dokumentu pro Krameria. Vybereme jednu z voleb: _public_ nebo _private_ a zvolíme, zda si přejeme práva nastavit i pro všechny potomky daného objektu.
 <br/>
 

@@ -346,19 +346,19 @@ zatím nefunkční
 ===4.2.4. Obnovit===
 Obnoví do původního nastavení neuložené změny.
 
-===Stáhnout FOXML===
+===4.2.5. Stáhnout FOXML===
 Pokud si z nějakého důvodu potřebujeme stáhnout kód FOXML pro daný objekt, umožní nám to právě toto tlačítko.
 
-===Odstranit objekt===
+===4.2.6. Odstranit objekt===
 Odstraní již vytvořený dig. objekt.
 
-===Publikovat=== 
+===4.2.7. Publikovat=== 
 Provede změny, které zadáme v editačním módu a zavede je do Krameria.
 
-===Perzistentní odkaz===
+===4.2.8. Perzistentní odkaz===
 Zobrazí nám perzistentní odkazy (do Krameria a do editoru).
 
-===Změnit právo===
+===4.2.9. Změnit právo===
 Pomocí tohoto tlačítka změníme přístupová práva k danému dokumentu pro Krameria. Vybereme jednu z voleb: _public_ nebo _private_ a zvolíme, zda si přejeme práva nastavit i pro všechny potomky daného objektu.
 <br/>
 

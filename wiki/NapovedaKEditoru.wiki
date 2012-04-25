@@ -332,14 +332,34 @@ Po provedení některého z těchto kroků se nám zobrazí daný digitální ob
 Nalezneme v horní liště úplně vpravo (vedle symbolu křížku, kterým se zavře aktuální okno upravovaného digitálního objektu)
 
 *V menu nalezneme tyto položky:*
-   * _Zamknout objekt_ - slouží k tomu, že objekt, který máme rozpracovaný a nemáme čas v jeho editaci dále pokračovat, tímto znepřístupníme úpravám jiných uživatelů.
-   * Odemknout objekt - slouží k odemknutí zamčeného objektu	
-   * _Uložit práci_ - zatím nefunkční
-   * _Obnovit_ - obnoví do původního nastavení neuložené změny.
-   * _Stáhnout FOXML_ - pokud si z nějakého důvodu potřebujeme stáhnout   kód FOXML.
-   * _Odstranit objekt_ - odstraní již vytvořený dig. objekt.
-   * _Publikovat_ - provede změny, které zadáme v editačním módu a zavede je do Krameria?
-   * _Perzistentní odkaz_ - vytvoří perzistentní odkaz
+
+===4.2.1. Zamknout objekt=== 
+Toto tlačítko slouží k tomu, že objekt, který máme rozpracovaný a nemáme čas v jeho editaci dále pokračovat, tímto znepřístupníme úpravám jiných uživatelů v rámci editačního módu.
+
+===4.2.2. Odemknout objekt===
+
+Tato volba slouží k odemknutí uzamčeného objektu.
+
+===4.2.3. Uložit práci===
+zatím nefunkční
+
+===4.2.4. Obnovit===
+Obnoví do původního nastavení neuložené změny.
+
+===Stáhnout FOXML===
+Pokud si z nějakého důvodu potřebujeme stáhnout kód FOXML pro daný objekt, umožní nám to právě toto tlačítko.
+
+===Odstranit objekt===
+Odstraní již vytvořený dig. objekt.
+
+===Publikovat=== 
+Provede změny, které zadáme v editačním módu a zavede je do Krameria.
+
+===Perzistentní odkaz===
+Zobrazí nám perzistentní odkazy (do Krameria a do editoru).
+
+===Změnit právo===
+Pomocí tohoto tlačítka změníme přístupová práva k danému dokumentu pro Krameria. Vybereme jednu z voleb: _public_ nebo _private_ a zvolíme, zda si přejeme práva nastavit i pro všechny potomky daného objektu.
 <br/>
 
 ==4.3. Záložky==

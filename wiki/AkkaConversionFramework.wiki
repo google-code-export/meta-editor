@@ -1,0 +1,37 @@
+#summary information concerning the installation and deployment of conversion nodes and akka conversion framework itself
+
+<wiki:toc max_depth="2" />
+
+
+----
+
+
+= General Info =
+This wiki page should provide the basic information about AKKA conversion framework and the way to install the agent application on the nodes.
+
+== Why ==
+Metadata Editor takes the images from filesystem (mounted remotely) and converts them into JPEG2000 format. The conversion itself is quite time-consuming. For one average image it takes about 3 second to convert. 
+
+== How ==
+The editor runs the bash script for each image and this script runs subsequently convert (from imagemagick package), tiffcp (from libtiff-tools package) and compress (kakadu). This combination guarantees that the format of the input images can be various as long as the convert utility can take it to tiff format.
+
+The editor provides the way to paralelize the conversion tasks across many worker nodes. Default behavior is the serial execution of conversion tasks described above. For paralel execution the following steps should be done:
+
+ 1) add following to configuration.properties of the deployes Metadata Editor:
+{{{
+# AKKA (for image conversion)
+akkaOn=Yes
+akkaConvertWorkers=192.168.100.1:2552, 192.168.100.2:2552, 192.168.100.3:2552, 192.168.100.4:2552
+}}}
+where `akkaConvertWorkers` is the comma separated list of IP addresses of worker nodes and the port, where akka microkernel is running (2552 is default)
+
+ 2) install the, akka framework, deploy the agent/worker application into akka microkernel and ensure the remote drives are mounted
+
+== Installation of worker node ==
+
+add the following packages:
+libtiff-tools imagemagick sshfs
+
+download and install java and akka microkernel v 2.0
+
+..

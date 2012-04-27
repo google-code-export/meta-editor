@@ -9,4 +9,5 @@
     * [CodingStandards Coding Standards]
     * [Repository Repository]
     * [InstallationNotes Installation Notes]
+    * [AkkaConversionFramework Akka Conversion Framework]
   * [NapovedaKEditoru User Guide]

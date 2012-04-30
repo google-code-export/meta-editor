@@ -237,6 +237,11 @@ create script _/etc/init.d/tomcat_ and copy the content from the same location i
 update-rc.d tomcat defaults
 }}}
 
+or on debian 6 and higher:
+{{{
+insserv tomcat
+}}}
+
 == Actualizations: ==
 
 As the root launch a command 

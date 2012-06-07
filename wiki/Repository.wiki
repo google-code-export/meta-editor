@@ -2,7 +2,7 @@
 [http://technology.edmunds.com/github-logo.png]
 
 The source code of the project is hosted on `GitHub`
-https://github.com/Jiri-Kremser/MEditor
+https://github.com/moravianlibrary/MEditor
 
 To clone the repository just type in 
 {{{

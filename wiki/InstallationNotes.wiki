@@ -53,8 +53,8 @@ host	all 	meditor 	195.113.155.0/24   	password
 == Install Tomcat: ==
 
 {{{
-wget http://websiterra.com/friends/apache/tomcat/tomcat-7/v7.0.25/bin/apache-tomcat-7.0.25.zip #(or newer)
-unzip apache-tomcat-7.0.25.zip
+wget http://mirror.hosting90.cz/apache/tomcat/tomcat-7/v7.0.27/bin/apache-tomcat-7.0.27.zip #(or newer)
+unzip apache-tomcat-7.0.27.zip
 }}}
    * Into
 {{{

@@ -1,7 +1,7 @@
 #summary Technical documentation of the whole architecture
 
 = Introduction =
-This wiki page provides information about building the project from the source code, because it is an open-source and provided you accept the licence agreement you are allowed to do that. It also gives the information about code separation into particular maven modules, information about used technologies, security aspects, etc.
+This wiki page provides information about building the project from the source code, because it is an open-source; and provided you accept the licence agreement, you are allowed to do that. It also gives the information about code separation into particular maven modules, information about used technologies, security aspects, etc.
 
 == Building form Source Code ==
 

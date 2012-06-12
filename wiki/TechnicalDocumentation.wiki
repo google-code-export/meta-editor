@@ -75,7 +75,7 @@ I was trying to use similar technologies as related project [code.google.com/p/k
 
 Unfortunately, sometimes both GWTP and SmartGWT frameworks solves the same problems differently and developer has to choose between the two. Firstly, I was using the concept of datasources from SmartGWT, then I've realized the GWTP implementation of command pattern (GoF design pattern) is more robust and flexible in the same time, so the new code uses this approach for fetching the data from server/db or sending them to the server/db.
 
-In fact, after refactoring, the SmartGWT datasources ([https://github.com/moravianlibrary/MEditor/tree/master/editor-common/editor-common-client/src/main/java/cz/mzk/editor/client/gwtrpcds link]) are used only for InputTree component IIRC.
+In fact, after refactoring, the SmartGWT datasources ([https://github.com/moravianlibrary/MEditor/tree/master/editor-common/editor-common-client/src/main/java/cz/mzk/editor/client/gwtrpcds link]) are used only for `InputTree` component IIRC.
 
 GWTP uses the code generators for generating the Action and Result tuples and for generating the Event and its Handler as well. Actually, the handlers substitute the old fashioned service impl classes from pure GWT.
 

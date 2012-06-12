@@ -22,9 +22,49 @@ If you have the war file ready for the deployment, you can continue with Install
 == Code Separation ==
 As mentioned above, the Editor uses the Maven build system and the related classes are situated int the same Maven module. In general there are different approaches how to separate the project into particular projects. One can take the layer approach, one can take the feature based approach, we are probably somewhere between the two. Some modules are feature based (like editor-{creation|editation|user}) some are more layer based like editor-dao.
 
+The structure of mvn modules:
+{{{
+.
+|-- editor-common
+    |-- editor-common-client
+    `-- editor-common-server
+|-- editor-converter
+|-- editor-creation
+|-- editor-dao
+|-- editor-editation
+|-- editor-request
+|-- editor-user
+`-- editor-webapp
+}}}
+
 Here is a short description to the modules:
 
+*commons*
+Common-client contains the shared functionality across other client modules. The same applies for common-server. Here the client/server corresponds with the notion of client-side and server-side from GWT (client-side Java classes are compiled into JavaScript)
+
+*converter*
+Contains the code written in Scala language for parallel execution of convert tasks using the Akka framework. More info in AkkaConversionFramework.
+
+*creation*
+This module contains client side and server side for creation of new digital object and creating the FOXML out of them.
+
+*dao*
+Data access layer, pure JDBC is used (no ORM), it should be relatively easy to change the implementation of the DAO interfaces, say, with some NoSQL DB if needed. However, the editor is not "DB intense" application.
+
+*editation*
+Similarly to cration module, this one takes care of editing the existing digital objects in fedora.
+
+*request*
+Since application is using OpenID for authentication and ssl for secure access, this module provides the way for submitting the request for access permission to application using unsecured GWT endpoint -> contains its own GWT descriptor.
+
+*user*
+Provides the administration GUI for adding/modifying new users, putting users into roles, dealing with requests for adding (see previous module), etc.
+
+*webapp*
+"Glue" module, contains deployment descriptor (web.xml), images and other web resources and depends  on all other modules (directly or transitively). It's pom.xml is also responsible for assembling the war file.
 
 == Security ==
 
 == Frameworks ==
+
+== Database ==

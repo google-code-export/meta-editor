@@ -1,4 +1,4 @@
-#the description of the editor's configuration
+#summary the description of the editor's configuration
 
 <wiki:toc max_depth="2" />
 

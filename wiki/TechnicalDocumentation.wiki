@@ -69,8 +69,18 @@ All the communication is tunneled via SSL. If the user is not authenticated by t
 There is an authorization server filter with some white-listed resources redirecting the user if not logged in.
 
 == Frameworks ==
+I was trying to use similar technologies as related project [code.google.com/p/kramerius/ Kramerius 4] i.e. GWT, Google Guice, Apache Commons stuff, etc. For visual component library I decided to choose the SmartGWT framework and for "gwt-best-practices-framework" I've picked the gwtp. 
+
+===UI===
+
+Unfortunately, sometimes both GWTP and SmartGWT frameworks solves the same problems differently and developer has to choose between the two. Firstly, I was using the concept of datasources from SmartGWT, then I've realized the GWTP implementation of command pattern (GoF design pattern) is more robust and flexible in the same time, so the new code uses this approach for fetching the data from server/db or sending them to the server/db.
+
+In fact, after refactoring, the SmartGWT datasources ([https://github.com/moravianlibrary/MEditor/tree/master/editor-common/editor-common-client/src/main/java/cz/mzk/editor/client/gwtrpcds link]) are used only for InputTree component IIRC.
+
+GWTP uses the code generators for generating the Action and Result tuples and for generating the Event and its Handler as well. Actually, the handlers substitute the old fashioned service impl classes from pure GWT.
+
 
 == Database ==
-The system incorporates an easy way for coping with database versioning. There are two related files in [https://github.com/moravianlibrary/MEditor/tree/master/editor-webapp/src/main/resources here]. Schema and schema version. Whenever the schema version is increased, the content of the file schema is applied on the Postgres database automatically by the system. 
+The system incorporates an easy way for coping with database versioning. There are two related files located in [https://github.com/moravianlibrary/MEditor/tree/master/editor-webapp/src/main/resources here]. `schema.sql` and `schemaVersion.txt`. Whenever the schema version (content of the `schemaVersion.txt` file) is increased, the content of the file `schema.sql` is applied on the Postgres database automatically by the system. In other words, it drops the existing schema and applies the new one form the file.
 
-The schema is relatively small, there are only few tables (up to 20). The old version of ERD is present in my [http://code.google.com/p/meta-editor/downloads/detail?name=Thesis.pdf&can=2&q= thesis]
+The schema is relatively small, there are only few tables (up to 20). The old version of ERD is present in my [http://code.google.com/p/meta-editor/downloads/detail?name=Thesis.pdf&can=2&q= thesis].

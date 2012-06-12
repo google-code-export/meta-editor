@@ -6,6 +6,7 @@
     * [Team]
   * Developer Information
     * [TechnicalDocumentation Technical Documentation]
+    * [EditorConfiguration Configuration]
     * [CodingStandards Coding Standards]
     * [Repository Repository]
     * [InstallationNotes Installation Notes]

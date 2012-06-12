@@ -27,14 +27,14 @@ The structure of mvn modules:
 .
 |-- editor-common
     |-- editor-common-client
-    `-- editor-common-server
+    \-- editor-common-server
 |-- editor-converter
 |-- editor-creation
 |-- editor-dao
 |-- editor-editation
 |-- editor-request
 |-- editor-user
-`-- editor-webapp
+\-- editor-webapp
 }}}
 
 Here is a short description to the modules:
@@ -64,7 +64,13 @@ Provides the administration GUI for adding/modifying new users, putting users in
 "Glue" module, contains deployment descriptor (web.xml), images and other web resources and depends  on all other modules (directly or transitively). It's pom.xml is also responsible for assembling the war file.
 
 == Security ==
+All the communication is tunneled via SSL. If the user is not authenticated by third party OpenID service, he is redirected to login page.
+
+There is an authorization server filter with some white-listed resources redirecting the user if not logged in.
 
 == Frameworks ==
 
 == Database ==
+The system incorporates an easy way for coping with database versioning. There are two related files in [https://github.com/moravianlibrary/MEditor/tree/master/editor-webapp/src/main/resources]. Schema and schema version. Whenever the schema version is increased, the content of the file schema is applied on the Postgres database automatically by the system. 
+
+The schema is relatively small, there are only few tables (up to 20). The old version of ERD is present in my [thesis http://code.google.com/p/meta-editor/downloads/detail?name=Thesis.pdf&can=2&q=]

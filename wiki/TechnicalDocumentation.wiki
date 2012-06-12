@@ -79,6 +79,8 @@ In fact, after refactoring, the SmartGWT datasources ([https://github.com/moravi
 
 GWTP uses the code generators for generating the Action and Result tuples and for generating the Event and its Handler as well. Actually, the handlers substitute the old fashioned service impl classes from pure GWT.
 
+GWTP provides also the MVP framework.
+
 === Domain Specific ===
 For working with Z39.50 there is a library called jzkit-z3950. For calling the REST API of Fedora Commons repository, I've used the plain old HttpURLConnection and utility class called RESTHelper (based on the class from Kramerius project). For dependency injection I've used the Google Guice.
 

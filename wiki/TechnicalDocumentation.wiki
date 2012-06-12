@@ -79,8 +79,21 @@ In fact, after refactoring, the SmartGWT datasources ([https://github.com/moravi
 
 GWTP uses the code generators for generating the Action and Result tuples and for generating the Event and its Handler as well. Actually, the handlers substitute the old fashioned service impl classes from pure GWT.
 
+=== Domain Specific ===
+For working with Z39.50 there is a library called jzkit-z3950. For calling the REST API of Fedora Commons repository, I've used the plain old HttpURLConnection and utility class called RESTHelper (based on the class from Kramerius project). For dependency injection I've used the Google Guice.
+
+For mapping between `DublinCore` and Mods on the one hand and the Java objects on the other hand the JAXB was used. Unfortunately, the GWT doesn't support the JAXB annotation on the client side, therefore, the client version of the generated objects had to be introduced. This part of projects is a good candidate for a big refactoring.
 
 == Database ==
 The system incorporates an easy way for coping with database versioning. There are two related files located in [https://github.com/moravianlibrary/MEditor/tree/master/editor-webapp/src/main/resources here]. `schema.sql` and `schemaVersion.txt`. Whenever the schema version (content of the `schemaVersion.txt` file) is increased, the content of the file `schema.sql` is applied on the Postgres database automatically by the system. In other words, it drops the existing schema and applies the new one form the file.
 
 The schema is relatively small, there are only few tables (up to 20). The old version of ERD is present in my [http://code.google.com/p/meta-editor/downloads/detail?name=Thesis.pdf&can=2&q= thesis].
+
+== Tests ==
+Unfortunately, there are no tests now. If you want to contribute, go ahead and send us the pull request on `GitHub`.
+
+== Djatoka ==
+Thumbnails of the scanned images are generated on-the-fly by the Djatoka image web server, which is basically the Java Servlet wrapper of the tool Kakadu. When using the editation mode (not the creation one), the thumbnails are obtained from the Fedora and the imageserver is not being used. Djatoka comes with the Editor's war file as a separated application in its own war file. This war file has to be deployed into same servlet container. (It can be changed in the editor configuration).
+
+== i18n ==
+Metadata Editor supports Czech language and English language. If you want to contribute and make the localization for your country and your mother tongue, go ahead and send us the pull request on `GitHub`.

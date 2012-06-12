@@ -8,7 +8,7 @@
 
 ||[http://meta-editor.googlecode.com/svn/wiki/img/Metad.jpg http://meta-editor.googlecode.com/svn/wiki/img/Metad_sm.jpg]||
 
- * Editation of pages (Editation mode)
+ * Creation of new objects (Creation mode)
 
 ||[http://meta-editor.googlecode.com/svn/wiki/img/Stranky.jpg http://meta-editor.googlecode.com/svn/wiki/img/Stranky_sm.jpg]||
 

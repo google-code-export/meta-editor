@@ -71,6 +71,6 @@ There is an authorization server filter with some white-listed resources redirec
 == Frameworks ==
 
 == Database ==
-The system incorporates an easy way for coping with database versioning. There are two related files in [https://github.com/moravianlibrary/MEditor/tree/master/editor-webapp/src/main/resources]. Schema and schema version. Whenever the schema version is increased, the content of the file schema is applied on the Postgres database automatically by the system. 
+The system incorporates an easy way for coping with database versioning. There are two related files in [https://github.com/moravianlibrary/MEditor/tree/master/editor-webapp/src/main/resources here]. Schema and schema version. Whenever the schema version is increased, the content of the file schema is applied on the Postgres database automatically by the system. 
 
-The schema is relatively small, there are only few tables (up to 20). The old version of ERD is present in my [thesis http://code.google.com/p/meta-editor/downloads/detail?name=Thesis.pdf&can=2&q=]
+The schema is relatively small, there are only few tables (up to 20). The old version of ERD is present in my [http://code.google.com/p/meta-editor/downloads/detail?name=Thesis.pdf&can=2&q= thesis]

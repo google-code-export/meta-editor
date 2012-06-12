@@ -43,15 +43,15 @@ meditor@editor-worker1:~$ tree -L 2
 |-- akkaLog -> /home/meditor/install/akka-2.0/log/conversion.log
 |-- input
 |   |-- monograph
-|   `-- periodical
+|   \-- periodical
 |-- install
 |   |-- akka-2.0
 |   |-- djatoka
-|   `-- jdk1.6.0_31
+|   \-- jdk1.6.0_31
 |-- output
 |   |-- editor-devel.mzk.cz
-|   `-- editor.mzk.cz
-`-- runConversionNode.sh
+|   \-- editor.mzk.cz
+\-- runConversionNode.sh
 }}}
 Note that sub-directories in output directory should correspond with the hostname of the master akka node (the node distributing the work and hosting the metadata editor webapp). You can use symlinks.
 

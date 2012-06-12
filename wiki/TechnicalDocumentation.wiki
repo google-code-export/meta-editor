@@ -2,7 +2,18 @@
 
 = Introduction =
 
-101101001101
+From architectural perspective, the editor is divided into several Maven modules forming the modular system. The whole application can be build from source code by running one of the following command 
+{{{
+mvn install # default build (hostname = editor.mzk.cz)
+mvn install -Dfilter.hostname=hostnameXY #for specific deployment
+mvn install -P dev # development profile will shorten the compilation time by omitting gwt permutation for specific locales and browsers
+}}}
+
+Unfortunately, a few libraries are not present at any public Maven repository, thus user have to install them manually. They are located at https://github.com/moravianlibrary/MEditor/tree/master/resources/lib and in the main (top-lvl) pom.xml, there should be some description how to do this.
+
+After the project is successfully built, the war is located at the target directory and can be deployed to any servlet container (neither EJB nor Spring was used and all the libraries except jdbc driver are in the web archive).
+
+If you have the war file ready for the deployment, you can continue with InstallationNotes
 
 
 = Details =

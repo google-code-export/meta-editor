@@ -23,7 +23,9 @@ Kliknutím na logo MZK v levé horní části se můžeme v jakékoli fázi prá
 
    ===2.2.1. Vstupní fronta===
 
-   V pravé horní části úvodní stránky editoru se nalézá *Vstupní   fronta*, kde nalezneme nascanované dokumenty čekající na finální úpravu metadat a jejich následné uložení do Fedory.
+   V pravé horní části úvodní stránky editoru se nalézá *Vstupní   fronta*, kde nalezneme nascanované dokumenty čekající na finální úpravu metadat a jejich následné uložení do Fedory a do Krameria4. 
+
+  Vstupní fronta je rozdělena do kategorií dle typu dokumentu (Např. monografie, periodika...).
 
 
    ===2.2.2. Odkazováno z===
@@ -69,7 +71,7 @@ V horní části úvodní stránky nalezneme *nápovědu* a okno pro *správu u�
 
 =3. Editor - vytvářecí mód=
 
-Vytvářecí mód editoru umožňuje vytvářet nové digitální objekty, které jsou následně nahrány do Fedory. V tomto módu je možné vytváření logické struktury dokumentu, zadávání typů stránek, jejich přečíslovávání a editace metadat pro MODS a DC.
+Vytvářecí mód editoru umožňuje vytvářet nové digitální objekty, které jsou následně nahrány do Fedory a Krameria. V tomto módu je možné vytváření logické struktury dokumentu, zadávání typů stránek, jejich přečíslovávání a editace metadat pro MODS a DC.
 
 
 

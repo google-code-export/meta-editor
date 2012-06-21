@@ -304,6 +304,25 @@ Vytvořené podstruktury tvoří strom v okně vlevo dole. Se stránkami a čás
    Můžeme také zvolit, zda se nám v okně načítací nabídky zobrazí mé vlastní savy pouze pro právě otevřený objekt nebo pro všechny. Toto volbu provedeme ve spodní části (tlačítka: *Jen pro tento vytvářený objekt* a *Všechny mé uložené struktury*).
 
 
+   ====3.10.5.1. Postup při začleňování doscanovaných a přescanovaných stran====
+
+   V některých případech se může stát, že zjistíme, že v knize  chybí nějaké nascanované strany, případně se scan provedl špatně a je třeba tyto obrázky opravit. Opravené obrázky scaneristé nahrají do mateřského adresáře a poté je možné je otevřít v editoru.
+
+   Editor umožňuje pohodlné začlenění těchto přidaných stránek do již rozpracovaných objektů. Přejeme-li si řešit tento problém, postupujeme podle následujících instrukcí:
+
+ * ve chvíli, kdy máme již označené některé typy stran, případně provedené číslování u části dokumentu zjistíme, že nějaká chybí a přejeme si rozdělanou práci uchovat pro další práci s objektem, *přesuneme rozpracované scany do srukturálního stromu* a použijeme ikonku pro uložení.
+
+ * pokud jsme si jistí, že byly chybějící strany scaneristy přidány do složky daného objektu, otevřeme znovu daný objekt (ze vstupní fronty) a pokračujeme obdobně jako bychom jej chtěli znovu začít editovat.
+
+ * po dokonvertování zbývajících obrázků by se nám v editoru měly zobrazit náhledy všech stran včetně těch doscanovaných. Je-li tomu tak, můžeme si v této chvíli načíst rozdělanou práci.
+
+ * Klikneme na ikonku "načíst", zvolíme požadovanou předem uloženou pozici a ve spodní části načítacího okna zaškrtneme volbu *"Načíst pouze levou stranu"*. Tím se nám do strukturálního stromu načte dříve uložená práce včetně zadaných typů stran a číslování.
+
+ * V tuto chvíli je nejlepší odmazat z pravé části všechny strany, kromě těch nově doscanovaných a pomocí drug and drope přesunout všechny strany ze strukturálního stromu do pravé části (záložka "Oskenované").
+
+ * Pomocí známých postupů přesuneme nové strany na chybějící místa v objektu a dále pokračujeme v číslování, určování typů stran apod. Dále postupujeme, jako v běžných případech.
+
+
    ===3.10.6. Zpět/vpřed v okně podstruktur===
 
    Okno *Podstruktury* má svá vlastní tlačítka, která umožňují vrátit se ve vytváření stromu o krok vpřed nebo vzad. Najdeme je v horní části tohoto okna vedle tlačítka pro ukládání.
@@ -359,10 +378,10 @@ Pokud si z nějakého důvodu potřebujeme stáhnout kód FOXML pro daný objekt
 Odstraní již vytvořený dig. objekt.
 
    ===4.2.7. Publikovat=== 
-Provede změny, které zadáme v editačním módu a zavede je do Krameria.
+Provede změny, které zadáme v editačním módu a zavede je do Fedory a Krameria.
 
    ===4.2.8. Perzistentní odkaz===
-Zobrazí nám perzistentní odkazy (do Krameria a do editoru).
+Zobrazí nám perzistentní odkazy (do Krameria a do editoru). Odkazy se můžeme přímo prokliknout a odkaz v Krameriu.
 
    ===4.2.9. Změnit právo===
 Pomocí tohoto tlačítka změníme přístupová práva k danému dokumentu pro Krameria. Vybereme jednu z voleb: _public_ nebo _private_ a zvolíme, zda si přejeme práva nastavit i pro všechny potomky daného objektu.

@@ -242,11 +242,13 @@ Okno umístěné vlevo uprostřed *Vytvořit podstrukturu* umožňuje rozdělova
 
    ===3.9.4. Rychlé vytváření podstruktury===
 
-Výběrem varianty *najednou* nám editor umožní vytvořit strukturu pomocí označení titulních stran. Označíme všechny titulní strany za pomoci kliku levým tlačítkem myši při současném držení kombinace kláves Ctrl + Alt. Vybrané titulní strany se nám podbarví červeně a dále použijeme tlačítko *vytvořit* (viz kapitola 3.9.5.). 
+Výběrem varianty *najednou* nám editor umožní vytvořit strukturu pomocí označení titulních stran. Označíme všechny titulní strany za pomoci kliku levým tlačítkem myši při současném držení kombinace kláves Ctrl + Alt. Vybrané titulní strany se nám podbarví červeně. Do kolonek níže můžeme vyplnit od jakého čísla si přejeme aby začínalo číslování a tadum, které se předvyplní u všech podstruktus. Nakonec použijeme tlačítko *vytvořit* (viz kapitola 3.9.5.), čímž se nám v levé části vytvoří stukturální strom. 
+
+ * Pozn: Označené titulní strany se automaticky označí typem strany "titlePage".
 
 ||[http://meta-editor.googlecode.com/svn/wiki/img/tvorbapodstuktury.jpg http://meta-editor.googlecode.com/svn/wiki/img/tvorbapodstuktury.jpg]||[http://meta-editor.googlecode.com/svn/wiki/img/rychledeleni.jpg http://meta-editor.googlecode.com/svn/wiki/img/rychledeleni.jpg]||
 
-*Pozn:* Při volbě této možnosti tvorby strukturálního stromu je nutné po vytvoření jednotlivých čísel a ročníků využít rychlé editace v okně podstruktur (čísla výtisků, data a poznámky vyplníme ručně tak, že klikneme pravým tlačítkem na zvolenou úroveň a výběrem *Rychlá editace* se nám zobrazí formulář pro editaci údajů dané úrovně)
+Při volbě této možnosti tvorby strukturálního stromu je nutné po vytvoření jednotlivých čísel a ročníků využít rychlé editace v okně podstruktur (čísla výtisků, data a poznámky vyplníme ručně tak, že klikneme pravým tlačítkem na zvolenou úroveň a výběrem *Rychlá editace* se nám zobrazí formulář pro editaci údajů dané úrovně).
 
    ===3.9.5. Vytvořit===
 Pomocí tohoto tlačítka přesuneme vybrané stránky do strukturálního stromu v pravé spodní části, kde je možné s nimi dále pracovat a při rychlém vytváření nám toto tlačítko vytvoří celý strukturální strom.

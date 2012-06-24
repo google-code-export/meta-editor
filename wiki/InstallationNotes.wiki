@@ -34,6 +34,7 @@ and run following commands:
 {{{
 CREATE ROLE meditor WITH PASSWORD 'samePassAsUnixPassForMeditor' LOGIN;
 CREATE SCHEMA AUTHORIZATION meditor;
+ALTER SCHEMA meditor OWNER TO meditor;
 CREATE DATABASE meditor WITH OWNER meditor;
 }}}
     * add (or ensure about their presence) the following lines to the configuration file of the postgres (_/etc/postgresql/${version}/main/pg_hba.conf_), for joining via http for user and database called "meditor"

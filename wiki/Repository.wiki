@@ -15,7 +15,7 @@ mvn clean install
 }}}
 
 <br/><br/>
-=Old abandoned repository=
+=Old Abandoned Repository=
 [http://code.google.com/images/code_logo.gif]
 
 Till revision r601 the source code were hosted here on Google code, since then we've moved to `GitHub`.

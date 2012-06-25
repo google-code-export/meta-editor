@@ -24,52 +24,50 @@
 = Communities =
 
 == Fedora ==
-<wiki:gadget url="http://www.ohloh.net/p/fcrepo/widgets/project_basic_stats.xml" height="230" width="360" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/fcrepo/widgets/project_basic_stats.xml" height="240" width="370" border="0" />
 
-<wiki:gadget url="http://www.ohloh.net/p/fcrepo/widgets/project_factoids.xml" width="350" height="150" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/fcrepo/widgets/project_factoids.xml" width="360" height="150" border="0" />
 
 == GWT ==
-<wiki:gadget url="http://www.ohloh.net/p/gwt/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/gwt/widgets/project_basic_stats.xml" height="220" width="370" border="0" />
 
 <wiki:gadget url="http://www.ohloh.net/p/gwt/widgets/project_factoids.xml" width="350" height="150" border="0" />
 
 == SmartGWT ==
 <wiki:gadget url="http://www.ohloh.net/p/smartgwt/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
 
-<wiki:gadget url="http://www.ohloh.net/p/smartgwt/widgets/project_factoids.xml" width="350" height="150" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/smartgwt/widgets/project_factoids.xml" width="360" height="150" border="0" />
 
 == GWTP ==
 <wiki:gadget url="http://www.ohloh.net/p/gwt-platform/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
 
-<wiki:gadget url="http://www.ohloh.net/p/gwt-platform/widgets/project_factoids.xml" width="350" height="150" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/gwt-platform/widgets/project_factoids.xml" width="360" height="150" border="0" />
 
 == Svn ==
-<wiki:gadget url="http://www.ohloh.net/p/subversion/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/subversion/widgets/project_basic_stats.xml" height="220" width="370" border="0" />
 
-<wiki:gadget url="http://www.ohloh.net/p/subversion/widgets/project_factoids.xml" width="350" height="150" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/subversion/widgets/project_factoids.xml" width="360" height="150" border="0" />
 
 
 == Log4j ==
-<wiki:gadget url="http://www.ohloh.net/p/log4j/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/log4j/widgets/project_basic_stats.xml" height="220" width="370" border="0" />
 
-<wiki:gadget url="http://www.ohloh.net/p/log4j/widgets/project_factoids.xml" width="350" height="150" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/log4j/widgets/project_factoids.xml" width="370" height="150" border="0" />
 
 == Postgres ==
-<wiki:gadget url="http://www.ohloh.net/p/postgres/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/postgres/widgets/project_basic_stats.xml" height="220" width="370" border="0" />
 
-<wiki:gadget url="http://www.ohloh.net/p/postgres/widgets/project_factoids.xml" width="350" height="165" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/postgres/widgets/project_factoids.xml" width="370" height="165" border="0" />
 
 == Tomcat ==
-<wiki:gadget url="http://www.ohloh.net/p/tomcat/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/tomcat/widgets/project_basic_stats.xml" height="220" width="370" border="0" />
 
-<wiki:gadget url="http://www.ohloh.net/p/tomcat/widgets/project_factoids.xml" width="350" height="150" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/tomcat/widgets/project_factoids.xml" width="370" height="150" border="0" />
 
 == Apache Server ==
-<wiki:gadget url="http://www.ohloh.net/p/apache/widgets/project_basic_stats.xml" height="220" width="360" border="0" />
+<wiki:gadget url="http://www.ohloh.net/p/apache/widgets/project_basic_stats.xml" height="220" width="370" border="0" />
 
-<wiki:gadget url="http://www.ohloh.net/p/apache/widgets/project_factoids.xml" width="350" height="150" border="0" />
-
-
+<wiki:gadget url="http://www.ohloh.net/p/apache/widgets/project_factoids.xml" width="370" height="150" border="0" />
 
 
 

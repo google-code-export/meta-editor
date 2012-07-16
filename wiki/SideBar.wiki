@@ -2,7 +2,9 @@
     * [Info Screenshots]
     * [DomainModel Domain Model]
     * [Links Related Links]
+<wiki:comment>
     * [EditorDemo Demo]
+</wiki:comment>
     * [Team]
   * Developer Information
     * [TechnicalDocumentation Technical Documentation]

@@ -1,0 +1,18 @@
+#summary used technologies, links to related projects, activity of related communities
+
+<wiki:toc max_depth="2" />
+
+
+----
+
+=Screencasts=
+These screencasts are only available in Czech language.
+
+==Introduction to creation mode==
+<wiki:video url="http://www.youtube.com/watch?v=dvFr-YkKmoY"/>
+
+==Introduction to edit mode==
+<wiki:video url="http://www.youtube.com/watch?v=yToGGwxhywI"/>
+
+==Demo of workflow for periodicals==
+<wiki:video url="http://www.youtube.com/watch?v=BdP2xc77DAI"/>

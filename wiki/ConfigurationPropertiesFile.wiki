@@ -7,93 +7,49 @@ How to set your configuration.properties file
 
 = Parameters =
 
-*inputQueue*=The path to the scanned images with subdirectories named same as documentTypes
-
-*imageServer.internal*=Whether the internal imageserver is used (values: false, true)
-_[default: false]_
-
-*imageServer.url*=The URL of a imageserver (if is any imageserver used)
-
-*imageServer.known*=The path to the image server directory where data with known sysno is stored (if is any imageserver used)
-
-*imageServer.unknown*=The path to image server directory where data with unknown sysno is stored (if is any imageserver used)
-
-*djatoka.home*=The scan Djatoka home path
-
-*editor.home*=The editor home path
-
-*imageExtension*=The allowed image extensions (values: jpg, JPG, png, tiff, tif, jpeg, jp2, pdf) _[default: jpg, png, tiff, tif, jpeg]_
-
-*documentTypes*=Types of objects being digitalized (values: monograph, periodical, map, manuscript) _[default: periodical, monograph]_
-
-*guishowInputQueue*=Whether the input queue has to be shown(values: false, true) _[default: true]_
-
-*recentlyModifiedNumber*=The number of shown recently modified item _[default: 10]_
-
-*z39.50Profile*=The z39.50 profile _[default: mzk]_
-
-*z39.50Host*=The host(s) of z39.50 providers _[default: aleph.mzk.cz, aleph.muni.cz, sigma.nkp.cz, sigma.nkp.cz]_
-
-*z39.50Port*=The used port(s) of z39.50 _[default: 9991, 9991, 9909, 9909]_
-
-*z39.50Base*=The z39.50 base(s) _[default: MZK01-UTF, MUB01, SKC, NKC]_
-
-*barcodeLength*=The lenght(s) of barcode _[default: 10, 10, 10, 10]_
-
-*oaiUrls*=The URL(s) of OAI provider _[default: http://oai.mzk.cz]_
-
-*oaiIdPrefixes*=The ID-prefixes of OAI _[default: oai:aleph.mzk.cz]_
-
-*oaiBases*=The OAI base(s) _[default: MZK01, MZK03]_
-
-*accessUserPatterns*= _[default: {{{*}}}]_
-
-*accessAdminPatterns*= _[default: 127.{{{*}}}||localhost]_
-
-*krameriusHost*=The kramerius host
-
-*krameriusLogin*=The kramerius login
-
-*krameriusPassword*=The kramerius password
-
-*fedoraHost*=The fedora host
-
-*fedoraLogin*=The fedora login _[default: fedoraAdmin]_
-
-*fedoraPassword*=The fedora password
-
-*fedoraVersion*=The fedora version _[default: 3.3]_
-
-*httpBasicPass NOT SUPPORTED
-
-*dbHost*=The database host _[default: localhost]_
-
-*dbPort*=The database port _[default: 5432]_
-
-*dbLogin*=The database login _[default: meditor]_
-
-*dbPassword*=The database password
-
-*dbName*=The database name _[default: meditor]_
-
-*sshUser*=The user for accessing the machine via ssh _[default: meditor]_
-
-*openIdApiKey*=The openId API key (of Janrain service) _[default: 775a3d3ec29deeeaf39e506ff514f39fcb5e434d]_
-
-*openIdApiUrl*=The openId API URL (of Janrain service) _[default: https://rpxnow.com]_
-
-*localhost*=Whether is this machine for developing (when the application is ran via hosted mode) _[default: false]_
-
-*userDirectories*=The path to the stored user copies of FOXML or other user things
-
-*genImagesLifetime*=The number of days after which will be the generated (converted) images removed
-
-*akkaConvertWorkers NOT SUPPORTED
-
-*akkaOn NOT SUPPORTED _[default: false]_
-
-*createIngestInfoXmlFile NOT SUPPORTED
-
-*imagesDir*=The path to the directory where converted images will be stored _[default: ~/output/]_
-
-*identities  NOT SUPPORTED YET
+||Parameter||Description||Default values||
+||<b>inputQueue</b>||The path to the scanned images with subdirectories named same as documentTypes||||
+||<b>imageServer.internal</b>||Whether the internal imageserver is used (values: false, true)||false||
+||<b>imageServer.url</b>||The URL of a imageserver (if is any imageserver used)||||
+||<b>imageServer.known</b>||The path to the image server directory where data with known sysno is stored (if is any imageserver used)||||
+||<b>imageServer.unknown</b>||The path to image server directory where data with unknown sysno is stored (if is any imageserver used)||||
+||<b>djatoka.home</b>||The scan Djatoka home path||||
+||<b>editor.home</b>||The editor home path||||
+||<b>imageExtension</b>||The allowed image extensions (values: jpg, JPG, png, tiff, tif, jpeg, jp2, pdf) ||jpg, png, tiff, tif, jpeg||
+||<b>documentTypes</b>||Types of objects being digitalized (values: monograph, periodical, map, manuscript) ||periodical, monograph||
+||<b>guishowInputQueue</b>||Whether the input queue has to be shown(values: false, true) ||true||
+||<b>recentlyModifiedNumber</b>||The number of shown recently modified item ||10||
+||<b>z39.50Profile</b>||The z39.50 profile ||mzk||
+||<b>z39.50Host</b>||The host(s) of z39.50 providers ||aleph.mzk.cz, aleph.muni.cz, sigma.nkp.cz, sigma.nkp.cz||
+||<b>z39.50Port</b>||The used port(s) of z39.50 ||9991, 9991, 9909, 9909||
+||<b>z39.50Base</b>||The z39.50 base(s) ||MZK01-UTF, MUB01, SKC, NKC||
+||<b>barcodeLength</b>||The lenght(s) of barcode ||10, 10, 10, 10||
+||<b>oaiUrls</b>||The URL(s) of OAI provider ||http://oai.mzk.cz||
+||<b>oaiIdPrefixes</b>||The ID-prefixes of OAI ||oai:aleph.mzk.cz||
+||<b>oaiBases</b>||The OAI base(s) ||MZK01, MZK03||
+||<b>accessUserPatterns</b>|| ||{{{*}}}||
+||<b>accessAdminPatterns</b>|| ||127.{{{*}}}{{{|}}}{{{|}}}localhost||
+||<b>krameriusHost</b>||The kramerius host||||
+||<b>krameriusLogin</b>||The kramerius login||||
+||<b>krameriusPassword</b>||The kramerius password||||
+||<b>fedoraHost</b>||The fedora host||||
+||<b>fedoraLogin</b>||The fedora login ||fedoraAdmin||
+||<b>fedoraPassword</b>||The fedora password||||
+||<b>fedoraVersion</b>||The fedora version ||3.3||
+||<b>httpBasicPass</b>||NOT SUPPORTED||||
+||<b>dbHost</b>||The database host ||localhost||
+||<b>dbPort</b>||The database port ||5432||
+||<b>dbLogin</b>||The database login ||meditor||
+||<b>dbPassword</b>||The database password||||
+||<b>dbName</b>||The database name ||meditor||
+||<b>sshUser</b>||The user for accessing the machine via ssh ||meditor||
+||<b>openIdApiKey</b>||The openId API key (of Janrain service) ||775a3d3ec29deeeaf39e506ff514f39fcb5e434d||
+||<b>openIdApiUrl</b>||The openId API URL (of Janrain service) ||https://rpxnow.com||
+||<b>localhost</b>||Whether is this machine for developing (when the application is ran via hosted mode) ||false||
+||<b>userDirectories</b>||The path to the stored user copies of FOXML or other user things||||
+||<b>genImagesLifetime</b>||The number of days after which will be the generated (converted) images removed||||
+||<b>akkaConvertWorkers</b>||NOT SUPPORTED||||
+||<b>akkaOn</b>||NOT SUPPORTED ||false||
+||<b>createIngestInfoXmlFile</b>||NOT SUPPORTED||||
+||<b>imagesDir</b>||The path to the directory where converted images will be stored ||~/output/||
+||<b>identities</b>||NOT SUPPORTED YET||openid||

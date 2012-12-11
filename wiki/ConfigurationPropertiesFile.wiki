@@ -53,5 +53,5 @@ syntax: parameter=value1, value2, ...
 ||<b>akkaConvertWorkers</b>||NOT SUPPORTED||||
 ||<b>akkaOn</b>||NOT SUPPORTED ||false||
 ||<b>createIngestInfoXmlFile</b>||NOT SUPPORTED||||
-||<b>imagesDir</b>||The path to the directory where converted images will be stored ||~/output/||
+||<b>imagesDir</b>||The path to the directory where converted images will be stored ||`~/output/`||
 ||<b>identities</b>||NOT SUPPORTED YET||openid||

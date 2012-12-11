@@ -1,0 +1,99 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+How to set your configuration.properties file
+
+
+= Parameters =
+
+inputQueue=The path to the scanned images with subdirectories named same as documentTypes
+
+imageServer.internal=Whether the internal imageserver is used (values: false, true)
+[default: false]
+
+imageServer.url=The URL of a imageserver (if is any imageserver used)
+
+imageServer.known=The path to the image server directory where data with known sysno is stored (if is any imageserver used)
+
+imageServer.unknown=The path to image server directory where data with unknown sysno is stored (if is any imageserver used)
+
+djatoka.home=The scan Djatoka home path
+
+editor.home=The editor home path
+
+imageExtension=The allowed image extensions (values: jpg, JPG, png, tiff, tif, jpeg, jp2, pdf) [default: jpg, png, tiff, tif, jpeg]
+
+documentTypes=Types of objects being digitalized (values: monograph, periodical, map, manuscript) [default: periodical, monograph]
+
+guishowInputQueue=Whether the input queue has to be shown(values: false, true) [default: true]
+
+recentlyModifiedNumber=The number of shown recently modified item [default: 10]
+
+z39.50Profile=The z39.50 profile [default: mzk]
+
+z39.50Host=The host(s) of z39.50 providers [default: aleph.mzk.cz, aleph.muni.cz, sigma.nkp.cz, sigma.nkp.cz]
+
+z39.50Port=The used port(s) of z39.50 [default: 9991, 9991, 9909, 9909]
+
+z39.50Base=The z39.50 base(s) [default: MZK01-UTF, MUB01, SKC, NKC]
+
+barcodeLength=The lenght(s) of barcode [default: 10, 10, 10, 10]
+
+oaiUrls=The URL(s) of OAI provider [default: http://oai.mzk.cz]
+
+oaiIdPrefixes=The ID-prefixes of OAI [default: oai:aleph.mzk.cz]
+
+oaiBases=The OAI base(s) [default: MZK01, MZK03]
+
+accessUserPatterns= [default: {{{*}}}]
+
+accessAdminPatterns= [default: 127.{{{*}}}||localhost]
+
+krameriusHost=The kramerius host
+
+krameriusLogin=The kramerius login
+
+krameriusPassword=The kramerius password
+
+fedoraHost=The fedora host
+
+fedoraLogin=The fedora login [default: fedoraAdmin]
+
+fedoraPassword=The fedora password
+
+fedoraVersion=The fedora version [default: 3.3]
+
+httpBasicPass NOT SUPPORTED
+
+dbHost=The database host [default: localhost]
+
+dbPort=The database port [default: 5432]
+
+dbLogin=The database login [default: meditor]
+
+dbPassword=The database password
+
+dbName=The database name [default: meditor]
+
+sshUser=The user for accessing the machine via ssh [default: meditor]
+
+openIdApiKey=The openId API key (of Janrain service) [default: 775a3d3ec29deeeaf39e506ff514f39fcb5e434d]
+
+openIdApiUrl=The openId API URL (of Janrain service) [default: https://rpxnow.com]
+
+localhost=Whether is this machine for developing (when the application is ran via hosted mode) [default: false]
+
+userDirectories=The path to the stored user copies of FOXML or other user things
+
+genImagesLifetime=The number of days after which will be the generated (converted) images removed
+
+akkaConvertWorkers NOT SUPPORTED
+
+akkaOn NOT SUPPORTED [default: false]
+
+createIngestInfoXmlFile NOT SUPPORTED
+
+imagesDir=The path to the directory where converted images will be stored [default: ~/output/]
+
+identities  NOT SUPPORTED YET

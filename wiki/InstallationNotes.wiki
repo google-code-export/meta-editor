@@ -112,7 +112,7 @@ into _H:/meditor/.meditor_ (directories are in SVN)
     * Check that java is not using JVM from OpenJDK (java -version) It should be using JVM from Oracle (`HotSpot` or JRockit). There should be equality between java, which is launched from bash ('$PATH/java') and which is launched from _$JAVA_HOME/bin/java_ (due to external processes as image conversion).
 
 
-     * Make a file _configuration.properties_ in H/user/.meditor and set the parameters, especially the path to the import directory, the path to the images (internal imgserver), etc.
+     * Make a file _configuration.properties_ in H/user/.meditor and set the [ConfigurationPropertiesFile parameters], especially the path to the import directory, the path to the images (internal imgserver), etc.
 
 == DB Credentials: ==
 On the PC from which I want to deploy, create the directory META-INF (next to the WEB-INF in the war directory) and subsequently create the file context.xml with following content:

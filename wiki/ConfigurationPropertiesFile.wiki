@@ -4,6 +4,8 @@
 
 How to set your configuration.properties file
 
+syntax: parameter=value1, value2, ...
+
 
 = Parameters =
 

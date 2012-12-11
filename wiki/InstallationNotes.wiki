@@ -37,7 +37,7 @@ CREATE SCHEMA AUTHORIZATION meditor;
 ALTER SCHEMA meditor OWNER TO meditor;
 CREATE DATABASE meditor WITH OWNER meditor;
 }}}
-    * The database schema is [https://github.com/moravianlibrary/MEditor/blob/master/resources/newSqlWithClean/schema.sql here]. If don't have the old version (before 1. 11. 2012) you can omit the "DROP & ALTER" part
+    * The database schema is [https://github.com/moravianlibrary/MEditor/blob/master/resources/newSqlWithClean/schema.sql here]. If you don't have the old version (before 1. 11. 2012) you can omit the "DROP & ALTER" part
     * add (or ensure about their presence) the following lines to the configuration file of the postgres (_/etc/postgresql/${version}/main/pg_hba.conf_), for joining via http for user and database called "meditor"
 {{{
 #localhost

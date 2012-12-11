@@ -7,93 +7,93 @@ How to set your configuration.properties file
 
 = Parameters =
 
-inputQueue=The path to the scanned images with subdirectories named same as documentTypes
+*inputQueue*=The path to the scanned images with subdirectories named same as documentTypes
 
-imageServer.internal=Whether the internal imageserver is used (values: false, true)
-[default: false]
+*imageServer.internal*=Whether the internal imageserver is used (values: false, true)
+_[default: false]_
 
-imageServer.url=The URL of a imageserver (if is any imageserver used)
+*imageServer.url*=The URL of a imageserver (if is any imageserver used)
 
-imageServer.known=The path to the image server directory where data with known sysno is stored (if is any imageserver used)
+*imageServer.known*=The path to the image server directory where data with known sysno is stored (if is any imageserver used)
 
-imageServer.unknown=The path to image server directory where data with unknown sysno is stored (if is any imageserver used)
+*imageServer.unknown*=The path to image server directory where data with unknown sysno is stored (if is any imageserver used)
 
-djatoka.home=The scan Djatoka home path
+*djatoka.home*=The scan Djatoka home path
 
-editor.home=The editor home path
+*editor.home*=The editor home path
 
-imageExtension=The allowed image extensions (values: jpg, JPG, png, tiff, tif, jpeg, jp2, pdf) [default: jpg, png, tiff, tif, jpeg]
+*imageExtension*=The allowed image extensions (values: jpg, JPG, png, tiff, tif, jpeg, jp2, pdf) _[default: jpg, png, tiff, tif, jpeg]_
 
-documentTypes=Types of objects being digitalized (values: monograph, periodical, map, manuscript) [default: periodical, monograph]
+*documentTypes*=Types of objects being digitalized (values: monograph, periodical, map, manuscript) _[default: periodical, monograph]_
 
-guishowInputQueue=Whether the input queue has to be shown(values: false, true) [default: true]
+*guishowInputQueue*=Whether the input queue has to be shown(values: false, true) _[default: true]_
 
-recentlyModifiedNumber=The number of shown recently modified item [default: 10]
+*recentlyModifiedNumber*=The number of shown recently modified item _[default: 10]_
 
-z39.50Profile=The z39.50 profile [default: mzk]
+*z39.50Profile*=The z39.50 profile _[default: mzk]_
 
-z39.50Host=The host(s) of z39.50 providers [default: aleph.mzk.cz, aleph.muni.cz, sigma.nkp.cz, sigma.nkp.cz]
+*z39.50Host*=The host(s) of z39.50 providers _[default: aleph.mzk.cz, aleph.muni.cz, sigma.nkp.cz, sigma.nkp.cz]_
 
-z39.50Port=The used port(s) of z39.50 [default: 9991, 9991, 9909, 9909]
+*z39.50Port*=The used port(s) of z39.50 _[default: 9991, 9991, 9909, 9909]_
 
-z39.50Base=The z39.50 base(s) [default: MZK01-UTF, MUB01, SKC, NKC]
+*z39.50Base*=The z39.50 base(s) _[default: MZK01-UTF, MUB01, SKC, NKC]_
 
-barcodeLength=The lenght(s) of barcode [default: 10, 10, 10, 10]
+*barcodeLength*=The lenght(s) of barcode _[default: 10, 10, 10, 10]_
 
-oaiUrls=The URL(s) of OAI provider [default: http://oai.mzk.cz]
+*oaiUrls*=The URL(s) of OAI provider _[default: http://oai.mzk.cz]_
 
-oaiIdPrefixes=The ID-prefixes of OAI [default: oai:aleph.mzk.cz]
+*oaiIdPrefixes*=The ID-prefixes of OAI _[default: oai:aleph.mzk.cz]_
 
-oaiBases=The OAI base(s) [default: MZK01, MZK03]
+*oaiBases*=The OAI base(s) _[default: MZK01, MZK03]_
 
-accessUserPatterns= [default: {{{*}}}]
+*accessUserPatterns*= _[default: {{{*}}}]_
 
-accessAdminPatterns= [default: 127.{{{*}}}||localhost]
+*accessAdminPatterns*= _[default: 127.{{{*}}}||localhost]_
 
-krameriusHost=The kramerius host
+*krameriusHost*=The kramerius host
 
-krameriusLogin=The kramerius login
+*krameriusLogin*=The kramerius login
 
-krameriusPassword=The kramerius password
+*krameriusPassword*=The kramerius password
 
-fedoraHost=The fedora host
+*fedoraHost*=The fedora host
 
-fedoraLogin=The fedora login [default: fedoraAdmin]
+*fedoraLogin*=The fedora login _[default: fedoraAdmin]_
 
-fedoraPassword=The fedora password
+*fedoraPassword*=The fedora password
 
-fedoraVersion=The fedora version [default: 3.3]
+*fedoraVersion*=The fedora version _[default: 3.3]_
 
-httpBasicPass NOT SUPPORTED
+*httpBasicPass NOT SUPPORTED
 
-dbHost=The database host [default: localhost]
+*dbHost*=The database host _[default: localhost]_
 
-dbPort=The database port [default: 5432]
+*dbPort*=The database port _[default: 5432]_
 
-dbLogin=The database login [default: meditor]
+*dbLogin*=The database login _[default: meditor]_
 
-dbPassword=The database password
+*dbPassword*=The database password
 
-dbName=The database name [default: meditor]
+*dbName*=The database name _[default: meditor]_
 
-sshUser=The user for accessing the machine via ssh [default: meditor]
+*sshUser*=The user for accessing the machine via ssh _[default: meditor]_
 
-openIdApiKey=The openId API key (of Janrain service) [default: 775a3d3ec29deeeaf39e506ff514f39fcb5e434d]
+*openIdApiKey*=The openId API key (of Janrain service) _[default: 775a3d3ec29deeeaf39e506ff514f39fcb5e434d]_
 
-openIdApiUrl=The openId API URL (of Janrain service) [default: https://rpxnow.com]
+*openIdApiUrl*=The openId API URL (of Janrain service) _[default: https://rpxnow.com]_
 
-localhost=Whether is this machine for developing (when the application is ran via hosted mode) [default: false]
+*localhost*=Whether is this machine for developing (when the application is ran via hosted mode) _[default: false]_
 
-userDirectories=The path to the stored user copies of FOXML or other user things
+*userDirectories*=The path to the stored user copies of FOXML or other user things
 
-genImagesLifetime=The number of days after which will be the generated (converted) images removed
+*genImagesLifetime*=The number of days after which will be the generated (converted) images removed
 
-akkaConvertWorkers NOT SUPPORTED
+*akkaConvertWorkers NOT SUPPORTED
 
-akkaOn NOT SUPPORTED [default: false]
+*akkaOn NOT SUPPORTED _[default: false]_
 
-createIngestInfoXmlFile NOT SUPPORTED
+*createIngestInfoXmlFile NOT SUPPORTED
 
-imagesDir=The path to the directory where converted images will be stored [default: ~/output/]
+*imagesDir*=The path to the directory where converted images will be stored _[default: ~/output/]_
 
-identities  NOT SUPPORTED YET
+*identities  NOT SUPPORTED YET

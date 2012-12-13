@@ -9,10 +9,13 @@
 These screencasts are only available in Czech language.
 
 ==Introduction to creation mode==
-<wiki:video url="http://www.youtube.com/watch?v=dvFr-YkKmoY"/>
+<wiki:video url="http://www.youtube.com/watch?v=o3Uwxdu5BX0"/>
 
 ==Introduction to edit mode==
 <wiki:video url="http://www.youtube.com/watch?v=yToGGwxhywI"/>
 
 ==Demo of workflow for periodicals==
 <wiki:video url="http://www.youtube.com/watch?v=BdP2xc77DAI"/>
+
+==Another useful screencast (connecting periodicals already stored in Fedora)==
+<wiki:video url="http://www.youtube.com/watch?v=gwYD9t10mXI"/>

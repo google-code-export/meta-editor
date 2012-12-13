@@ -8,7 +8,8 @@
     * [Team]
   * Developer Information
     * [TechnicalDocumentation Technical Documentation]
-    * [EditorConfiguration Configuration]
+    * [EditorConfiguration Configuration Example]
+    * [ConfigurationPropertiesFile List of Possible Config. Entries]
     * [CodingStandards Coding Standards]
     * [Repository Repository]
     * [InstallationNotes Installation Notes]

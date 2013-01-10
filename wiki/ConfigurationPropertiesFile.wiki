@@ -49,7 +49,7 @@ syntax: parameter=value1, value2, ...
 ||<b>openIdApiUrl</b>||The openId API URL (of Janrain service) ||https://rpxnow.com||
 ||<b>localhost</b>||Whether is this machine for developing (when the application is ran via hosted mode) ||false||
 ||<b>userDirectories</b>||The path to the stored user copies of FOXML or other user things||||
-||<b>genImagesLifetime</b>||The number of days after which will be the generated (converted) images removed||||
+||<b>genImagesLifetime</b>||The number of days after which will be the generated (converted) images removed||never||
 ||<b>akkaConvertWorkers</b>||NOT SUPPORTED||||
 ||<b>akkaOn</b>||NOT SUPPORTED ||false||
 ||<b>createIngestInfoXmlFile</b>||NOT SUPPORTED||||

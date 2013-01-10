@@ -37,15 +37,18 @@ CREATE SCHEMA AUTHORIZATION meditor;
 ALTER SCHEMA meditor OWNER TO meditor;
 CREATE DATABASE meditor WITH OWNER meditor;
 }}}
-    * The database schema is [https://github.com/moravianlibrary/MEditor/blob/master/resources/newSqlWithClean/schema.sql here]. If you don't have the old version (before 1. 11. 2012) you can omit the "DROP & ALTER" part
-    * add (or ensure about their presence) the following lines to the configuration file of the postgres (_/etc/postgresql/${version}/main/pg_hba.conf_), for joining via http for user and database called "meditor"
+    * The database schema is [https://github.com/moravianlibrary/MEditor/blob/master/resources/newSqlWithClean/schema.sql here]. You can import it with the command "{{{psql -f /path_to_the_file/shema.sql meditor}}}" from bash. Or with the command "{{{\i /path_to_the_file/shema.sql}}}" from Postgres command line. Please run both of the commands as a user meditor. If you don't have the old version (before 1. 11. 2012) you can omit the "DROP & ALTER" part.
+    * add (or ensure about their presence) the following lines to the configuration file of the postgres (_/etc/postgresql/${version}/main/pg_hba.conf_), for joining via http for user and database called "meditor". The "MZK lines" is only an example. Please use the IP(s) of you institute.
 {{{
 #localhost
 host	all 	meditor 	127.0.0.1/32		password
 # MZK
 host	all 	meditor 	195.113.155.0/24   	password
 }}}
-   * in file _/etc/postgresql/${version}/main/postgresql.conf_ uncomment the line "listen_addresses" and as a value set the strings "localhost" and ip address of H computer, separated by comma
+   * in file _/etc/postgresql/${version}/main/postgresql.conf_ uncomment the line "listen_addresses" and as a value set the strings "localhost" and ip address of H computer, separated by comma. Example:
+{{{
+listen_addresses = 'localhost,195.113.155.50'
+}}}
 
    * restart postgres 
 {{{
@@ -55,8 +58,8 @@ host	all 	meditor 	195.113.155.0/24   	password
 == Install Tomcat: ==
 
 {{{
-wget http://mirror.hosting90.cz/apache/tomcat/tomcat-7/v7.0.27/bin/apache-tomcat-7.0.27.zip #(or newer)
-unzip apache-tomcat-7.0.27.zip
+wget http://mirror.hosting90.cz/apache/tomcat/tomcat-7/${tomcat_version}/bin/apache-tomcat-${tomcat_version}.zip #(or newer)
+unzip apache-tomcat-${tomcat_version}.zip
 }}}
    * Into
 {{{
@@ -85,8 +88,8 @@ add the following lines (+/-):
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 export HISTCONTROL=ignoreboth
-export JAVA_HOME='/home/meditor/install/jdk1.6.0_21/'
-export CATALINA_HOME='/home/meditor/apache-tomcat-7.0.25/'
+export JAVA_HOME='/path_to_java/jdk-${java_version}/'
+export CATALINA_HOME='/home/meditor/apache-tomcat-${tomcat_version}/'
 export CATALINA_OPTS='-server -Xmx512m -XX:MaxPermSize=128m -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n'
 export PATH=$JAVA_HOME/bin:$PATH
 export LC_ALL=cs_CZ.utf8
@@ -100,17 +103,17 @@ export PGCLIENTENCODING=UNICODE
 H:/home/meditor/.meditor
 }}}
 
- * copy directories 
+ * copy directories
 {{{
 resources/djatoka dir
 resources/xml
 }}} 
-into _H:/meditor/.meditor_ (directories are in SVN)
+from [https://github.com/moravianlibrary/MEditor/blob/master/resources resources] into _H:/meditor/.meditor_ (directories are in SVN)
    * in war file: _H/user/.meditor/djatoka/dist/djatoka.war#/WEB-INF/classes/djatoka.properties_ change the password for database by _‘samePassAsUnixPassForMeditor'_ (mc can be used), eventually port of the database as well if it is not the default one (5432).
 
     * Copy the war file of djatoka image server into Tomcat (into webapps)
 
-    * Check that java is not using JVM from OpenJDK (java -version) It should be using JVM from Oracle (`HotSpot` or JRockit). There should be equality between java, which is launched from bash ('$PATH/java') and which is launched from _$JAVA_HOME/bin/java_ (due to external processes as image conversion).
+    * Check that java is not using JVM from OpenJDK (java -version) It should be using JVM from Oracle (JRockit is not recommended). There should be equality between java, which is launched from bash ('$PATH/java') and which is launched from _$JAVA_HOME/bin/java_ (due to external processes as image conversion).
 
 
      * Make a file _configuration.properties_ in H/user/.meditor and set the [ConfigurationPropertiesFile parameters], especially the path to the import directory, the path to the images (internal imgserver), etc.
@@ -135,9 +138,24 @@ Note: the file is not included in the SVN, because of the password
 
 == Reverse Proxy: ==
 
-   * Install Apache (httpd on `RedHat`) and check the presence of (if absent, install them) modules (situated at _/etc/apache2/mods-available_) _mod_proxy, mod-proxy-html_ a _mod_ssl_ and _mod_rewrite_ and activate it by a2enmod (_/etc/apache2/mods-enabled_).
+   * Install Apache (httpd or `RedHat`) and check the presence of (if absent, install them) modules (situated at _/etc/apache2/mods-available_) _mod_proxy, mod-proxy-html_ a _mod_ssl_ and _mod_rewrite_ and activate it by a2enmod (_/etc/apache2/mods-enabled_).
 
-   * From any computer where editor is currently deployed, lets call this machine as E, copy the definitions of virtual hosts, one for editor running on port 80 and one for editor running on port 443 and change the hostname in all places for the proper one. The virtual hosts definitions are situated at _E:/etc/apache/sites-available_.
+   * Create the definitions of virtual hosts in /etc/apache/sites-available_, one for editor running on port 80 and one for editor running on port 443. In order to run imageserver Djatoka you will need to set rewrite rules:
+{{{
+<IfModule mod_rewrite.c>
+        RewriteEngine on
+        RewriteLog "/var/log/apache/rewrite.log"
+        RewriteLogLevel 9
+        Options +FollowSymlinks
+
+        RewriteRule ^[a-zA-Z0-9_\/\.\-]*\/([a-zA-Z0-9_\.\-]*)\/preview.jpg$ http://hostURL/djatoka/resolver?url_ver=Z39.88-2004&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.level=2&svc.scale=150&rft_id=$1& [L]
+        RewriteRule ^[a-zA-Z0-9_\/\.\-]*\/([a-zA-Z0-9_\.\-]*)\/large.jpg$ http://hostURL/djatoka/resolver?url_ver=Z39.88-2004&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.level=4&svc.scale=975&rft_id=$1& [L]
+        RewriteRule ^[a-zA-Z0-9_\/\.\-]*\/([a-zA-Z0-9_\.\-]*)\/big.jpg$ http://hostURL/djatoka/resolver?url_ver=Z39.88-2004&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.level=5&svc.scale=1500&rft_id=$1& [L]
+</IfModule>
+}}}
+Change the hostURL in all places for the proper one.
+
+
    * Add links for certificates into the virtual host definition for SSL.
 
    * Allow these the two sites by a2ensite.

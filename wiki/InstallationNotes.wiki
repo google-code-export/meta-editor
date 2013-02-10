@@ -38,7 +38,7 @@ ALTER SCHEMA meditor OWNER TO meditor;
 CREATE DATABASE meditor WITH OWNER meditor;
 }}}
     * The database schema is [https://github.com/moravianlibrary/MEditor/blob/master/resources/newSqlWithClean/schema.sql here]. You can import it with the command "{{{psql -f /path_to_the_file/shema.sql meditor}}}" from bash. Or with the command "{{{\i /path_to_the_file/shema.sql}}}" from Postgres command line. Please run both of the commands as a user meditor. If you don't have the old version (before 1. 11. 2012) you can omit the "DROP & ALTER" part.
-    * add (or ensure about their presence) the following lines to the configuration file of the postgres (_/etc/postgresql/${version}/main/pg_hba.conf_), for joining via http for user and database called "meditor". The "MZK lines" is only an example. Please use the IP(s) of you institute.
+    * add (or ensure about their presence) the following lines to the configuration file of the postgres (_/etc/postgresql/${version}/main/pg_hba.conf_ or _/usr/share/pgsql/pg_hba.conf_ on RHEL), for joining via http for user and database called "meditor". The "MZK lines" is only an example. Please use the IP(s) of you institute.
 {{{
 #localhost
 host	all 	meditor 	127.0.0.1/32		password

@@ -262,7 +262,7 @@ or on debian 6 and higher:
 insserv tomcat
 }}}
 
-== Actualizations: ==
+== Updates: ==
 
 As the root launch a command 
 {{{

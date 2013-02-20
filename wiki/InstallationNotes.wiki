@@ -164,6 +164,8 @@ Change the hostURL in all places for the proper one.
 
    * Revise the file _/etc/apache2/mods-enabled/proxy.conf_ to be equal to the file on the computer, where was editor installed before (E).
 
+   * host H should know he is H. In other words "ping H" should work and H should be resolved to ip address (add H to the /etc/hosts if it is not there).
+
    * Add/comment/change the file _H:$CATALINA_HOME/conf/server.xml_ to achieve the state as follows:
 {{{
  <Connector port="8081" protocol="HTTP/1.1"
